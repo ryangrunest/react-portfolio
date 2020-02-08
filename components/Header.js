@@ -1,18 +1,24 @@
 import Link from "next/Link";
 
-const linkStyle = {
-  marginRight: 15
-};
-
 const Header = () => (
-  <div>
+  <header>
     <Link href="/">
-      <a style={linkStyle}>Home</a>
+      <a>Home</a>
     </Link>
-    <Link href="/about">
-      <a style={linkStyle}>About</a>
+    <Link href="/blog">
+      <a>Blog</a>
     </Link>
-  </div>
+    <Link href="/shop">
+      <a>Shop</a>
+    </Link>
+
+    <style jsx>{`
+      header {
+        display: flex;
+        justify-content: space-between;
+      }
+    `}</style>
+  </header>
 );
 
 export default Header;
