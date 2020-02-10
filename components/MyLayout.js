@@ -1,18 +1,36 @@
 import Header from "./Header";
+import MyHead from "./MyHead";
 
 const layoutStyle = {
-  margin: 20,
-  padding: 20,
-  border: "1px solid #DDD"
+  margin: 20
 };
 
 const Layout = props => {
-  console.log(props);
   return (
-    <div style={layoutStyle}>
-      <Header />
-      {props.children}
-    </div>
+    <>
+      <MyHead page={props.page} />
+      <div style={layoutStyle}>
+        <Header />
+        {props.children}
+      </div>
+      <style jsx global>{`
+        html,
+        body {
+          font-family: "Dosis", sans-serif;
+          letter-spacing: 1px;
+        }
+        a {
+          text-decoration: none;
+          color: black;
+        }
+        a:hover,
+        a:active,
+        a:focus,
+        a: visited {
+          color: gray;
+        }
+      `}</style>
+    </>
   );
 };
 

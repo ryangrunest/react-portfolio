@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 
 export default function Blog() {
   return (
-    <Layout>
+    <Layout page="Blog">
       <p>This is the blog page.</p>
     </Layout>
   );

@@ -2,20 +2,27 @@ import Link from "next/Link";
 
 const Header = () => (
   <header>
-    <Link href="/">
-      <a>Home</a>
-    </Link>
-    <Link href="/blog">
-      <a>Blog</a>
-    </Link>
-    <Link href="/shop">
-      <a>Shop</a>
-    </Link>
+    <div className="header-left">
+      <Link href="/">
+        <a>Ryan</a>
+      </Link>
+    </div>
+    <div className="header-right">
+      <Link href="/blog">
+        <a>Blog</a>
+      </Link>
+      <Link href="/shop">
+        <a>Shop</a>
+      </Link>
+    </div>
 
     <style jsx>{`
       header {
         display: flex;
         justify-content: space-between;
+      }
+      .header-right a {
+        padding: 0 1rem;
       }
     `}</style>
   </header>
