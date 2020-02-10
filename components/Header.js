@@ -22,7 +22,13 @@ const Header = () => (
         justify-content: space-between;
       }
       .header-right a {
-        padding: 0 1rem;
+        margin: 0 1rem;
+        padding: 0 0.2rem;
+        padding-bottom: 0.2rem;
+        border-bottom: 1px solid black;
+      }
+      .header-right a:hover {
+        border: none;
       }
     `}</style>
   </header>

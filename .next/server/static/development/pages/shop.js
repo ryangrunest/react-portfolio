@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -115,14 +115,14 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 const Header = () => __jsx("header", {
-  className: "jsx-1689445092",
+  className: "jsx-1780491860",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 4
   },
   __self: undefined
 }, __jsx("div", {
-  className: "jsx-1689445092" + " " + "header-left",
+  className: "jsx-1780491860" + " " + "header-left",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 5
@@ -136,14 +136,14 @@ const Header = () => __jsx("header", {
   },
   __self: undefined
 }, __jsx("a", {
-  className: "jsx-1689445092",
+  className: "jsx-1780491860",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 7
   },
   __self: undefined
 }, "Ryan"))), __jsx("div", {
-  className: "jsx-1689445092" + " " + "header-right",
+  className: "jsx-1780491860" + " " + "header-right",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 10
@@ -157,7 +157,7 @@ const Header = () => __jsx("header", {
   },
   __self: undefined
 }, __jsx("a", {
-  className: "jsx-1689445092",
+  className: "jsx-1780491860",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 12
@@ -171,16 +171,16 @@ const Header = () => __jsx("header", {
   },
   __self: undefined
 }, __jsx("a", {
-  className: "jsx-1689445092",
+  className: "jsx-1780491860",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 15
   },
   __self: undefined
 }, "Shop"))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-  id: "1689445092",
+  id: "1780491860",
   __self: undefined
-}, "header.jsx-1689445092{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}.header-right.jsx-1689445092 a.jsx-1689445092{padding:0 1rem;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9yZ3J1bmVzdC9EZXZlbG9wZXIvcmVhY3QtcG9ydGZvbGlvL2NvbXBvbmVudHMvSGVhZGVyLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWtCZ0IsQUFHc0IsQUFJRSxlQUNqQiwyREFKZ0MsbUhBQ2hDIiwiZmlsZSI6Ii9Vc2Vycy9yZ3J1bmVzdC9EZXZlbG9wZXIvcmVhY3QtcG9ydGZvbGlvL2NvbXBvbmVudHMvSGVhZGVyLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IExpbmsgZnJvbSBcIm5leHQvTGlua1wiO1xuXG5jb25zdCBIZWFkZXIgPSAoKSA9PiAoXG4gIDxoZWFkZXI+XG4gICAgPGRpdiBjbGFzc05hbWU9XCJoZWFkZXItbGVmdFwiPlxuICAgICAgPExpbmsgaHJlZj1cIi9cIj5cbiAgICAgICAgPGE+UnlhbjwvYT5cbiAgICAgIDwvTGluaz5cbiAgICA8L2Rpdj5cbiAgICA8ZGl2IGNsYXNzTmFtZT1cImhlYWRlci1yaWdodFwiPlxuICAgICAgPExpbmsgaHJlZj1cIi9ibG9nXCI+XG4gICAgICAgIDxhPkJsb2c8L2E+XG4gICAgICA8L0xpbms+XG4gICAgICA8TGluayBocmVmPVwiL3Nob3BcIj5cbiAgICAgICAgPGE+U2hvcDwvYT5cbiAgICAgIDwvTGluaz5cbiAgICA8L2Rpdj5cblxuICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgIGhlYWRlciB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICAgIH1cbiAgICAgIC5oZWFkZXItcmlnaHQgYSB7XG4gICAgICAgIHBhZGRpbmc6IDAgMXJlbTtcbiAgICAgIH1cbiAgICBgfTwvc3R5bGU+XG4gIDwvaGVhZGVyPlxuKTtcblxuZXhwb3J0IGRlZmF1bHQgSGVhZGVyO1xuIl19 */\n/*@ sourceURL=/Users/rgrunest/Developer/react-portfolio/components/Header.js */"));
+}, "header.jsx-1780491860{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}.header-right.jsx-1780491860 a.jsx-1780491860{margin:0 1rem;padding:0 0.2rem;padding-bottom:0.2rem;border-bottom:1px solid black;}.header-right.jsx-1780491860 a.jsx-1780491860:hover{border:none;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9yZ3J1bmVzdC9EZXZlbG9wZXIvcmVhY3QtcG9ydGZvbGlvL2NvbXBvbmVudHMvSGVhZGVyLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWtCZ0IsQUFHc0IsQUFJQyxBQU1GLFlBQ2QsRUFObUIsaUJBQ0ssc0JBQ1EscUJBTkEsU0FPaEMsMEdBTkEiLCJmaWxlIjoiL1VzZXJzL3JncnVuZXN0L0RldmVsb3Blci9yZWFjdC1wb3J0Zm9saW8vY29tcG9uZW50cy9IZWFkZXIuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgTGluayBmcm9tIFwibmV4dC9MaW5rXCI7XG5cbmNvbnN0IEhlYWRlciA9ICgpID0+IChcbiAgPGhlYWRlcj5cbiAgICA8ZGl2IGNsYXNzTmFtZT1cImhlYWRlci1sZWZ0XCI+XG4gICAgICA8TGluayBocmVmPVwiL1wiPlxuICAgICAgICA8YT5SeWFuPC9hPlxuICAgICAgPC9MaW5rPlxuICAgIDwvZGl2PlxuICAgIDxkaXYgY2xhc3NOYW1lPVwiaGVhZGVyLXJpZ2h0XCI+XG4gICAgICA8TGluayBocmVmPVwiL2Jsb2dcIj5cbiAgICAgICAgPGE+QmxvZzwvYT5cbiAgICAgIDwvTGluaz5cbiAgICAgIDxMaW5rIGhyZWY9XCIvc2hvcFwiPlxuICAgICAgICA8YT5TaG9wPC9hPlxuICAgICAgPC9MaW5rPlxuICAgIDwvZGl2PlxuXG4gICAgPHN0eWxlIGpzeD57YFxuICAgICAgaGVhZGVyIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgICAgfVxuICAgICAgLmhlYWRlci1yaWdodCBhIHtcbiAgICAgICAgbWFyZ2luOiAwIDFyZW07XG4gICAgICAgIHBhZGRpbmc6IDAgMC4ycmVtO1xuICAgICAgICBwYWRkaW5nLWJvdHRvbTogMC4ycmVtO1xuICAgICAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgYmxhY2s7XG4gICAgICB9XG4gICAgICAuaGVhZGVyLXJpZ2h0IGE6aG92ZXIge1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG4gICAgYH08L3N0eWxlPlxuICA8L2hlYWRlcj5cbik7XG5cbmV4cG9ydCBkZWZhdWx0IEhlYWRlcjtcbiJdfQ== */\n/*@ sourceURL=/Users/rgrunest/Developer/react-portfolio/components/Header.js */"));
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
 
@@ -339,7 +339,7 @@ function Shop() {
 
 /***/ }),
 
-/***/ 5:
+/***/ 6:
 /*!*****************************!*\
   !*** multi ./pages/shop.js ***!
   \*****************************/

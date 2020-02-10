@@ -7,6 +7,10 @@ export default function Index() {
       <div className="index">
         <h1>Software / Web Developer</h1>
         <p>Currently Based in San Diego, CA.</p>
+        <p>
+          Don't be shy. Send me an{" "}
+          <a href="mailto:ryangrunest45@gmail.com">email</a>.
+        </p>
         <style jsx>{`
           h1 {
             text-align: center;
@@ -18,9 +22,11 @@ export default function Index() {
           h1:hover {
             transform: rotate(5deg);
           }
+          p:first-of-type {
+            margin-top: 4rem;
+          }
           p {
             text-align: center;
-            margin-top: 4rem;
           }
         `}</style>
       </div>
