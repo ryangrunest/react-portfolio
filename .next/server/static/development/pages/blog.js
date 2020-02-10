@@ -88,429 +88,94 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./components/Cart.js":
-/*!****************************!*\
-  !*** ./components/Cart.js ***!
-  \****************************/
+/***/ "./blogposts.js":
+/*!**********************!*\
+  !*** ./blogposts.js ***!
+  \**********************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _LineItem__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LineItem */ "./components/LineItem.js");
-var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/components/Cart.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-class Cart extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
-  constructor(props) {
-    super(props);
-    this.openCheckout = this.openCheckout.bind(this);
-  }
-
-  openCheckout() {
-    window.open(this.props.checkout.webUrl);
-  }
-
-  render() {
-    let line_items = this.props.checkout.lineItems.map(line_item => {
-      return __jsx(_LineItem__WEBPACK_IMPORTED_MODULE_1__["default"], {
-        updateQuantityInCart: this.props.updateQuantityInCart,
-        removeLineItemInCart: this.props.removeLineItemInCart,
-        key: line_item.id.toString(),
-        line_item: line_item,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 18
-        },
-        __self: this
-      });
-    });
-    return __jsx("div", {
-      className: `Cart ${this.props.isCartOpen ? 'Cart--open' : ''}`,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 28
-      },
-      __self: this
-    }, __jsx("header", {
-      className: "Cart__header",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 29
-      },
-      __self: this
-    }, __jsx("h2", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 30
-      },
-      __self: this
-    }, "Your cart"), __jsx("button", {
-      onClick: this.props.handleCartClose,
-      className: "Cart__close",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 31
-      },
-      __self: this
-    }, "\xD7")), __jsx("ul", {
-      className: "Cart__line-items",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 37
-      },
-      __self: this
-    }, line_items), __jsx("footer", {
-      className: "Cart__footer",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 40
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "Cart-info clearfix",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 41
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "Cart-info__total Cart-info__small",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 42
-      },
-      __self: this
-    }, "Subtotal"), __jsx("div", {
-      className: "Cart-info__pricing",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 43
-      },
-      __self: this
-    }, __jsx("span", {
-      className: "pricing",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 44
-      },
-      __self: this
-    }, "$ ", this.props.checkout.subtotalPrice))), __jsx("div", {
-      className: "Cart-info clearfix",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 47
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "Cart-info__total Cart-info__small",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 48
-      },
-      __self: this
-    }, "Taxes"), __jsx("div", {
-      className: "Cart-info__pricing",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 49
-      },
-      __self: this
-    }, __jsx("span", {
-      className: "pricing",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 50
-      },
-      __self: this
-    }, "$ ", this.props.checkout.totalTax))), __jsx("div", {
-      className: "Cart-info clearfix",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 53
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "Cart-info__total Cart-info__small",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 54
-      },
-      __self: this
-    }, "Total"), __jsx("div", {
-      className: "Cart-info__pricing",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 55
-      },
-      __self: this
-    }, __jsx("span", {
-      className: "pricing",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 56
-      },
-      __self: this
-    }, "$ ", this.props.checkout.totalPrice))), __jsx("button", {
-      className: "Cart__checkout button",
-      onClick: this.openCheckout,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 59
-      },
-      __self: this
-    }, "Checkout")));
-  }
-
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (Cart);
+const blogArray = [{
+  title: "First Blog Post",
+  text: ["Some Sample text Some Sample text Some Sample text Some Sample text Some Sample text Some Sample text Some Sample text Some Sample text Some Sample text", "This is more sample text"],
+  imgPath: "/blog-1.jpg"
+}];
+/* harmony default export */ __webpack_exports__["default"] = (blogArray);
 
 /***/ }),
 
-/***/ "./components/Header.js":
-/*!******************************!*\
-  !*** ./components/Header.js ***!
-  \******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "styled-jsx/style");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_Link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/Link */ "next/Link");
-/* harmony import */ var next_Link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_Link__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/components/Header.js";
-
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
-
-
-const Header = () => __jsx("header", {
-  className: "jsx-1780491860",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 4
-  },
-  __self: undefined
-}, __jsx("div", {
-  className: "jsx-1780491860" + " " + "header-left",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5
-  },
-  __self: undefined
-}, __jsx(next_Link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-  href: "/",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6
-  },
-  __self: undefined
-}, __jsx("a", {
-  className: "jsx-1780491860",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 7
-  },
-  __self: undefined
-}, "Ryan"))), __jsx("div", {
-  className: "jsx-1780491860" + " " + "header-right",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 10
-  },
-  __self: undefined
-}, __jsx(next_Link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-  href: "/blog",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 11
-  },
-  __self: undefined
-}, __jsx("a", {
-  className: "jsx-1780491860",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 12
-  },
-  __self: undefined
-}, "Blog")), __jsx(next_Link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-  href: "/shop",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 14
-  },
-  __self: undefined
-}, __jsx("a", {
-  className: "jsx-1780491860",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 15
-  },
-  __self: undefined
-}, "Shop"))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-  id: "1780491860",
-  __self: undefined
-}, "header.jsx-1780491860{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}.header-right.jsx-1780491860 a.jsx-1780491860{margin:0 1rem;padding:0 0.2rem;padding-bottom:0.2rem;border-bottom:1px solid black;}.header-right.jsx-1780491860 a.jsx-1780491860:hover{border:none;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9yZ3J1bmVzdC9EZXZlbG9wZXIvcmVhY3QtcG9ydGZvbGlvL2NvbXBvbmVudHMvSGVhZGVyLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWtCZ0IsQUFHc0IsQUFJQyxBQU1GLFlBQ2QsRUFObUIsaUJBQ0ssc0JBQ1EscUJBTkEsU0FPaEMsMEdBTkEiLCJmaWxlIjoiL1VzZXJzL3JncnVuZXN0L0RldmVsb3Blci9yZWFjdC1wb3J0Zm9saW8vY29tcG9uZW50cy9IZWFkZXIuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgTGluayBmcm9tIFwibmV4dC9MaW5rXCI7XG5cbmNvbnN0IEhlYWRlciA9ICgpID0+IChcbiAgPGhlYWRlcj5cbiAgICA8ZGl2IGNsYXNzTmFtZT1cImhlYWRlci1sZWZ0XCI+XG4gICAgICA8TGluayBocmVmPVwiL1wiPlxuICAgICAgICA8YT5SeWFuPC9hPlxuICAgICAgPC9MaW5rPlxuICAgIDwvZGl2PlxuICAgIDxkaXYgY2xhc3NOYW1lPVwiaGVhZGVyLXJpZ2h0XCI+XG4gICAgICA8TGluayBocmVmPVwiL2Jsb2dcIj5cbiAgICAgICAgPGE+QmxvZzwvYT5cbiAgICAgIDwvTGluaz5cbiAgICAgIDxMaW5rIGhyZWY9XCIvc2hvcFwiPlxuICAgICAgICA8YT5TaG9wPC9hPlxuICAgICAgPC9MaW5rPlxuICAgIDwvZGl2PlxuXG4gICAgPHN0eWxlIGpzeD57YFxuICAgICAgaGVhZGVyIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgICAgfVxuICAgICAgLmhlYWRlci1yaWdodCBhIHtcbiAgICAgICAgbWFyZ2luOiAwIDFyZW07XG4gICAgICAgIHBhZGRpbmc6IDAgMC4ycmVtO1xuICAgICAgICBwYWRkaW5nLWJvdHRvbTogMC4ycmVtO1xuICAgICAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgYmxhY2s7XG4gICAgICB9XG4gICAgICAuaGVhZGVyLXJpZ2h0IGE6aG92ZXIge1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG4gICAgYH08L3N0eWxlPlxuICA8L2hlYWRlcj5cbik7XG5cbmV4cG9ydCBkZWZhdWx0IEhlYWRlcjtcbiJdfQ== */\n/*@ sourceURL=/Users/rgrunest/Developer/react-portfolio/components/Header.js */"));
-
-/* harmony default export */ __webpack_exports__["default"] = (Header);
-
-/***/ }),
-
-/***/ "./components/LineItem.js":
+/***/ "./components/BlogPost.js":
 /*!********************************!*\
-  !*** ./components/LineItem.js ***!
+  !*** ./components/BlogPost.js ***!
   \********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return BlogPost; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/components/LineItem.js";
+var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/components/BlogPost.js";
+
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-class LineItem extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
-  constructor(props) {
-    super(props);
-    this.decrementQuantity = this.decrementQuantity.bind(this);
-    this.incrementQuantity = this.incrementQuantity.bind(this);
+function BlogPost(props) {
+  return __jsx("div", {
+    className: "BlogPost",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 3
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "title",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, props.title), __jsx("img", {
+    src: props.imgPath,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "text",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, props.text.map(line => __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, line))), __jsx("style", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, `
+      .BlogPost {
+      }
+  img {
+    width: calc(100% + 40px);
+    transform: translateX(-20px);
   }
-
-  decrementQuantity(lineItemId) {
-    const updatedQuantity = this.props.line_item.quantity - 1;
-    this.props.updateQuantityInCart(lineItemId, updatedQuantity);
-  }
-
-  incrementQuantity(lineItemId) {
-    const updatedQuantity = this.props.line_item.quantity + 1;
-    this.props.updateQuantityInCart(lineItemId, updatedQuantity);
-  }
-
-  render() {
-    return __jsx("li", {
-      className: "Line-item",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 23
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "Line-item__img",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 24
-      },
-      __self: this
-    }, this.props.line_item.variant.image ? __jsx("img", {
-      src: this.props.line_item.variant.image.src,
-      alt: `${this.props.line_item.title} product shot`,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 26
-      },
-      __self: this
-    }) : null), __jsx("div", {
-      className: "Line-item__content",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 32
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "Line-item__content-row",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 33
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "Line-item__variant-title",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 34
-      },
-      __self: this
-    }, this.props.line_item.variant.title), __jsx("span", {
-      className: "Line-item__title",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 37
-      },
-      __self: this
-    }, this.props.line_item.title)), __jsx("div", {
-      className: "Line-item__content-row",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 41
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "Line-item__quantity-container",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 42
-      },
-      __self: this
-    }, __jsx("button", {
-      className: "Line-item__quantity-update",
-      onClick: () => this.decrementQuantity(this.props.line_item.id),
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 43
-      },
-      __self: this
-    }, "-"), __jsx("span", {
-      className: "Line-item__quantity",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 49
-      },
-      __self: this
-    }, this.props.line_item.quantity), __jsx("button", {
-      className: "Line-item__quantity-update",
-      onClick: () => this.incrementQuantity(this.props.line_item.id),
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 52
-      },
-      __self: this
-    }, "+")), __jsx("span", {
-      className: "Line-item__price",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 59
-      },
-      __self: this
-    }, "$", " ", (this.props.line_item.quantity * this.props.line_item.variant.price).toFixed(2)), __jsx("button", {
-      className: "Line-item__remove",
-      onClick: () => this.props.removeLineItemInCart(this.props.line_item.id),
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 66
-      },
-      __self: this
-    }, "\xD7"))));
-  }
-
+  `));
 }
-
-/* harmony default export */ __webpack_exports__["default"] = (LineItem);
 
 /***/ }),
 
@@ -568,6 +233,99 @@ const MyHead = props => {
 
 /***/ }),
 
+/***/ "./components/MyHeader.js":
+/*!********************************!*\
+  !*** ./components/MyHeader.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "styled-jsx/style");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/components/MyHeader.js";
+
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+
+const MyHeader = () => __jsx("header", {
+  className: "jsx-164391395",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 4
+  },
+  __self: undefined
+}, __jsx("div", {
+  className: "jsx-164391395" + " " + "header-left",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 5
+  },
+  __self: undefined
+}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  href: "/",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 6
+  },
+  __self: undefined
+}, __jsx("a", {
+  className: "jsx-164391395",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 7
+  },
+  __self: undefined
+}, "Ryan"))), __jsx("div", {
+  className: "jsx-164391395" + " " + "header-right",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 10
+  },
+  __self: undefined
+}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  href: "/blog",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 11
+  },
+  __self: undefined
+}, __jsx("a", {
+  className: "jsx-164391395",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 12
+  },
+  __self: undefined
+}, "Blog")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  href: "/shop",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 14
+  },
+  __self: undefined
+}, __jsx("a", {
+  className: "jsx-164391395",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 15
+  },
+  __self: undefined
+}, "Shop"))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+  id: "164391395",
+  __self: undefined
+}, "header.jsx-164391395{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;padding-bottom:1rem;}.header-right.jsx-164391395 a.jsx-164391395{margin:0 1rem;padding:0 0.2rem;padding-bottom:0.2rem;border-bottom:1px solid black;}.header-right.jsx-164391395 a.jsx-164391395:hover{border:none;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9yZ3J1bmVzdC9EZXZlbG9wZXIvcmVhY3QtcG9ydGZvbGlvL2NvbXBvbmVudHMvTXlIZWFkZXIuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBa0JnQixBQUdzQixBQUtDLEFBTUYsWUFDZCxFQU5tQixpQkFDSyxzQkFDUSxxQkFQQSxTQVFoQywwR0FQc0Isb0JBQ3RCIiwiZmlsZSI6Ii9Vc2Vycy9yZ3J1bmVzdC9EZXZlbG9wZXIvcmVhY3QtcG9ydGZvbGlvL2NvbXBvbmVudHMvTXlIZWFkZXIuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgTGluayBmcm9tIFwibmV4dC9saW5rXCI7XG5cbmNvbnN0IE15SGVhZGVyID0gKCkgPT4gKFxuICA8aGVhZGVyPlxuICAgIDxkaXYgY2xhc3NOYW1lPVwiaGVhZGVyLWxlZnRcIj5cbiAgICAgIDxMaW5rIGhyZWY9XCIvXCI+XG4gICAgICAgIDxhPlJ5YW48L2E+XG4gICAgICA8L0xpbms+XG4gICAgPC9kaXY+XG4gICAgPGRpdiBjbGFzc05hbWU9XCJoZWFkZXItcmlnaHRcIj5cbiAgICAgIDxMaW5rIGhyZWY9XCIvYmxvZ1wiPlxuICAgICAgICA8YT5CbG9nPC9hPlxuICAgICAgPC9MaW5rPlxuICAgICAgPExpbmsgaHJlZj1cIi9zaG9wXCI+XG4gICAgICAgIDxhPlNob3A8L2E+XG4gICAgICA8L0xpbms+XG4gICAgPC9kaXY+XG5cbiAgICA8c3R5bGUganN4PntgXG4gICAgICBoZWFkZXIge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgICAgIHBhZGRpbmctYm90dG9tOiAxcmVtO1xuICAgICAgfVxuICAgICAgLmhlYWRlci1yaWdodCBhIHtcbiAgICAgICAgbWFyZ2luOiAwIDFyZW07XG4gICAgICAgIHBhZGRpbmc6IDAgMC4ycmVtO1xuICAgICAgICBwYWRkaW5nLWJvdHRvbTogMC4ycmVtO1xuICAgICAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgYmxhY2s7XG4gICAgICB9XG4gICAgICAuaGVhZGVyLXJpZ2h0IGE6aG92ZXIge1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG4gICAgYH08L3N0eWxlPlxuICA8L2hlYWRlcj5cbik7XG5cbmV4cG9ydCBkZWZhdWx0IE15SGVhZGVyO1xuIl19 */\n/*@ sourceURL=/Users/rgrunest/Developer/react-portfolio/components/MyHeader.js */"));
+
+/* harmony default export */ __webpack_exports__["default"] = (MyHeader);
+
+/***/ }),
+
 /***/ "./components/MyLayout.js":
 /*!********************************!*\
   !*** ./components/MyLayout.js ***!
@@ -581,7 +339,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
+/* harmony import */ var _MyHeader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./MyHeader */ "./components/MyHeader.js");
 /* harmony import */ var _MyHead__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./MyHead */ "./components/MyHead.js");
 var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/components/MyLayout.js";
 
@@ -603,263 +361,1696 @@ const Layout = props => {
     __self: undefined
   }), __jsx("div", {
     style: layoutStyle,
-    className: "jsx-708581402",
+    className: "jsx-1280677389",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
     },
     __self: undefined
-  }, __jsx(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, __jsx(_MyHeader__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 13
     },
     __self: undefined
   }), props.children), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "708581402",
+    id: "1280677389",
     __self: undefined
-  }, "html,body{font-family:\"Dosis\",sans-serif;-webkit-letter-spacing:1px;-moz-letter-spacing:1px;-ms-letter-spacing:1px;letter-spacing:1px;}a{-webkit-text-decoration:none;text-decoration:none;color:black;}a:hover,a:active,a:focus,a: visited{color:gray;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9yZ3J1bmVzdC9EZXZlbG9wZXIvcmVhY3QtcG9ydGZvbGlvL2NvbXBvbmVudHMvTXlMYXlvdXQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBZXlCLEFBSTJDLEFBSVgsQUFPVixXQUNiLG9CQVhxQixtQkFJUCxZQUNkLDhEQUpBIiwiZmlsZSI6Ii9Vc2Vycy9yZ3J1bmVzdC9EZXZlbG9wZXIvcmVhY3QtcG9ydGZvbGlvL2NvbXBvbmVudHMvTXlMYXlvdXQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgSGVhZGVyIGZyb20gXCIuL0hlYWRlclwiO1xuaW1wb3J0IE15SGVhZCBmcm9tIFwiLi9NeUhlYWRcIjtcblxuY29uc3QgbGF5b3V0U3R5bGUgPSB7XG4gIG1hcmdpbjogMjBcbn07XG5cbmNvbnN0IExheW91dCA9IHByb3BzID0+IHtcbiAgcmV0dXJuIChcbiAgICA8PlxuICAgICAgPE15SGVhZCBwYWdlPXtwcm9wcy5wYWdlfSAvPlxuICAgICAgPGRpdiBzdHlsZT17bGF5b3V0U3R5bGV9PlxuICAgICAgICA8SGVhZGVyIC8+XG4gICAgICAgIHtwcm9wcy5jaGlsZHJlbn1cbiAgICAgIDwvZGl2PlxuICAgICAgPHN0eWxlIGpzeCBnbG9iYWw+e2BcbiAgICAgICAgaHRtbCxcbiAgICAgICAgYm9keSB7XG4gICAgICAgICAgZm9udC1mYW1pbHk6IFwiRG9zaXNcIiwgc2Fucy1zZXJpZjtcbiAgICAgICAgICBsZXR0ZXItc3BhY2luZzogMXB4O1xuICAgICAgICB9XG4gICAgICAgIGEge1xuICAgICAgICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgICAgICAgICBjb2xvcjogYmxhY2s7XG4gICAgICAgIH1cbiAgICAgICAgYTpob3ZlcixcbiAgICAgICAgYTphY3RpdmUsXG4gICAgICAgIGE6Zm9jdXMsXG4gICAgICAgIGE6IHZpc2l0ZWQge1xuICAgICAgICAgIGNvbG9yOiBncmF5O1xuICAgICAgICB9XG4gICAgICBgfTwvc3R5bGU+XG4gICAgPC8+XG4gICk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBMYXlvdXQ7XG4iXX0= */\n/*@ sourceURL=/Users/rgrunest/Developer/react-portfolio/components/MyLayout.js */"));
+  }, "html,body{position:relative;font-family:\"Dosis\",sans-serif;-webkit-letter-spacing:1px;-moz-letter-spacing:1px;-ms-letter-spacing:1px;letter-spacing:1px;margin:0;padding:0;overflow-x:hidden;}a{-webkit-text-decoration:none;text-decoration:none;color:black;}a:hover,a:active,a:focus,a: visited{color:gray;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9yZ3J1bmVzdC9EZXZlbG9wZXIvcmVhY3QtcG9ydGZvbGlvL2NvbXBvbmVudHMvTXlMYXlvdXQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBZXlCLEFBSTZCLEFBUUcsQUFPVixXQUNiLE9BZmtDLCtCQUNiLENBT1AsWUFDZCxnRkFQVyxTQUNDLFVBQ1Esa0JBQ3BCIiwiZmlsZSI6Ii9Vc2Vycy9yZ3J1bmVzdC9EZXZlbG9wZXIvcmVhY3QtcG9ydGZvbGlvL2NvbXBvbmVudHMvTXlMYXlvdXQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgTXlIZWFkZXIgZnJvbSBcIi4vTXlIZWFkZXJcIjtcbmltcG9ydCBNeUhlYWQgZnJvbSBcIi4vTXlIZWFkXCI7XG5cbmNvbnN0IGxheW91dFN0eWxlID0ge1xuICBtYXJnaW46IDIwXG59O1xuXG5jb25zdCBMYXlvdXQgPSBwcm9wcyA9PiB7XG4gIHJldHVybiAoXG4gICAgPD5cbiAgICAgIDxNeUhlYWQgcGFnZT17cHJvcHMucGFnZX0gLz5cbiAgICAgIDxkaXYgc3R5bGU9e2xheW91dFN0eWxlfT5cbiAgICAgICAgPE15SGVhZGVyIC8+XG4gICAgICAgIHtwcm9wcy5jaGlsZHJlbn1cbiAgICAgIDwvZGl2PlxuICAgICAgPHN0eWxlIGpzeCBnbG9iYWw+e2BcbiAgICAgICAgaHRtbCxcbiAgICAgICAgYm9keSB7XG4gICAgICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgICAgIGZvbnQtZmFtaWx5OiBcIkRvc2lzXCIsIHNhbnMtc2VyaWY7XG4gICAgICAgICAgbGV0dGVyLXNwYWNpbmc6IDFweDtcbiAgICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgICBvdmVyZmxvdy14OiBoaWRkZW47XG4gICAgICAgIH1cbiAgICAgICAgYSB7XG4gICAgICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICAgICAgICAgIGNvbG9yOiBibGFjaztcbiAgICAgICAgfVxuICAgICAgICBhOmhvdmVyLFxuICAgICAgICBhOmFjdGl2ZSxcbiAgICAgICAgYTpmb2N1cyxcbiAgICAgICAgYTogdmlzaXRlZCB7XG4gICAgICAgICAgY29sb3I6IGdyYXk7XG4gICAgICAgIH1cbiAgICAgIGB9PC9zdHlsZT5cbiAgICA8Lz5cbiAgKTtcbn07XG5cbmV4cG9ydCBkZWZhdWx0IExheW91dDtcbiJdfQ== */\n/*@ sourceURL=/Users/rgrunest/Developer/react-portfolio/components/MyLayout.js */"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
 
 /***/ }),
 
-/***/ "./components/Product.js":
-/*!*******************************!*\
-  !*** ./components/Product.js ***!
-  \*******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/define-property */ "core-js/library/fn/object/define-property");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js":
+/*!*******************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js ***!
+  \*******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-property-descriptor */ "core-js/library/fn/object/get-own-property-descriptor");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/symbol.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/symbol.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/symbol */ "core-js/library/fn/symbol");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/symbol/iterator.js":
+/*!************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/symbol/iterator.js ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/symbol/iterator */ "core-js/library/fn/symbol/iterator");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/weak-map.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/weak-map.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/weak-map */ "core-js/library/fn/weak-map");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : {
+    "default": obj
+  };
+}
+
+module.exports = _interopRequireDefault;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireWildcard.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/interopRequireWildcard.js ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _Object$getOwnPropertyDescriptor = __webpack_require__(/*! ../core-js/object/get-own-property-descriptor */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js");
+
+var _Object$defineProperty = __webpack_require__(/*! ../core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+var _typeof = __webpack_require__(/*! ../helpers/typeof */ "./node_modules/@babel/runtime-corejs2/helpers/typeof.js");
+
+var _WeakMap = __webpack_require__(/*! ../core-js/weak-map */ "./node_modules/@babel/runtime-corejs2/core-js/weak-map.js");
+
+function _getRequireWildcardCache() {
+  if (typeof _WeakMap !== "function") return null;
+  var cache = new _WeakMap();
+
+  _getRequireWildcardCache = function _getRequireWildcardCache() {
+    return cache;
+  };
+
+  return cache;
+}
+
+function _interopRequireWildcard(obj) {
+  if (obj && obj.__esModule) {
+    return obj;
+  }
+
+  if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") {
+    return {
+      "default": obj
+    };
+  }
+
+  var cache = _getRequireWildcardCache();
+
+  if (cache && cache.has(obj)) {
+    return cache.get(obj);
+  }
+
+  var newObj = {};
+  var hasPropertyDescriptor = _Object$defineProperty && _Object$getOwnPropertyDescriptor;
+
+  for (var key in obj) {
+    if (Object.prototype.hasOwnProperty.call(obj, key)) {
+      var desc = hasPropertyDescriptor ? _Object$getOwnPropertyDescriptor(obj, key) : null;
+
+      if (desc && (desc.get || desc.set)) {
+        _Object$defineProperty(newObj, key, desc);
+      } else {
+        newObj[key] = obj[key];
+      }
+    }
+  }
+
+  newObj["default"] = obj;
+
+  if (cache) {
+    cache.set(obj, newObj);
+  }
+
+  return newObj;
+}
+
+module.exports = _interopRequireWildcard;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/typeof.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/typeof.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _Symbol$iterator = __webpack_require__(/*! ../core-js/symbol/iterator */ "./node_modules/@babel/runtime-corejs2/core-js/symbol/iterator.js");
+
+var _Symbol = __webpack_require__(/*! ../core-js/symbol */ "./node_modules/@babel/runtime-corejs2/core-js/symbol.js");
+
+function _typeof2(obj) { if (typeof _Symbol === "function" && typeof _Symbol$iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof _Symbol === "function" && obj.constructor === _Symbol && obj !== _Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
+
+function _typeof(obj) {
+  if (typeof _Symbol === "function" && _typeof2(_Symbol$iterator) === "symbol") {
+    module.exports = _typeof = function _typeof(obj) {
+      return _typeof2(obj);
+    };
+  } else {
+    module.exports = _typeof = function _typeof(obj) {
+      return obj && typeof _Symbol === "function" && obj.constructor === _Symbol && obj !== _Symbol.prototype ? "symbol" : _typeof2(obj);
+    };
+  }
+
+  return _typeof(obj);
+}
+
+module.exports = _typeof;
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/client/link.js":
+/*!***********************************************!*\
+  !*** ./node_modules/next/dist/client/link.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _VariantSelector__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./VariantSelector */ "./components/VariantSelector.js");
-var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/components/Product.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
 
-class Product extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+var _interopRequireWildcard = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireWildcard */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireWildcard.js");
+
+exports.__esModule = true;
+exports.default = void 0;
+
+var _url = __webpack_require__(/*! url */ "url");
+
+var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
+
+var _router = _interopRequireDefault(__webpack_require__(/*! ./router */ "./node_modules/next/dist/client/router.js"));
+
+var _utils = __webpack_require__(/*! ../next-server/lib/utils */ "./node_modules/next/dist/next-server/lib/utils.js");
+
+function isLocal(href) {
+  var url = (0, _url.parse)(href, false, true);
+  var origin = (0, _url.parse)((0, _utils.getLocationOrigin)(), false, true);
+  return !url.host || url.protocol === origin.protocol && url.host === origin.host;
+}
+
+function memoizedFormatUrl(formatFunc) {
+  var lastHref = null;
+  var lastAs = null;
+  var lastResult = null;
+  return (href, as) => {
+    if (lastResult && href === lastHref && as === lastAs) {
+      return lastResult;
+    }
+
+    var result = formatFunc(href, as);
+    lastHref = href;
+    lastAs = as;
+    lastResult = result;
+    return result;
+  };
+}
+
+function formatUrl(url) {
+  return url && typeof url === 'object' ? (0, _utils.formatWithValidation)(url) : url;
+}
+
+var observer;
+var listeners = new Map();
+var IntersectionObserver = false ? undefined : null;
+var prefetched = {};
+
+function getObserver() {
+  // Return shared instance of IntersectionObserver if already created
+  if (observer) {
+    return observer;
+  } // Only create shared IntersectionObserver if supported in browser
+
+
+  if (!IntersectionObserver) {
+    return undefined;
+  }
+
+  return observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!listeners.has(entry.target)) {
+        return;
+      }
+
+      var cb = listeners.get(entry.target);
+
+      if (entry.isIntersecting || entry.intersectionRatio > 0) {
+        observer.unobserve(entry.target);
+        listeners.delete(entry.target);
+        cb();
+      }
+    });
+  }, {
+    rootMargin: '200px'
+  });
+}
+
+var listenToIntersections = (el, cb) => {
+  var observer = getObserver();
+
+  if (!observer) {
+    return () => {};
+  }
+
+  observer.observe(el);
+  listeners.set(el, cb);
+  return () => {
+    try {
+      observer.unobserve(el);
+    } catch (err) {
+      console.error(err);
+    }
+
+    listeners.delete(el);
+  };
+};
+
+class Link extends _react.Component {
   constructor(props) {
     super(props);
-    this.state = {};
-    this.handleOptionChange = this.handleOptionChange.bind(this);
-    this.handleQuantityChange = this.handleQuantityChange.bind(this);
-    this.findImage = this.findImage.bind(this);
-  }
+    this.p = void 0;
 
-  componentWillMount() {
-    this.props.product.options.forEach(selector => {
-      this.setState({
-        selectedOptions: {
-          [selector.name]: selector.values[0].value
+    this.cleanUpListeners = () => {};
+
+    this.formatUrls = memoizedFormatUrl((href, asHref) => {
+      return {
+        href: formatUrl(href),
+        as: asHref ? formatUrl(asHref) : asHref
+      };
+    });
+
+    this.linkClicked = e => {
+      // @ts-ignore target exists on currentTarget
+      var {
+        nodeName,
+        target
+      } = e.currentTarget;
+
+      if (nodeName === 'A' && (target && target !== '_self' || e.metaKey || e.ctrlKey || e.shiftKey || e.nativeEvent && e.nativeEvent.which === 2)) {
+        // ignore click for new tab / new window behavior
+        return;
+      }
+
+      var {
+        href,
+        as
+      } = this.formatUrls(this.props.href, this.props.as);
+
+      if (!isLocal(href)) {
+        // ignore click if it's outside our scope (e.g. https://google.com)
+        return;
+      }
+
+      var {
+        pathname
+      } = window.location;
+      href = (0, _url.resolve)(pathname, href);
+      as = as ? (0, _url.resolve)(pathname, as) : href;
+      e.preventDefault(); //  avoid scroll for urls with anchor refs
+
+      var {
+        scroll
+      } = this.props;
+
+      if (scroll == null) {
+        scroll = as.indexOf('#') < 0;
+      } // replace state instead of push if prop is present
+
+
+      _router.default[this.props.replace ? 'replace' : 'push'](href, as, {
+        shallow: this.props.shallow
+      }).then(success => {
+        if (!success) return;
+
+        if (scroll) {
+          window.scrollTo(0, 0);
+          document.body.focus();
         }
       });
-    });
+    };
+
+    if (true) {
+      if (props.prefetch) {
+        console.warn('Next.js auto-prefetches automatically based on viewport. The prefetch attribute is no longer needed. More: https://err.sh/zeit/next.js/prefetch-true-deprecated');
+      }
+    }
+
+    this.p = props.prefetch !== false;
   }
 
-  findImage(images, variantId) {
-    const primary = images[0];
-    const image = images.filter(function (image) {
-      return image.variant_ids.includes(variantId);
-    })[0];
-    return (image || primary).src;
+  componentWillUnmount() {
+    this.cleanUpListeners();
   }
 
-  handleOptionChange(event) {
-    const target = event.target;
-    let selectedOptions = this.state.selectedOptions;
-    selectedOptions[target.name] = target.value;
-    const selectedVariant = this.props.product.variants.find(variant => {
-      return variant.selectedOptions.every(selectedOption => {
-        return selectedOptions[selectedOption.name] === selectedOption.value.valueOf();
-      });
-    });
-    this.setState({
-      selectedVariant: selectedVariant,
-      selectedVariantImage: selectedVariant.attrs.image.src
-    });
+  getHref() {
+    var {
+      pathname
+    } = window.location;
+    var {
+      href: parsedHref
+    } = this.formatUrls(this.props.href, this.props.as);
+    return (0, _url.resolve)(pathname, parsedHref);
   }
 
-  handleQuantityChange(event) {
-    this.setState({
-      selectedVariantQuantity: event.target.value
-    });
+  handleRef(ref) {
+    var isPrefetched = prefetched[this.getHref()];
+
+    if (this.p && IntersectionObserver && ref && ref.tagName) {
+      this.cleanUpListeners();
+
+      if (!isPrefetched) {
+        this.cleanUpListeners = listenToIntersections(ref, () => {
+          this.prefetch();
+        });
+      }
+    }
+  } // The function is memoized so that no extra lifecycles are needed
+  // as per https://reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html
+
+
+  prefetch() {
+    if (!this.p || true) return; // Prefetch the JSON page if asked (only in the client)
+
+    var href = this.getHref();
+
+    _router.default.prefetch(href);
+
+    prefetched[href] = true;
   }
 
   render() {
-    let variantImage = this.state.selectedVariantImage || this.props.product.images[0].src;
-    let variant = this.state.selectedVariant || this.props.product.variants[0];
-    let variantQuantity = this.state.selectedVariantQuantity || 1;
-    let variantSelectors = this.props.product.options.map(option => {
-      return __jsx(_VariantSelector__WEBPACK_IMPORTED_MODULE_1__["default"], {
-        handleOptionChange: this.handleOptionChange,
-        key: option.id.toString(),
-        option: option,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 66
-        },
-        __self: this
-      });
-    });
-    return __jsx("div", {
-      className: "Product",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 74
+    var {
+      children
+    } = this.props;
+    var {
+      href,
+      as
+    } = this.formatUrls(this.props.href, this.props.as); // Deprecated. Warning shown by propType check. If the children provided is a string (<Link>example</Link>) we wrap it in an <a> tag
+
+    if (typeof children === 'string') {
+      children = _react.default.createElement("a", null, children);
+    } // This will return the first child, if multiple are provided it will throw an error
+
+
+    var child = _react.Children.only(children);
+
+    var props = {
+      ref: el => {
+        this.handleRef(el);
+
+        if (child && typeof child === 'object' && child.ref) {
+          if (typeof child.ref === 'function') child.ref(el);else if (typeof child.ref === 'object') {
+            child.ref.current = el;
+          }
+        }
       },
-      __self: this
-    }, this.props.product.images.length ? __jsx("img", {
-      src: variantImage,
-      alt: `${this.props.product.title} product shot`,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 76
+      onMouseEnter: e => {
+        if (child.props && typeof child.props.onMouseEnter === 'function') {
+          child.props.onMouseEnter(e);
+        }
+
+        this.prefetch();
       },
-      __self: this
-    }) : null, __jsx("h5", {
-      className: "Product__title",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 81
-      },
-      __self: this
-    }, this.props.product.title), __jsx("span", {
-      className: "Product__price",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 82
-      },
-      __self: this
-    }, "$", variant.price), variantSelectors, __jsx("label", {
-      className: "Product__option",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 84
-      },
-      __self: this
-    }, "Quantity", __jsx("input", {
-      min: "1",
-      type: "number",
-      defaultValue: variantQuantity,
-      onChange: this.handleQuantityChange,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 86
-      },
-      __self: this
-    })), __jsx("button", {
-      className: "Product__buy button",
-      onClick: () => this.props.addVariantToCart(variant.id, variantQuantity),
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 93
-      },
-      __self: this
-    }, "Add to Cart"));
+      onClick: e => {
+        if (child.props && typeof child.props.onClick === 'function') {
+          child.props.onClick(e);
+        }
+
+        if (!e.defaultPrevented) {
+          this.linkClicked(e);
+        }
+      }
+    }; // If child is an <a> tag and doesn't have a href attribute, or if the 'passHref' property is
+    // defined, we specify the current 'href', so that repetition is not needed by the user
+
+    if (this.props.passHref || child.type === 'a' && !('href' in child.props)) {
+      props.href = as || href;
+    } // Add the ending slash to the paths. So, we can serve the
+    // "<page>/index.html" directly.
+
+
+    if (false) { var rewriteUrlForNextExport; }
+
+    return _react.default.cloneElement(child, props);
   }
 
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (Product);
+if (true) {
+  var warn = (0, _utils.execOnce)(console.error); // This module gets removed by webpack.IgnorePlugin
+
+  var PropTypes = __webpack_require__(/*! prop-types */ "prop-types");
+
+  var exact = __webpack_require__(/*! prop-types-exact */ "prop-types-exact"); // @ts-ignore the property is supported, when declaring it on the class it outputs an extra bit of code which is not needed.
+
+
+  Link.propTypes = exact({
+    href: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
+    as: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+    prefetch: PropTypes.bool,
+    replace: PropTypes.bool,
+    shallow: PropTypes.bool,
+    passHref: PropTypes.bool,
+    scroll: PropTypes.bool,
+    children: PropTypes.oneOfType([PropTypes.element, (props, propName) => {
+      var value = props[propName];
+
+      if (typeof value === 'string') {
+        warn("Warning: You're using a string directly inside <Link>. This usage has been deprecated. Please add an <a> tag as child of <Link>");
+      }
+
+      return null;
+    }]).isRequired
+  });
+}
+
+var _default = Link;
+exports.default = _default;
 
 /***/ }),
 
-/***/ "./components/Products.js":
-/*!********************************!*\
-  !*** ./components/Products.js ***!
-  \********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./node_modules/next/dist/client/router.js":
+/*!*************************************************!*\
+  !*** ./node_modules/next/dist/client/router.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Product__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Product */ "./components/Product.js");
-var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/components/Products.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
+var _interopRequireWildcard = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireWildcard */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireWildcard.js");
 
-class Products extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
-  render() {
-    let products = this.props.products.map(product => {
-      return __jsx(_Product__WEBPACK_IMPORTED_MODULE_1__["default"], {
-        addVariantToCart: this.props.addVariantToCart,
-        checkout: this.props.checkout,
-        key: product.id.toString(),
-        product: product,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 8
-        },
-        __self: this
-      });
-    });
-    return __jsx("div", {
-      className: "Product-wrapper",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 17
-      },
-      __self: this
-    }, products);
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+exports.__esModule = true;
+exports.useRouter = useRouter;
+exports.makePublicRouterInstance = makePublicRouterInstance;
+exports.createRouter = exports.withRouter = exports.default = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+
+var _router2 = _interopRequireWildcard(__webpack_require__(/*! ../next-server/lib/router/router */ "./node_modules/next/dist/next-server/lib/router/router.js"));
+
+exports.Router = _router2.default;
+exports.NextRouter = _router2.NextRouter;
+
+var _routerContext = __webpack_require__(/*! ../next-server/lib/router-context */ "./node_modules/next/dist/next-server/lib/router-context.js");
+
+var _withRouter = _interopRequireDefault(__webpack_require__(/*! ./with-router */ "./node_modules/next/dist/client/with-router.js"));
+
+exports.withRouter = _withRouter.default;
+/* global window */
+
+var singletonRouter = {
+  router: null,
+  // holds the actual router instance
+  readyCallbacks: [],
+
+  ready(cb) {
+    if (this.router) return cb();
+
+    if (false) {}
   }
 
-}
+}; // Create public properties and methods of the router in the singletonRouter
 
-/* harmony default export */ __webpack_exports__["default"] = (Products);
+var urlPropertyFields = ['pathname', 'route', 'query', 'asPath', 'components'];
+var routerEvents = ['routeChangeStart', 'beforeHistoryChange', 'routeChangeComplete', 'routeChangeError', 'hashChangeStart', 'hashChangeComplete'];
+var coreMethodFields = ['push', 'replace', 'reload', 'back', 'prefetch', 'beforePopState']; // Events is a static property on the router, the router doesn't have to be initialized to use it
+
+Object.defineProperty(singletonRouter, 'events', {
+  get() {
+    return _router2.default.events;
+  }
+
+});
+urlPropertyFields.forEach(field => {
+  // Here we need to use Object.defineProperty because, we need to return
+  // the property assigned to the actual router
+  // The value might get changed as we change routes and this is the
+  // proper way to access it
+  Object.defineProperty(singletonRouter, field, {
+    get() {
+      var router = getRouter();
+      return router[field];
+    }
+
+  });
+});
+coreMethodFields.forEach(field => {
+  // We don't really know the types here, so we add them later instead
+  ;
+
+  singletonRouter[field] = function () {
+    var router = getRouter();
+    return router[field](...arguments);
+  };
+});
+routerEvents.forEach(event => {
+  singletonRouter.ready(() => {
+    _router2.default.events.on(event, function () {
+      var eventField = "on" + event.charAt(0).toUpperCase() + event.substring(1);
+      var _singletonRouter = singletonRouter;
+
+      if (_singletonRouter[eventField]) {
+        try {
+          _singletonRouter[eventField](...arguments);
+        } catch (err) {
+          // tslint:disable-next-line:no-console
+          console.error("Error when running the Router event: " + eventField); // tslint:disable-next-line:no-console
+
+          console.error(err.message + "\n" + err.stack);
+        }
+      }
+    });
+  });
+});
+
+function getRouter() {
+  if (!singletonRouter.router) {
+    var message = 'No router instance found.\n' + 'You should only use "next/router" inside the client side of your app.\n';
+    throw new Error(message);
+  }
+
+  return singletonRouter.router;
+} // Export the singletonRouter and this is the public API.
+
+
+var _default = singletonRouter; // Reexport the withRoute HOC
+
+exports.default = _default;
+
+function useRouter() {
+  return _react.default.useContext(_routerContext.RouterContext);
+} // INTERNAL APIS
+// -------------
+// (do not use following exports inside the app)
+// Create a router and assign it as the singleton instance.
+// This is used in client side when we are initilizing the app.
+// This should **not** use inside the server.
+
+
+var createRouter = function createRouter() {
+  for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  singletonRouter.router = new _router2.default(...args);
+  singletonRouter.readyCallbacks.forEach(cb => cb());
+  singletonRouter.readyCallbacks = [];
+  return singletonRouter.router;
+}; // This function is used to create the `withRouter` router instance
+
+
+exports.createRouter = createRouter;
+
+function makePublicRouterInstance(router) {
+  var _router = router;
+  var instance = {};
+
+  for (var property of urlPropertyFields) {
+    if (typeof _router[property] === 'object') {
+      instance[property] = Object.assign({}, _router[property]); // makes sure query is not stateful
+
+      continue;
+    }
+
+    instance[property] = _router[property];
+  } // Events is a static property on the router, the router doesn't have to be initialized to use it
+
+
+  instance.events = _router2.default.events;
+  coreMethodFields.forEach(field => {
+    instance[field] = function () {
+      return _router[field](...arguments);
+    };
+  });
+  return instance;
+}
 
 /***/ }),
 
-/***/ "./components/VariantSelector.js":
-/*!***************************************!*\
-  !*** ./components/VariantSelector.js ***!
-  \***************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./node_modules/next/dist/client/with-router.js":
+/*!******************************************************!*\
+  !*** ./node_modules/next/dist/client/with-router.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/components/VariantSelector.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-class VariantSelector extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
-  render() {
-    return __jsx("select", {
-      className: "Product__option",
-      name: this.props.option.name,
-      key: this.props.option.name,
-      onChange: this.props.handleOptionChange,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 6
-      },
-      __self: this
-    }, this.props.option.values.map(value => {
-      return __jsx("option", {
-        value: value,
-        key: `${this.props.option.name}-${value}`,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 14
-        },
-        __self: this
-      }, `${value}`);
-    }));
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+exports.__esModule = true;
+exports.default = withRouter;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+
+var _router = __webpack_require__(/*! ./router */ "./node_modules/next/dist/client/router.js");
+
+function withRouter(ComposedComponent) {
+  function WithRouterWrapper(props) {
+    return _react.default.createElement(ComposedComponent, Object.assign({
+      router: (0, _router.useRouter)()
+    }, props));
+  }
+
+  WithRouterWrapper.getInitialProps = ComposedComponent.getInitialProps // This is needed to allow checking for custom getInitialProps in _app
+  ;
+  WithRouterWrapper.origGetInitialProps = ComposedComponent.origGetInitialProps;
+
+  if (true) {
+    var name = ComposedComponent.displayName || ComposedComponent.name || 'Unknown';
+    WithRouterWrapper.displayName = "withRouter(" + name + ")";
+  }
+
+  return WithRouterWrapper;
+}
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/next-server/lib/mitt.js":
+/*!********************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/mitt.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/*
+MIT License
+
+Copyright (c) Jason Miller (https://jasonformat.com/)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+function mitt() {
+  const all = Object.create(null);
+  return {
+    on(type, handler) {
+      ;
+      (all[type] || (all[type] = [])).push(handler);
+    },
+
+    off(type, handler) {
+      if (all[type]) {
+        // tslint:disable-next-line:no-bitwise
+        all[type].splice(all[type].indexOf(handler) >>> 0, 1);
+      }
+    },
+
+    emit(type, ...evts) {
+      // eslint-disable-next-line array-callback-return
+      ;
+      (all[type] || []).slice().map(handler => {
+        handler(...evts);
+      });
+    }
+
+  };
+}
+
+exports.default = mitt;
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/next-server/lib/router-context.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/router-context.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+  result["default"] = mod;
+  return result;
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const React = __importStar(__webpack_require__(/*! react */ "react"));
+
+exports.RouterContext = React.createContext(null);
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/next-server/lib/router/router.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/router/router.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const url_1 = __webpack_require__(/*! url */ "url");
+
+const mitt_1 = __importDefault(__webpack_require__(/*! ../mitt */ "./node_modules/next/dist/next-server/lib/mitt.js"));
+
+const utils_1 = __webpack_require__(/*! ../utils */ "./node_modules/next/dist/next-server/lib/utils.js");
+
+const is_dynamic_1 = __webpack_require__(/*! ./utils/is-dynamic */ "./node_modules/next/dist/next-server/lib/router/utils/is-dynamic.js");
+
+const route_matcher_1 = __webpack_require__(/*! ./utils/route-matcher */ "./node_modules/next/dist/next-server/lib/router/utils/route-matcher.js");
+
+const route_regex_1 = __webpack_require__(/*! ./utils/route-regex */ "./node_modules/next/dist/next-server/lib/router/utils/route-regex.js");
+
+function addBasePath(path) {
+  // @ts-ignore variable is always a string
+  const p = "";
+  return path.indexOf(p) !== 0 ? p + path : path;
+}
+
+function toRoute(path) {
+  return path.replace(/\/$/, '') || '/';
+}
+
+class Router {
+  constructor(pathname, query, as, {
+    initialProps,
+    pageLoader,
+    App,
+    wrapApp,
+    Component,
+    err,
+    subscription
+  }) {
+    // Static Data Cache
+    this.sdc = {};
+
+    this.onPopState = e => {
+      if (!e.state) {
+        // We get state as undefined for two reasons.
+        //  1. With older safari (< 8) and older chrome (< 34)
+        //  2. When the URL changed with #
+        //
+        // In the both cases, we don't need to proceed and change the route.
+        // (as it's already changed)
+        // But we can simply replace the state with the new changes.
+        // Actually, for (1) we don't need to nothing. But it's hard to detect that event.
+        // So, doing the following for (1) does no harm.
+        const {
+          pathname,
+          query
+        } = this;
+        this.changeState('replaceState', utils_1.formatWithValidation({
+          pathname,
+          query
+        }), utils_1.getURL());
+        return;
+      } // Make sure we don't re-render on initial load,
+      // can be caused by navigating back from an external site
+
+
+      if (e.state && this.isSsr && e.state.url === this.pathname && e.state.as === this.asPath) {
+        return;
+      } // If the downstream application returns falsy, return.
+      // They will then be responsible for handling the event.
+
+
+      if (this._bps && !this._bps(e.state)) {
+        return;
+      }
+
+      const {
+        url,
+        as,
+        options
+      } = e.state;
+
+      if (true) {
+        if (typeof url === 'undefined' || typeof as === 'undefined') {
+          console.warn('`popstate` event triggered but `event.state` did not have `url` or `as` https://err.sh/zeit/next.js/popstate-state-empty');
+        }
+      }
+
+      this.replace(url, as, options);
+    };
+
+    this._getStaticData = (asPath, _cachedData) => {
+      let pathname = url_1.parse(asPath).pathname;
+      pathname = toRoute(!pathname || pathname === '/' ? '/index' : pathname);
+      return  false ? undefined : fetch( // @ts-ignore __NEXT_DATA__
+      `/_next/data/${__NEXT_DATA__.buildId}${pathname}.json`).then(res => {
+        if (!res.ok) {
+          throw new Error(`Failed to load static props`);
+        }
+
+        return res.json();
+      }).then(data => {
+        this.sdc[pathname] = data;
+        return data;
+      }).catch(err => {
+        ;
+        err.code = 'PAGE_LOAD_ERROR';
+        throw err;
+      });
+    }; // represents the current component key
+
+
+    this.route = toRoute(pathname); // set up the component cache (by route keys)
+
+    this.components = {}; // We should not keep the cache, if there's an error
+    // Otherwise, this cause issues when when going back and
+    // come again to the errored page.
+
+    if (pathname !== '/_error') {
+      this.components[this.route] = {
+        Component,
+        props: initialProps,
+        err
+      };
+    }
+
+    this.components['/_app'] = {
+      Component: App
+    }; // Backwards compat for Router.router.events
+    // TODO: Should be remove the following major version as it was never documented
+    // @ts-ignore backwards compatibility
+
+    this.events = Router.events;
+    this.pageLoader = pageLoader;
+    this.pathname = pathname;
+    this.query = query; // if auto prerendered and dynamic route wait to update asPath
+    // until after mount to prevent hydration mismatch
+
+    this.asPath = // @ts-ignore this is temporarily global (attached to window)
+    is_dynamic_1.isDynamicRoute(pathname) && __NEXT_DATA__.autoExport ? pathname : as;
+    this.sub = subscription;
+    this.clc = null;
+    this._wrapApp = wrapApp; // make sure to ignore extra popState in safari on navigating
+    // back from external site
+
+    this.isSsr = true;
+
+    if (false) {}
+  } // @deprecated backwards compatibility even though it's a private method.
+
+
+  static _rewriteUrlForNextExport(url) {
+    if (false) {} else {
+      return url;
+    }
+  }
+
+  update(route, mod) {
+    const Component = mod.default || mod;
+    const data = this.components[route];
+
+    if (!data) {
+      throw new Error(`Cannot update unavailable route: ${route}`);
+    }
+
+    const newData = Object.assign(Object.assign({}, data), {
+      Component
+    });
+    this.components[route] = newData; // pages/_app.js updated
+
+    if (route === '/_app') {
+      this.notify(this.components[this.route]);
+      return;
+    }
+
+    if (route === this.route) {
+      this.notify(newData);
+    }
+  }
+
+  reload() {
+    window.location.reload();
+  }
+  /**
+   * Go back in history
+   */
+
+
+  back() {
+    window.history.back();
+  }
+  /**
+   * Performs a `pushState` with arguments
+   * @param url of the route
+   * @param as masks `url` for the browser
+   * @param options object you can define `shallow` and other options
+   */
+
+
+  push(url, as = url, options = {}) {
+    return this.change('pushState', url, as, options);
+  }
+  /**
+   * Performs a `replaceState` with arguments
+   * @param url of the route
+   * @param as masks `url` for the browser
+   * @param options object you can define `shallow` and other options
+   */
+
+
+  replace(url, as = url, options = {}) {
+    return this.change('replaceState', url, as, options);
+  }
+
+  change(method, _url, _as, options) {
+    return new Promise((resolve, reject) => {
+      if (!options._h) {
+        this.isSsr = false;
+      } // marking route changes as a navigation start entry
+
+
+      if (utils_1.ST) {
+        performance.mark('routeChange');
+      } // If url and as provided as an object representation,
+      // we'll format them into the string version here.
+
+
+      const url = typeof _url === 'object' ? utils_1.formatWithValidation(_url) : _url;
+      let as = typeof _as === 'object' ? utils_1.formatWithValidation(_as) : _as; // Add the ending slash to the paths. So, we can serve the
+      // "<page>/index.html" directly for the SSR page.
+
+      if (false) {}
+
+      this.abortComponentLoad(as); // If the url change is only related to a hash change
+      // We should not proceed. We should only change the state.
+      // WARNING: `_h` is an internal option for handing Next.js client-side
+      // hydration. Your app should _never_ use this property. It may change at
+      // any time without notice.
+
+      if (!options._h && this.onlyAHashChange(as)) {
+        this.asPath = as;
+        Router.events.emit('hashChangeStart', as);
+        this.changeState(method, url, addBasePath(as), options);
+        this.scrollToHash(as);
+        Router.events.emit('hashChangeComplete', as);
+        return resolve(true);
+      }
+
+      const {
+        pathname,
+        query,
+        protocol
+      } = url_1.parse(url, true);
+
+      if (!pathname || protocol) {
+        if (true) {
+          throw new Error(`Invalid href passed to router: ${url} https://err.sh/zeit/next.js/invalid-href-passed`);
+        }
+
+        return resolve(false);
+      } // If asked to change the current URL we should reload the current page
+      // (not location.reload() but reload getInitialProps and other Next.js stuffs)
+      // We also need to set the method = replaceState always
+      // as this should not go into the history (That's how browsers work)
+      // We should compare the new asPath to the current asPath, not the url
+
+
+      if (!this.urlIsNew(as)) {
+        method = 'replaceState';
+      } // @ts-ignore pathname is always a string
+
+
+      const route = toRoute(pathname);
+      const {
+        shallow = false
+      } = options;
+
+      if (is_dynamic_1.isDynamicRoute(route)) {
+        const {
+          pathname: asPathname
+        } = url_1.parse(as);
+        const routeRegex = route_regex_1.getRouteRegex(route);
+        const routeMatch = route_matcher_1.getRouteMatcher(routeRegex)(asPathname);
+
+        if (!routeMatch) {
+          const missingParams = Object.keys(routeRegex.groups).filter(param => !query[param]);
+
+          if (missingParams.length > 0) {
+            if (true) {
+              console.warn(`Mismatching \`as\` and \`href\` failed to manually provide ` + `the params: ${missingParams.join(', ')} in the \`href\`'s \`query\``);
+            }
+
+            return reject(new Error(`The provided \`as\` value (${asPathname}) is incompatible with the \`href\` value (${route}). ` + `Read more: https://err.sh/zeit/next.js/incompatible-href-as`));
+          }
+        } else {
+          // Merge params into `query`, overwriting any specified in search
+          Object.assign(query, routeMatch);
+        }
+      }
+
+      Router.events.emit('routeChangeStart', as); // If shallow is true and the route exists in the router cache we reuse the previous result
+      // @ts-ignore pathname is always a string
+
+      this.getRouteInfo(route, pathname, query, as, shallow).then(routeInfo => {
+        const {
+          error
+        } = routeInfo;
+
+        if (error && error.cancelled) {
+          return resolve(false);
+        }
+
+        Router.events.emit('beforeHistoryChange', as);
+        this.changeState(method, url, addBasePath(as), options);
+        const hash = window.location.hash.substring(1);
+
+        if (true) {
+          const appComp = this.components['/_app'].Component;
+          window.next.isPrerendered = appComp.getInitialProps === appComp.origGetInitialProps && !routeInfo.Component.getInitialProps;
+        } // @ts-ignore pathname is always defined
+
+
+        this.set(route, pathname, query, as, Object.assign(Object.assign({}, routeInfo), {
+          hash
+        }));
+
+        if (error) {
+          Router.events.emit('routeChangeError', error, as);
+          throw error;
+        }
+
+        Router.events.emit('routeChangeComplete', as);
+        return resolve(true);
+      }, reject);
+    });
+  }
+
+  changeState(method, url, as, options = {}) {
+    if (true) {
+      if (typeof window.history === 'undefined') {
+        console.error(`Warning: window.history is not available.`);
+        return;
+      } // @ts-ignore method should always exist on history
+
+
+      if (typeof window.history[method] === 'undefined') {
+        console.error(`Warning: window.history.${method} is not available`);
+        return;
+      }
+    }
+
+    if (method !== 'pushState' || utils_1.getURL() !== as) {
+      // @ts-ignore method should always exist on history
+      window.history[method]({
+        url,
+        as,
+        options
+      }, null, as);
+    }
+  }
+
+  getRouteInfo(route, pathname, query, as, shallow = false) {
+    const cachedRouteInfo = this.components[route]; // If there is a shallow route transition possible
+    // If the route is already rendered on the screen.
+
+    if (shallow && cachedRouteInfo && this.route === route) {
+      return Promise.resolve(cachedRouteInfo);
+    }
+
+    return new Promise((resolve, reject) => {
+      if (cachedRouteInfo) {
+        return resolve(cachedRouteInfo);
+      }
+
+      this.fetchComponent(route).then(Component => resolve({
+        Component
+      }), reject);
+    }).then(routeInfo => {
+      const {
+        Component
+      } = routeInfo;
+
+      if (true) {
+        const {
+          isValidElementType
+        } = __webpack_require__(/*! react-is */ "react-is");
+
+        if (!isValidElementType(Component)) {
+          throw new Error(`The default export is not a React Component in page: "${pathname}"`);
+        }
+      }
+
+      return this._getData(() => Component.__N_SSG ? this._getStaticData(as) : this.getInitialProps(Component, // we provide AppTree later so this needs to be `any`
+      {
+        pathname,
+        query,
+        asPath: as
+      })).then(props => {
+        routeInfo.props = props;
+        this.components[route] = routeInfo;
+        return routeInfo;
+      });
+    }).catch(err => {
+      return new Promise(resolve => {
+        if (err.code === 'PAGE_LOAD_ERROR') {
+          // If we can't load the page it could be one of following reasons
+          //  1. Page doesn't exists
+          //  2. Page does exist in a different zone
+          //  3. Internal error while loading the page
+          // So, doing a hard reload is the proper way to deal with this.
+          window.location.href = as; // Changing the URL doesn't block executing the current code path.
+          // So, we need to mark it as a cancelled error and stop the routing logic.
+
+          err.cancelled = true; // @ts-ignore TODO: fix the control flow here
+
+          return resolve({
+            error: err
+          });
+        }
+
+        if (err.cancelled) {
+          // @ts-ignore TODO: fix the control flow here
+          return resolve({
+            error: err
+          });
+        }
+
+        resolve(this.fetchComponent('/_error').then(Component => {
+          const routeInfo = {
+            Component,
+            err
+          };
+          return new Promise(resolve => {
+            this.getInitialProps(Component, {
+              err,
+              pathname,
+              query
+            }).then(props => {
+              routeInfo.props = props;
+              routeInfo.error = err;
+              resolve(routeInfo);
+            }, gipErr => {
+              console.error('Error in error page `getInitialProps`: ', gipErr);
+              routeInfo.error = err;
+              routeInfo.props = {};
+              resolve(routeInfo);
+            });
+          });
+        }));
+      });
+    });
+  }
+
+  set(route, pathname, query, as, data) {
+    this.route = route;
+    this.pathname = pathname;
+    this.query = query;
+    this.asPath = as;
+    this.notify(data);
+  }
+  /**
+   * Callback to execute before replacing router state
+   * @param cb callback to be executed
+   */
+
+
+  beforePopState(cb) {
+    this._bps = cb;
+  }
+
+  onlyAHashChange(as) {
+    if (!this.asPath) return false;
+    const [oldUrlNoHash, oldHash] = this.asPath.split('#');
+    const [newUrlNoHash, newHash] = as.split('#'); // Makes sure we scroll to the provided hash if the url/hash are the same
+
+    if (newHash && oldUrlNoHash === newUrlNoHash && oldHash === newHash) {
+      return true;
+    } // If the urls are change, there's more than a hash change
+
+
+    if (oldUrlNoHash !== newUrlNoHash) {
+      return false;
+    } // If the hash has changed, then it's a hash only change.
+    // This check is necessary to handle both the enter and
+    // leave hash === '' cases. The identity case falls through
+    // and is treated as a next reload.
+
+
+    return oldHash !== newHash;
+  }
+
+  scrollToHash(as) {
+    const [, hash] = as.split('#'); // Scroll to top if the hash is just `#` with no value
+
+    if (hash === '') {
+      window.scrollTo(0, 0);
+      return;
+    } // First we check if the element by id is found
+
+
+    const idEl = document.getElementById(hash);
+
+    if (idEl) {
+      idEl.scrollIntoView();
+      return;
+    } // If there's no element with the id, we check the `name` property
+    // To mirror browsers
+
+
+    const nameEl = document.getElementsByName(hash)[0];
+
+    if (nameEl) {
+      nameEl.scrollIntoView();
+    }
+  }
+
+  urlIsNew(asPath) {
+    return this.asPath !== asPath;
+  }
+  /**
+   * Prefetch `page` code, you may wait for the data during `page` rendering.
+   * This feature only works in production!
+   * @param url of prefetched `page`
+   */
+
+
+  prefetch(url) {
+    return new Promise((resolve, reject) => {
+      const {
+        pathname,
+        protocol
+      } = url_1.parse(url);
+
+      if (!pathname || protocol) {
+        if (true) {
+          throw new Error(`Invalid href passed to router: ${url} https://err.sh/zeit/next.js/invalid-href-passed`);
+        }
+
+        return;
+      } // Prefetch is not supported in development mode because it would trigger on-demand-entries
+
+
+      if (true) {
+        return;
+      } // @ts-ignore pathname is always defined
+
+
+      const route = toRoute(pathname);
+      this.pageLoader.prefetch(route).then(resolve, reject);
+    });
+  }
+
+  async fetchComponent(route) {
+    let cancelled = false;
+
+    const cancel = this.clc = () => {
+      cancelled = true;
+    };
+
+    const Component = await this.pageLoader.loadPage(route);
+
+    if (cancelled) {
+      const error = new Error(`Abort fetching component for route: "${route}"`);
+      error.cancelled = true;
+      throw error;
+    }
+
+    if (cancel === this.clc) {
+      this.clc = null;
+    }
+
+    return Component;
+  }
+
+  _getData(fn) {
+    let cancelled = false;
+
+    const cancel = () => {
+      cancelled = true;
+    };
+
+    this.clc = cancel;
+    return fn().then(data => {
+      if (cancel === this.clc) {
+        this.clc = null;
+      }
+
+      if (cancelled) {
+        const err = new Error('Loading initial props cancelled');
+        err.cancelled = true;
+        throw err;
+      }
+
+      return data;
+    });
+  }
+
+  getInitialProps(Component, ctx) {
+    const {
+      Component: App
+    } = this.components['/_app'];
+
+    const AppTree = this._wrapApp(App);
+
+    ctx.AppTree = AppTree;
+    return utils_1.loadGetInitialProps(App, {
+      AppTree,
+      Component,
+      router: this,
+      ctx
+    });
+  }
+
+  abortComponentLoad(as) {
+    if (this.clc) {
+      const e = new Error('Route Cancelled');
+      e.cancelled = true;
+      Router.events.emit('routeChangeError', e, as);
+      this.clc();
+      this.clc = null;
+    }
+  }
+
+  notify(data) {
+    this.sub(data, this.components['/_app'].Component);
   }
 
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (VariantSelector);
+exports.default = Router;
+Router.events = mitt_1.default();
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/next-server/lib/router/utils/is-dynamic.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/router/utils/is-dynamic.js ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+}); // Identify /[param]/ in route string
+
+const TEST_ROUTE = /\/\[[^/]+?\](?=\/|$)/;
+
+function isDynamicRoute(route) {
+  return TEST_ROUTE.test(route);
+}
+
+exports.isDynamicRoute = isDynamicRoute;
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/next-server/lib/router/utils/route-matcher.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/router/utils/route-matcher.js ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+function getRouteMatcher(routeRegex) {
+  const {
+    re,
+    groups
+  } = routeRegex;
+  return pathname => {
+    const routeMatch = re.exec(pathname);
+
+    if (!routeMatch) {
+      return false;
+    }
+
+    const decode = decodeURIComponent;
+    const params = {};
+    Object.keys(groups).forEach(slugName => {
+      const g = groups[slugName];
+      const m = routeMatch[g.pos];
+
+      if (m !== undefined) {
+        params[slugName] = ~m.indexOf('/') ? m.split('/').map(entry => decode(entry)) : g.repeat ? [decode(m)] : decode(m);
+      }
+    });
+    return params;
+  };
+}
+
+exports.getRouteMatcher = getRouteMatcher;
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/next-server/lib/router/utils/route-regex.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/router/utils/route-regex.js ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+function getRouteRegex(normalizedRoute) {
+  // Escape all characters that could be considered RegEx
+  const escapedRoute = (normalizedRoute.replace(/\/$/, '') || '/').replace(/[|\\{}()[\]^$+*?.-]/g, '\\$&');
+  const groups = {};
+  let groupIndex = 1;
+  const parameterizedRoute = escapedRoute.replace(/\/\\\[([^/]+?)\\\](?=\/|$)/g, (_, $1) => {
+    const isCatchAll = /^(\\\.){3}/.test($1);
+    groups[$1 // Un-escape key
+    .replace(/\\([|\\{}()[\]^$+*?.-])/g, '$1').replace(/^\.{3}/, '') // eslint-disable-next-line no-sequences
+    ] = {
+      pos: groupIndex++,
+      repeat: isCatchAll
+    };
+    return isCatchAll ? '/(.+?)' : '/([^/]+?)';
+  });
+  return {
+    re: new RegExp('^' + parameterizedRoute + '(?:/)?$', 'i'),
+    groups
+  };
+}
+
+exports.getRouteRegex = getRouteRegex;
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/next-server/lib/utils.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/utils.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+const url_1 = __webpack_require__(/*! url */ "url");
+/**
+ * Utils
+ */
+
+
+function execOnce(fn) {
+  let used = false;
+  let result = null;
+  return (...args) => {
+    if (!used) {
+      used = true;
+      result = fn.apply(this, args);
+    }
+
+    return result;
+  };
+}
+
+exports.execOnce = execOnce;
+
+function getLocationOrigin() {
+  const {
+    protocol,
+    hostname,
+    port
+  } = window.location;
+  return `${protocol}//${hostname}${port ? ':' + port : ''}`;
+}
+
+exports.getLocationOrigin = getLocationOrigin;
+
+function getURL() {
+  const {
+    href
+  } = window.location;
+  const origin = getLocationOrigin();
+  return href.substring(origin.length);
+}
+
+exports.getURL = getURL;
+
+function getDisplayName(Component) {
+  return typeof Component === 'string' ? Component : Component.displayName || Component.name || 'Unknown';
+}
+
+exports.getDisplayName = getDisplayName;
+
+function isResSent(res) {
+  return res.finished || res.headersSent;
+}
+
+exports.isResSent = isResSent;
+
+async function loadGetInitialProps(App, ctx) {
+  var _a;
+
+  if (true) {
+    if ((_a = App.prototype) === null || _a === void 0 ? void 0 : _a.getInitialProps) {
+      const message = `"${getDisplayName(App)}.getInitialProps()" is defined as an instance method - visit https://err.sh/zeit/next.js/get-initial-props-as-an-instance-method for more information.`;
+      throw new Error(message);
+    }
+  } // when called from _app `ctx` is nested in `ctx`
+
+
+  const res = ctx.res || ctx.ctx && ctx.ctx.res;
+
+  if (!App.getInitialProps) {
+    if (ctx.ctx && ctx.Component) {
+      // @ts-ignore pageProps default
+      return {
+        pageProps: await loadGetInitialProps(ctx.Component, ctx.ctx)
+      };
+    }
+
+    return {};
+  }
+
+  const props = await App.getInitialProps(ctx);
+
+  if (res && isResSent(res)) {
+    return props;
+  }
+
+  if (!props) {
+    const message = `"${getDisplayName(App)}.getInitialProps()" should resolve to an object. But found "${props}" instead.`;
+    throw new Error(message);
+  }
+
+  if (true) {
+    if (Object.keys(props).length === 0 && !ctx.ctx) {
+      console.warn(`${getDisplayName(App)} returned an empty object from \`getInitialProps\`. This de-optimizes and prevents automatic static optimization. https://err.sh/zeit/next.js/empty-object-getInitialProps`);
+    }
+  }
+
+  return props;
+}
+
+exports.loadGetInitialProps = loadGetInitialProps;
+exports.urlObjectKeys = ['auth', 'hash', 'host', 'hostname', 'href', 'path', 'pathname', 'port', 'protocol', 'query', 'search', 'slashes'];
+
+function formatWithValidation(url, options) {
+  if (true) {
+    if (url !== null && typeof url === 'object') {
+      Object.keys(url).forEach(key => {
+        if (exports.urlObjectKeys.indexOf(key) === -1) {
+          console.warn(`Unknown key passed via urlObject into url.format: ${key}`);
+        }
+      });
+    }
+  }
+
+  return url_1.format(url, options);
+}
+
+exports.formatWithValidation = formatWithValidation;
+exports.SP = typeof performance !== 'undefined';
+exports.ST = exports.SP && typeof performance.mark === 'function' && typeof performance.measure === 'function';
+
+/***/ }),
+
+/***/ "./node_modules/next/link.js":
+/*!***********************************!*\
+  !*** ./node_modules/next/link.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/next/dist/client/link.js")
+
 
 /***/ }),
 
@@ -872,1824 +2063,89 @@ class VariantSelector extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Blog; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_Products__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Products */ "./components/Products.js");
-/* harmony import */ var _components_Cart__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Cart */ "./components/Cart.js");
-/* harmony import */ var babel_plugin_graphql_js_client_transform__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! babel-plugin-graphql-js-client-transform */ "babel-plugin-graphql-js-client-transform");
-/* harmony import */ var babel_plugin_graphql_js_client_transform__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(babel_plugin_graphql_js_client_transform__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _components_MyLayout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/MyLayout */ "./components/MyLayout.js");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/router */ "next/router");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var graphql_js_client__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! graphql-js-client */ "graphql-js-client");
-/* harmony import */ var graphql_js_client__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(graphql_js_client__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./types */ "./pages/types.js");
+/* harmony import */ var _components_MyLayout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/MyLayout */ "./components/MyLayout.js");
+/* harmony import */ var _components_BlogPost__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/BlogPost */ "./components/BlogPost.js");
+/* harmony import */ var _blogposts_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../blogposts.js */ "./blogposts.js");
 var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/pages/blog.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
 
 
 
 
+class Blog extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  constructor(props) {
+    super(props);
 
-const client = new graphql_js_client__WEBPACK_IMPORTED_MODULE_6___default.a(_types__WEBPACK_IMPORTED_MODULE_7__["default"], {
-  url: "https://graphql.myshopify.com/api/graphql",
-  fetcherOptions: {
-    headers: {
-      "X-Shopify-Storefront-Access-Token": "dd4d4dc146542ba7763305d71d1b3d38"
-    }
+    _defineProperty(this, "buttonClick", event => {
+      event.preventDefault();
+      this.setState({
+        numBlogs: this.state.numBlogs + 1
+      });
+    });
+
+    this.state = {
+      numBlogs: _blogposts_js__WEBPACK_IMPORTED_MODULE_3__["default"].length
+    };
+    this.buttonClick = this.buttonClick.bind(this);
   }
-}); // class Blog extends Component {
-//   constructor() {
-//     super();
-//     this.state = {
-//       isCartOpen: false,
-//       checkout: { lineItems: [] },
-//       products: [],
-//       shop: {}
-//     };
-//     this.handleCartClose = this.handleCartClose.bind(this);
-//     this.addVariantToCart = this.addVariantToCart.bind(this);
-//     this.updateQuantityInCart = this.updateQuantityInCart.bind(this);
-//     this.removeLineItemInCart = this.removeLineItemInCart.bind(this);
-//   }
-//   componentWillMount() {
-//     const client = this.props.client;
-//     client
-//       .send(
-//         gql(client)`
-//       mutation {
-//         checkoutCreate(input: {}) {
-//           userErrors {
-//             message
-//             field
-//           }
-//           checkout {
-//             id
-//             webUrl
-//             subtotalPrice
-//             totalTax
-//             totalPrice
-//             lineItems (first:250) {
-//               pageInfo {
-//                 hasNextPage
-//                 hasPreviousPage
-//               }
-//               edges {
-//                 node {
-//                   title
-//                   variant {
-//                     title
-//                     image {
-//                       src
-//                     }
-//                     price
-//                   }
-//                   quantity
-//                 }
-//               }
-//             }
-//           }
-//         }
-//       }
-//     `
-//       )
-//       .then(res => {
-//         this.setState({
-//           checkout: res.model.checkoutCreate.checkout
-//         });
-//       });
-//     client
-//       .send(
-//         gql(client)`
-//       query {
-//         shop {
-//           name
-//           description
-//           products(first:20) {
-//             pageInfo {
-//               hasNextPage
-//               hasPreviousPage
-//             }
-//             edges {
-//               node {
-//                 id
-//                 title
-//                 options {
-//                   name
-//                   values
-//                 }
-//                 variants(first: 250) {
-//                   pageInfo {
-//                     hasNextPage
-//                     hasPreviousPage
-//                   }
-//                   edges {
-//                     node {
-//                       title
-//                       selectedOptions {
-//                         name
-//                         value
-//                       }
-//                       image {
-//                         src
-//                       }
-//                       price
-//                     }
-//                   }
-//                 }
-//                 images(first: 250) {
-//                   pageInfo {
-//                     hasNextPage
-//                     hasPreviousPage
-//                   }
-//                   edges {
-//                     node {
-//                       src
-//                     }
-//                   }
-//                 }
-//               }
-//             }
-//           }
-//         }
-//       }
-//     `
-//       )
-//       .then(res => {
-//         this.setState({
-//           shop: res.model.shop,
-//           products: res.model.shop.products
-//         });
-//       });
-//   }
-//   addVariantToCart(variantId, quantity) {
-//     this.setState({
-//       isCartOpen: true
-//     });
-//     const lineItems = [{ variantId, quantity: parseInt(quantity, 10) }];
-//     const checkoutId = this.state.checkout.id;
-//     return this.props.client
-//       .send(
-//         gql(this.props.client)`
-//       mutation ($checkoutId: ID!, $lineItems: [CheckoutLineItemInput!]!) {
-//         checkoutLineItemsAdd(checkoutId: $checkoutId, lineItems: $lineItems) {
-//           userErrors {
-//             message
-//             field
-//           }
-//           checkout {
-//             webUrl
-//             subtotalPrice
-//             totalTax
-//             totalPrice
-//             lineItems (first:250) {
-//               pageInfo {
-//                 hasNextPage
-//                 hasPreviousPage
-//               }
-//               edges {
-//                 node {
-//                   title
-//                   variant {
-//                     title
-//                     image {
-//                       src
-//                     }
-//                     price
-//                   }
-//                   quantity
-//                 }
-//               }
-//             }
-//           }
-//         }
-//       }
-//     `,
-//         { checkoutId, lineItems }
-//       )
-//       .then(res => {
-//         this.setState({
-//           checkout: res.model.checkoutLineItemsAdd.checkout
-//         });
-//       });
-//   }
-//   updateQuantityInCart(lineItemId, quantity) {
-//     const checkoutId = this.state.checkout.id;
-//     const lineItems = [{ id: lineItemId, quantity: parseInt(quantity, 10) }];
-//     return this.props.client
-//       .send(
-//         gql(this.props.client)`
-//       mutation ($checkoutId: ID!, $lineItems: [CheckoutLineItemUpdateInput!]!) {
-//         checkoutLineItemsUpdate(checkoutId: $checkoutId, lineItems: $lineItems) {
-//           userErrors {
-//             message
-//             field
-//           }
-//           checkout {
-//             webUrl
-//             subtotalPrice
-//             totalTax
-//             totalPrice
-//             lineItems (first:250) {
-//               pageInfo {
-//                 hasNextPage
-//                 hasPreviousPage
-//               }
-//               edges {
-//                 node {
-//                   title
-//                   variant {
-//                     title
-//                     image {
-//                       src
-//                     }
-//                     price
-//                   }
-//                   quantity
-//                 }
-//               }
-//             }
-//           }
-//         }
-//       }
-//     `,
-//         { checkoutId, lineItems }
-//       )
-//       .then(res => {
-//         this.setState({
-//           checkout: res.model.checkoutLineItemsUpdate.checkout
-//         });
-//       });
-//   }
-//   removeLineItemInCart(lineItemId) {
-//     const checkoutId = this.state.checkout.id;
-//     return this.props.client
-//       .send(
-//         gql(this.props.client)`
-//       mutation ($checkoutId: ID!, $lineItemIds: [ID!]!) {
-//         checkoutLineItemsRemove(checkoutId: $checkoutId, lineItemIds: $lineItemIds) {
-//           userErrors {
-//             message
-//             field
-//           }
-//           checkout {
-//             webUrl
-//             subtotalPrice
-//             totalTax
-//             totalPrice
-//             lineItems (first:250) {
-//               pageInfo {
-//                 hasNextPage
-//                 hasPreviousPage
-//               }
-//               edges {
-//                 node {
-//                   title
-//                   variant {
-//                     title
-//                     image {
-//                       src
-//                     }
-//                     price
-//                   }
-//                   quantity
-//                 }
-//               }
-//             }
-//           }
-//         }
-//       }
-//     `,
-//         { checkoutId, lineItemIds: [lineItemId] }
-//       )
-//       .then(res => {
-//         this.setState({
-//           checkout: res.model.checkoutLineItemsRemove.checkout
-//         });
-//       });
-//   }
-//   handleCartClose() {
-//     this.setState({
-//       isCartOpen: false
-//     });
-//   }
-//   render() {
-//     return (
-//       <div className="App">
-//         <header className="App__header">
-//           {!this.state.isCartOpen && (
-//             <div className="App__view-cart-wrapper">
-//               <button
-//                 className="App__view-cart"
-//                 onClick={() => this.setState({ isCartOpen: true })}
-//               >
-//                 Cart
-//               </button>
-//             </div>
-//           )}
-//           <div className="App__title">
-//             <h1>{this.state.shop.name}: React Example</h1>
-//             <h2>{this.state.shop.description}</h2>
-//           </div>
-//         </header>
-//         <Products
-//           products={this.state.products}
-//           addVariantToCart={this.addVariantToCart}
-//         />
-//         <Cart
-//           checkout={this.state.checkout}
-//           isCartOpen={this.state.isCartOpen}
-//           handleCartClose={this.handleCartClose}
-//           updateQuantityInCart={this.updateQuantityInCart}
-//           removeLineItemInCart={this.removeLineItemInCart}
-//         />
-//       </div>
-//     );
-//   }
-// }
-// export default Blog;
 
-function Blog() {
-  console.log(client);
-  return __jsx(_components_MyLayout__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    page: "Blog",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 348
-    },
-    __self: this
-  }, __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 349
-    },
-    __self: this
-  }, "This is the blog page."));
+  render() {
+    console.log(_blogposts_js__WEBPACK_IMPORTED_MODULE_3__["default"]);
+    return __jsx(_components_MyLayout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      page: "Blog",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 23
+      },
+      __self: this
+    }, __jsx("h1", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24
+      },
+      __self: this
+    }, "This is the blog page. There are currently ", this.state.numBlogs, " ", "posts."), _blogposts_js__WEBPACK_IMPORTED_MODULE_3__["default"].map((blog, index) => {
+      return __jsx(_components_BlogPost__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        key: index,
+        title: blog.title,
+        text: blog.text,
+        imgPath: blog.imgPath,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
+      });
+    }), __jsx("button", {
+      onClick: this.buttonClick,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 38
+      },
+      __self: this
+    }, "Add A Post"), __jsx("style", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 40
+      },
+      __self: this
+    }, `
+    `));
+  }
+
 }
 
-/***/ }),
-
-/***/ "./pages/types.js":
-/*!************************!*\
-  !*** ./pages/types.js ***!
-  \************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-const Checkout = {
-  "name": "Checkout",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "appliedGiftCards": "AppliedGiftCard",
-    "availableShippingRates": "AvailableShippingRates",
-    "completedAt": "DateTime",
-    "createdAt": "DateTime",
-    "currencyCode": "CurrencyCode",
-    "customAttributes": "Attribute",
-    "customer": "Customer",
-    "email": "String",
-    "id": "ID",
-    "lineItems": "CheckoutLineItemConnection",
-    "note": "String",
-    "order": "Order",
-    "orderStatusUrl": "URL",
-    "paymentDue": "Money",
-    "ready": "Boolean",
-    "requiresShipping": "Boolean",
-    "shippingAddress": "MailingAddress",
-    "shippingLine": "ShippingRate",
-    "subtotalPrice": "Money",
-    "taxExempt": "Boolean",
-    "taxesIncluded": "Boolean",
-    "totalPrice": "Money",
-    "totalTax": "Money",
-    "updatedAt": "DateTime",
-    "vaultUrl": "URL",
-    "webUrl": "URL"
-  },
-  "implementsNode": true
-};
-Object.freeze(Checkout.fieldBaseTypes);
-var Checkout$1 = Object.freeze(Checkout);
-const ID = {
-  "name": "ID",
-  "kind": "SCALAR"
-};
-var ID$1 = Object.freeze(ID);
-const Boolean = {
-  "name": "Boolean",
-  "kind": "SCALAR"
-};
-var Boolean$1 = Object.freeze(Boolean);
-const CheckoutLineItemConnection = {
-  "name": "CheckoutLineItemConnection",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "edges": "CheckoutLineItemEdge",
-    "pageInfo": "PageInfo"
-  },
-  "implementsNode": false
-};
-Object.freeze(CheckoutLineItemConnection.fieldBaseTypes);
-var CheckoutLineItemConnection$1 = Object.freeze(CheckoutLineItemConnection);
-const PageInfo = {
-  "name": "PageInfo",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "hasNextPage": "Boolean",
-    "hasPreviousPage": "Boolean"
-  },
-  "implementsNode": false
-};
-Object.freeze(PageInfo.fieldBaseTypes);
-var PageInfo$1 = Object.freeze(PageInfo);
-const CheckoutLineItemEdge = {
-  "name": "CheckoutLineItemEdge",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "cursor": "String",
-    "node": "CheckoutLineItem"
-  },
-  "implementsNode": false
-};
-Object.freeze(CheckoutLineItemEdge.fieldBaseTypes);
-var CheckoutLineItemEdge$1 = Object.freeze(CheckoutLineItemEdge);
-const String = {
-  "name": "String",
-  "kind": "SCALAR"
-};
-var String$1 = Object.freeze(String);
-const CheckoutLineItem = {
-  "name": "CheckoutLineItem",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "customAttributes": "Attribute",
-    "id": "ID",
-    "quantity": "Int",
-    "title": "String",
-    "variant": "ProductVariant"
-  },
-  "implementsNode": true
-};
-Object.freeze(CheckoutLineItem.fieldBaseTypes);
-var CheckoutLineItem$1 = Object.freeze(CheckoutLineItem);
-const ProductVariant = {
-  "name": "ProductVariant",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "available": "Boolean",
-    "id": "ID",
-    "image": "Image",
-    "price": "Money",
-    "product": "Product",
-    "selectedOptions": "SelectedOption",
-    "title": "String",
-    "weight": "Float",
-    "weightUnit": "WeightUnit"
-  },
-  "implementsNode": true
-};
-Object.freeze(ProductVariant.fieldBaseTypes);
-var ProductVariant$1 = Object.freeze(ProductVariant);
-const Float = {
-  "name": "Float",
-  "kind": "SCALAR"
-};
-var Float$1 = Object.freeze(Float);
-const WeightUnit = {
-  "name": "WeightUnit",
-  "kind": "ENUM"
-};
-var WeightUnit$1 = Object.freeze(WeightUnit);
-const Money = {
-  "name": "Money",
-  "kind": "SCALAR"
-};
-var Money$1 = Object.freeze(Money);
-const Image = {
-  "name": "Image",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "altText": "String",
-    "id": "ID",
-    "src": "URL"
-  },
-  "implementsNode": false
-};
-Object.freeze(Image.fieldBaseTypes);
-var Image$1 = Object.freeze(Image);
-const URL = {
-  "name": "URL",
-  "kind": "SCALAR"
-};
-var URL$1 = Object.freeze(URL);
-const Int = {
-  "name": "Int",
-  "kind": "SCALAR"
-};
-var Int$1 = Object.freeze(Int);
-const CropRegion = {
-  "name": "CropRegion",
-  "kind": "ENUM"
-};
-var CropRegion$1 = Object.freeze(CropRegion);
-const SelectedOption = {
-  "name": "SelectedOption",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "name": "String",
-    "value": "String"
-  },
-  "implementsNode": false
-};
-Object.freeze(SelectedOption.fieldBaseTypes);
-var SelectedOption$1 = Object.freeze(SelectedOption);
-const Product = {
-  "name": "Product",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "collections": "CollectionConnection",
-    "createdAt": "DateTime",
-    "description": "String",
-    "descriptionHtml": "HTML",
-    "handle": "String",
-    "id": "ID",
-    "images": "ImageConnection",
-    "options": "ProductOption",
-    "productType": "String",
-    "publishedAt": "DateTime",
-    "tags": "String",
-    "title": "String",
-    "updatedAt": "DateTime",
-    "variantBySelectedOptions": "ProductVariant",
-    "variants": "ProductVariantConnection",
-    "vendor": "String"
-  },
-  "implementsNode": true
-};
-Object.freeze(Product.fieldBaseTypes);
-var Product$1 = Object.freeze(Product);
-const CollectionConnection = {
-  "name": "CollectionConnection",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "edges": "CollectionEdge",
-    "pageInfo": "PageInfo"
-  },
-  "implementsNode": false
-};
-Object.freeze(CollectionConnection.fieldBaseTypes);
-var CollectionConnection$1 = Object.freeze(CollectionConnection);
-const CollectionEdge = {
-  "name": "CollectionEdge",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "cursor": "String",
-    "node": "Collection"
-  },
-  "implementsNode": false
-};
-Object.freeze(CollectionEdge.fieldBaseTypes);
-var CollectionEdge$1 = Object.freeze(CollectionEdge);
-const Collection = {
-  "name": "Collection",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "description": "String",
-    "descriptionHtml": "HTML",
-    "handle": "String",
-    "id": "ID",
-    "image": "Image",
-    "products": "ProductConnection",
-    "title": "String",
-    "updatedAt": "DateTime"
-  },
-  "implementsNode": true
-};
-Object.freeze(Collection.fieldBaseTypes);
-var Collection$1 = Object.freeze(Collection);
-const HTML = {
-  "name": "HTML",
-  "kind": "SCALAR"
-};
-var HTML$1 = Object.freeze(HTML);
-const DateTime = {
-  "name": "DateTime",
-  "kind": "SCALAR"
-};
-var DateTime$1 = Object.freeze(DateTime);
-const ProductConnection = {
-  "name": "ProductConnection",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "edges": "ProductEdge",
-    "pageInfo": "PageInfo"
-  },
-  "implementsNode": false
-};
-Object.freeze(ProductConnection.fieldBaseTypes);
-var ProductConnection$1 = Object.freeze(ProductConnection);
-const ProductEdge = {
-  "name": "ProductEdge",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "cursor": "String",
-    "node": "Product"
-  },
-  "implementsNode": false
-};
-Object.freeze(ProductEdge.fieldBaseTypes);
-var ProductEdge$1 = Object.freeze(ProductEdge);
-const Node = {
-  "name": "Node",
-  "kind": "INTERFACE",
-  "fieldBaseTypes": {
-    "id": "ID"
-  },
-  "possibleTypes": ["AppliedGiftCard", "Checkout", "CheckoutLineItem", "Collection", "MailingAddress", "Order", "Payment", "Product", "ProductOption", "ProductVariant", "ShopPolicy"]
-};
-Object.freeze(Node.fieldBaseTypes);
-Object.freeze(Node.possibleTypes);
-var Node$1 = Object.freeze(Node);
-const ImageConnection = {
-  "name": "ImageConnection",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "edges": "ImageEdge",
-    "pageInfo": "PageInfo"
-  },
-  "implementsNode": false
-};
-Object.freeze(ImageConnection.fieldBaseTypes);
-var ImageConnection$1 = Object.freeze(ImageConnection);
-const ImageEdge = {
-  "name": "ImageEdge",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "cursor": "String",
-    "node": "Image"
-  },
-  "implementsNode": false
-};
-Object.freeze(ImageEdge.fieldBaseTypes);
-var ImageEdge$1 = Object.freeze(ImageEdge);
-const SelectedOptionInput = {
-  "name": "SelectedOptionInput",
-  "kind": "INPUT_OBJECT",
-  "inputFieldBaseTypes": {
-    "name": "String",
-    "value": "String"
-  }
-};
-Object.freeze(SelectedOptionInput.inputFieldBaseTypes);
-var SelectedOptionInput$1 = Object.freeze(SelectedOptionInput);
-const ProductOption = {
-  "name": "ProductOption",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "id": "ID",
-    "name": "String",
-    "values": "String"
-  },
-  "implementsNode": true
-};
-Object.freeze(ProductOption.fieldBaseTypes);
-var ProductOption$1 = Object.freeze(ProductOption);
-const ProductVariantConnection = {
-  "name": "ProductVariantConnection",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "edges": "ProductVariantEdge",
-    "pageInfo": "PageInfo"
-  },
-  "implementsNode": false
-};
-Object.freeze(ProductVariantConnection.fieldBaseTypes);
-var ProductVariantConnection$1 = Object.freeze(ProductVariantConnection);
-const ProductVariantEdge = {
-  "name": "ProductVariantEdge",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "cursor": "String",
-    "node": "ProductVariant"
-  },
-  "implementsNode": false
-};
-Object.freeze(ProductVariantEdge.fieldBaseTypes);
-var ProductVariantEdge$1 = Object.freeze(ProductVariantEdge);
-const Attribute = {
-  "name": "Attribute",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "key": "String",
-    "value": "String"
-  },
-  "implementsNode": false
-};
-Object.freeze(Attribute.fieldBaseTypes);
-var Attribute$1 = Object.freeze(Attribute);
-const MailingAddress = {
-  "name": "MailingAddress",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "address1": "String",
-    "address2": "String",
-    "city": "String",
-    "company": "String",
-    "country": "String",
-    "countryCode": "String",
-    "firstName": "String",
-    "formatted": "String",
-    "id": "ID",
-    "lastName": "String",
-    "latitude": "Float",
-    "longitude": "Float",
-    "name": "String",
-    "phone": "String",
-    "province": "String",
-    "provinceCode": "String",
-    "zip": "String"
-  },
-  "implementsNode": true
-};
-Object.freeze(MailingAddress.fieldBaseTypes);
-var MailingAddress$1 = Object.freeze(MailingAddress);
-const ShippingRate = {
-  "name": "ShippingRate",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "handle": "String",
-    "price": "Money",
-    "title": "String"
-  },
-  "implementsNode": false
-};
-Object.freeze(ShippingRate.fieldBaseTypes);
-var ShippingRate$1 = Object.freeze(ShippingRate);
-const AvailableShippingRates = {
-  "name": "AvailableShippingRates",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "ready": "Boolean",
-    "shippingRates": "ShippingRate"
-  },
-  "implementsNode": false
-};
-Object.freeze(AvailableShippingRates.fieldBaseTypes);
-var AvailableShippingRates$1 = Object.freeze(AvailableShippingRates);
-const Customer = {
-  "name": "Customer",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "acceptsMarketing": "Boolean",
-    "addresses": "MailingAddressConnection",
-    "createdAt": "DateTime",
-    "defaultAddress": "MailingAddress",
-    "displayName": "String",
-    "email": "String",
-    "firstName": "String",
-    "id": "ID",
-    "lastName": "String",
-    "orders": "OrderConnection",
-    "phone": "String",
-    "updatedAt": "DateTime"
-  },
-  "implementsNode": false
-};
-Object.freeze(Customer.fieldBaseTypes);
-var Customer$1 = Object.freeze(Customer);
-const MailingAddressConnection = {
-  "name": "MailingAddressConnection",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "edges": "MailingAddressEdge",
-    "pageInfo": "PageInfo"
-  },
-  "implementsNode": false
-};
-Object.freeze(MailingAddressConnection.fieldBaseTypes);
-var MailingAddressConnection$1 = Object.freeze(MailingAddressConnection);
-const MailingAddressEdge = {
-  "name": "MailingAddressEdge",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "cursor": "String",
-    "node": "MailingAddress"
-  },
-  "implementsNode": false
-};
-Object.freeze(MailingAddressEdge.fieldBaseTypes);
-var MailingAddressEdge$1 = Object.freeze(MailingAddressEdge);
-const OrderConnection = {
-  "name": "OrderConnection",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "edges": "OrderEdge",
-    "pageInfo": "PageInfo"
-  },
-  "implementsNode": false
-};
-Object.freeze(OrderConnection.fieldBaseTypes);
-var OrderConnection$1 = Object.freeze(OrderConnection);
-const OrderEdge = {
-  "name": "OrderEdge",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "cursor": "String",
-    "node": "Order"
-  },
-  "implementsNode": false
-};
-Object.freeze(OrderEdge.fieldBaseTypes);
-var OrderEdge$1 = Object.freeze(OrderEdge);
-const Order = {
-  "name": "Order",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "cancelReason": "OrderCancelReason",
-    "cancelledAt": "DateTime",
-    "createdAt": "DateTime",
-    "currencyCode": "CurrencyCode",
-    "customerUrl": "URL",
-    "displayFinancialStatus": "OrderDisplayFinancialStatus",
-    "displayFulfillmentStatus": "OrderDisplayFulfillmentStatus",
-    "email": "String",
-    "id": "ID",
-    "lineItems": "OrderLineItemConnection",
-    "orderNumber": "Int",
-    "phone": "String",
-    "processedAt": "DateTime",
-    "shippingAddress": "MailingAddress",
-    "subtotalPrice": "Money",
-    "totalPrice": "Money",
-    "totalRefunded": "Money",
-    "totalShippingPrice": "Money",
-    "totalTax": "Money",
-    "updatedAt": "DateTime"
-  },
-  "implementsNode": true
-};
-Object.freeze(Order.fieldBaseTypes);
-var Order$1 = Object.freeze(Order);
-const OrderCancelReason = {
-  "name": "OrderCancelReason",
-  "kind": "ENUM"
-};
-var OrderCancelReason$1 = Object.freeze(OrderCancelReason);
-const CurrencyCode = {
-  "name": "CurrencyCode",
-  "kind": "ENUM"
-};
-var CurrencyCode$1 = Object.freeze(CurrencyCode);
-const OrderDisplayFulfillmentStatus = {
-  "name": "OrderDisplayFulfillmentStatus",
-  "kind": "ENUM"
-};
-var OrderDisplayFulfillmentStatus$1 = Object.freeze(OrderDisplayFulfillmentStatus);
-const OrderDisplayFinancialStatus = {
-  "name": "OrderDisplayFinancialStatus",
-  "kind": "ENUM"
-};
-var OrderDisplayFinancialStatus$1 = Object.freeze(OrderDisplayFinancialStatus);
-const OrderLineItemConnection = {
-  "name": "OrderLineItemConnection",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "edges": "OrderLineItemEdge",
-    "pageInfo": "PageInfo"
-  },
-  "implementsNode": false
-};
-Object.freeze(OrderLineItemConnection.fieldBaseTypes);
-var OrderLineItemConnection$1 = Object.freeze(OrderLineItemConnection);
-const OrderLineItemEdge = {
-  "name": "OrderLineItemEdge",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "cursor": "String",
-    "node": "OrderLineItem"
-  },
-  "implementsNode": false
-};
-Object.freeze(OrderLineItemEdge.fieldBaseTypes);
-var OrderLineItemEdge$1 = Object.freeze(OrderLineItemEdge);
-const OrderLineItem = {
-  "name": "OrderLineItem",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "customAttributes": "Attribute",
-    "quantity": "Int",
-    "title": "String",
-    "variant": "ProductVariant"
-  },
-  "implementsNode": false
-};
-Object.freeze(OrderLineItem.fieldBaseTypes);
-var OrderLineItem$1 = Object.freeze(OrderLineItem);
-const OrderSortKeys = {
-  "name": "OrderSortKeys",
-  "kind": "ENUM"
-};
-var OrderSortKeys$1 = Object.freeze(OrderSortKeys);
-const AppliedGiftCard = {
-  "name": "AppliedGiftCard",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "amountUsed": "Money",
-    "balance": "Money",
-    "id": "ID",
-    "lastCharacters": "String"
-  },
-  "implementsNode": true
-};
-Object.freeze(AppliedGiftCard.fieldBaseTypes);
-var AppliedGiftCard$1 = Object.freeze(AppliedGiftCard);
-const QueryRoot = {
-  "name": "QueryRoot",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "customer": "Customer",
-    "node": "Node",
-    "nodes": "Node",
-    "shop": "Shop"
-  },
-  "implementsNode": false
-};
-Object.freeze(QueryRoot.fieldBaseTypes);
-var QueryRoot$1 = Object.freeze(QueryRoot);
-const Shop = {
-  "name": "Shop",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "collections": "CollectionConnection",
-    "currencyCode": "CurrencyCode",
-    "description": "String",
-    "moneyFormat": "String",
-    "name": "String",
-    "primaryDomain": "Domain",
-    "privacyPolicy": "ShopPolicy",
-    "products": "ProductConnection",
-    "refundPolicy": "ShopPolicy",
-    "termsOfService": "ShopPolicy"
-  },
-  "implementsNode": false
-};
-Object.freeze(Shop.fieldBaseTypes);
-var Shop$1 = Object.freeze(Shop);
-const Domain = {
-  "name": "Domain",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "host": "String",
-    "sslEnabled": "Boolean",
-    "url": "URL"
-  },
-  "implementsNode": false
-};
-Object.freeze(Domain.fieldBaseTypes);
-var Domain$1 = Object.freeze(Domain);
-const ShopPolicy = {
-  "name": "ShopPolicy",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "body": "String",
-    "id": "ID",
-    "title": "String",
-    "url": "URL"
-  },
-  "implementsNode": true
-};
-Object.freeze(ShopPolicy.fieldBaseTypes);
-var ShopPolicy$1 = Object.freeze(ShopPolicy);
-const CollectionSortKeys = {
-  "name": "CollectionSortKeys",
-  "kind": "ENUM"
-};
-var CollectionSortKeys$1 = Object.freeze(CollectionSortKeys);
-const ProductSortKeys = {
-  "name": "ProductSortKeys",
-  "kind": "ENUM"
-};
-var ProductSortKeys$1 = Object.freeze(ProductSortKeys);
-const Mutation = {
-  "name": "Mutation",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "checkoutAttributesUpdate": "CheckoutAttributesUpdatePayload",
-    "checkoutCompleteFree": "CheckoutCompleteFreePayload",
-    "checkoutCompleteWithCreditCard": "CheckoutCompleteWithCreditCardPayload",
-    "checkoutCompleteWithTokenizedPayment": "CheckoutCompleteWithTokenizedPaymentPayload",
-    "checkoutCreate": "CheckoutCreatePayload",
-    "checkoutCustomerAssociate": "CheckoutCustomerAssociatePayload",
-    "checkoutCustomerDisassociate": "CheckoutCustomerDisassociatePayload",
-    "checkoutEmailUpdate": "CheckoutEmailUpdatePayload",
-    "checkoutGiftCardApply": "CheckoutGiftCardApplyPayload",
-    "checkoutGiftCardRemove": "CheckoutGiftCardRemovePayload",
-    "checkoutLineItemsAdd": "CheckoutLineItemsAddPayload",
-    "checkoutLineItemsRemove": "CheckoutLineItemsRemovePayload",
-    "checkoutLineItemsUpdate": "CheckoutLineItemsUpdatePayload",
-    "checkoutShippingAddressUpdate": "CheckoutShippingAddressUpdatePayload",
-    "checkoutShippingLineUpdate": "CheckoutShippingLineUpdatePayload",
-    "customerAccessTokenCreate": "CustomerAccessTokenCreatePayload",
-    "customerAccessTokenDelete": "CustomerAccessTokenDeletePayload",
-    "customerAccessTokenRenew": "CustomerAccessTokenRenewPayload",
-    "customerActivate": "CustomerActivatePayload",
-    "customerAddressCreate": "CustomerAddressCreatePayload",
-    "customerAddressDelete": "CustomerAddressDeletePayload",
-    "customerAddressUpdate": "CustomerAddressUpdatePayload",
-    "customerCreate": "CustomerCreatePayload",
-    "customerRecover": "CustomerRecoverPayload",
-    "customerReset": "CustomerResetPayload",
-    "customerUpdate": "CustomerUpdatePayload"
-  },
-  "implementsNode": false,
-  "relayInputObjectBaseTypes": {
-    "checkoutAttributesUpdate": "CheckoutAttributesUpdateInput",
-    "checkoutCreate": "CheckoutCreateInput",
-    "customerAccessTokenCreate": "CustomerAccessTokenCreateInput",
-    "customerActivate": "CustomerActivateInput",
-    "customerCreate": "CustomerCreateInput",
-    "customerReset": "CustomerResetInput"
-  }
-};
-Object.freeze(Mutation.fieldBaseTypes);
-Object.freeze(Mutation.relayInputObjectBaseTypes);
-var Mutation$1 = Object.freeze(Mutation);
-const CheckoutAttributesUpdatePayload = {
-  "name": "CheckoutAttributesUpdatePayload",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "checkout": "Checkout",
-    "userErrors": "UserError"
-  },
-  "implementsNode": false
-};
-Object.freeze(CheckoutAttributesUpdatePayload.fieldBaseTypes);
-var CheckoutAttributesUpdatePayload$1 = Object.freeze(CheckoutAttributesUpdatePayload);
-const UserError = {
-  "name": "UserError",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "field": "String",
-    "message": "String"
-  },
-  "implementsNode": false
-};
-Object.freeze(UserError.fieldBaseTypes);
-var UserError$1 = Object.freeze(UserError);
-const CheckoutAttributesUpdateInput = {
-  "name": "CheckoutAttributesUpdateInput",
-  "kind": "INPUT_OBJECT",
-  "inputFieldBaseTypes": {
-    "note": "String",
-    "customAttributes": "AttributeInput",
-    "allowPartialAddresses": "Boolean"
-  }
-};
-Object.freeze(CheckoutAttributesUpdateInput.inputFieldBaseTypes);
-var CheckoutAttributesUpdateInput$1 = Object.freeze(CheckoutAttributesUpdateInput);
-const AttributeInput = {
-  "name": "AttributeInput",
-  "kind": "INPUT_OBJECT",
-  "inputFieldBaseTypes": {
-    "key": "String",
-    "value": "String"
-  }
-};
-Object.freeze(AttributeInput.inputFieldBaseTypes);
-var AttributeInput$1 = Object.freeze(AttributeInput);
-const CheckoutCompleteFreePayload = {
-  "name": "CheckoutCompleteFreePayload",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "checkout": "Checkout",
-    "userErrors": "UserError"
-  },
-  "implementsNode": false
-};
-Object.freeze(CheckoutCompleteFreePayload.fieldBaseTypes);
-var CheckoutCompleteFreePayload$1 = Object.freeze(CheckoutCompleteFreePayload);
-const CheckoutCompleteWithCreditCardPayload = {
-  "name": "CheckoutCompleteWithCreditCardPayload",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "checkout": "Checkout",
-    "payment": "Payment",
-    "userErrors": "UserError"
-  },
-  "implementsNode": false
-};
-Object.freeze(CheckoutCompleteWithCreditCardPayload.fieldBaseTypes);
-var CheckoutCompleteWithCreditCardPayload$1 = Object.freeze(CheckoutCompleteWithCreditCardPayload);
-const Payment = {
-  "name": "Payment",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "amount": "Money",
-    "billingAddress": "MailingAddress",
-    "checkout": "Checkout",
-    "creditCard": "CreditCard",
-    "errorMessage": "String",
-    "id": "ID",
-    "idempotencyKey": "String",
-    "ready": "Boolean",
-    "test": "Boolean",
-    "transaction": "Transaction"
-  },
-  "implementsNode": true
-};
-Object.freeze(Payment.fieldBaseTypes);
-var Payment$1 = Object.freeze(Payment);
-const CreditCard = {
-  "name": "CreditCard",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "brand": "String",
-    "expiryMonth": "Int",
-    "expiryYear": "Int",
-    "firstDigits": "String",
-    "firstName": "String",
-    "lastDigits": "String",
-    "lastName": "String",
-    "maskedNumber": "String"
-  },
-  "implementsNode": false
-};
-Object.freeze(CreditCard.fieldBaseTypes);
-var CreditCard$1 = Object.freeze(CreditCard);
-const Transaction = {
-  "name": "Transaction",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "amount": "Money",
-    "kind": "TransactionKind",
-    "status": "TransactionStatus",
-    "test": "Boolean"
-  },
-  "implementsNode": false
-};
-Object.freeze(Transaction.fieldBaseTypes);
-var Transaction$1 = Object.freeze(Transaction);
-const TransactionKind = {
-  "name": "TransactionKind",
-  "kind": "ENUM"
-};
-var TransactionKind$1 = Object.freeze(TransactionKind);
-const TransactionStatus = {
-  "name": "TransactionStatus",
-  "kind": "ENUM"
-};
-var TransactionStatus$1 = Object.freeze(TransactionStatus);
-const CreditCardPaymentInput = {
-  "name": "CreditCardPaymentInput",
-  "kind": "INPUT_OBJECT",
-  "inputFieldBaseTypes": {
-    "amount": "Money",
-    "idempotencyKey": "String",
-    "billingAddress": "MailingAddressInput",
-    "vaultId": "String",
-    "test": "Boolean"
-  }
-};
-Object.freeze(CreditCardPaymentInput.inputFieldBaseTypes);
-var CreditCardPaymentInput$1 = Object.freeze(CreditCardPaymentInput);
-const MailingAddressInput = {
-  "name": "MailingAddressInput",
-  "kind": "INPUT_OBJECT",
-  "inputFieldBaseTypes": {
-    "address1": "String",
-    "address2": "String",
-    "city": "String",
-    "company": "String",
-    "country": "String",
-    "firstName": "String",
-    "lastName": "String",
-    "phone": "String",
-    "province": "String",
-    "zip": "String"
-  }
-};
-Object.freeze(MailingAddressInput.inputFieldBaseTypes);
-var MailingAddressInput$1 = Object.freeze(MailingAddressInput);
-const CheckoutCompleteWithTokenizedPaymentPayload = {
-  "name": "CheckoutCompleteWithTokenizedPaymentPayload",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "checkout": "Checkout",
-    "payment": "Payment",
-    "userErrors": "UserError"
-  },
-  "implementsNode": false
-};
-Object.freeze(CheckoutCompleteWithTokenizedPaymentPayload.fieldBaseTypes);
-var CheckoutCompleteWithTokenizedPaymentPayload$1 = Object.freeze(CheckoutCompleteWithTokenizedPaymentPayload);
-const TokenizedPaymentInput = {
-  "name": "TokenizedPaymentInput",
-  "kind": "INPUT_OBJECT",
-  "inputFieldBaseTypes": {
-    "amount": "Money",
-    "idempotencyKey": "String",
-    "billingAddress": "MailingAddressInput",
-    "type": "String",
-    "paymentData": "String",
-    "test": "Boolean",
-    "identifier": "String"
-  }
-};
-Object.freeze(TokenizedPaymentInput.inputFieldBaseTypes);
-var TokenizedPaymentInput$1 = Object.freeze(TokenizedPaymentInput);
-const CheckoutCreatePayload = {
-  "name": "CheckoutCreatePayload",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "checkout": "Checkout",
-    "userErrors": "UserError"
-  },
-  "implementsNode": false
-};
-Object.freeze(CheckoutCreatePayload.fieldBaseTypes);
-var CheckoutCreatePayload$1 = Object.freeze(CheckoutCreatePayload);
-const CheckoutCreateInput = {
-  "name": "CheckoutCreateInput",
-  "kind": "INPUT_OBJECT",
-  "inputFieldBaseTypes": {
-    "email": "String",
-    "lineItems": "CheckoutLineItemInput",
-    "shippingAddress": "MailingAddressInput",
-    "note": "String",
-    "customAttributes": "AttributeInput",
-    "allowPartialAddresses": "Boolean"
-  }
-};
-Object.freeze(CheckoutCreateInput.inputFieldBaseTypes);
-var CheckoutCreateInput$1 = Object.freeze(CheckoutCreateInput);
-const CheckoutLineItemInput = {
-  "name": "CheckoutLineItemInput",
-  "kind": "INPUT_OBJECT",
-  "inputFieldBaseTypes": {
-    "variantId": "ID",
-    "quantity": "Int",
-    "customAttributes": "AttributeInput"
-  }
-};
-Object.freeze(CheckoutLineItemInput.inputFieldBaseTypes);
-var CheckoutLineItemInput$1 = Object.freeze(CheckoutLineItemInput);
-const CheckoutCustomerAssociatePayload = {
-  "name": "CheckoutCustomerAssociatePayload",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "checkout": "Checkout",
-    "userErrors": "UserError"
-  },
-  "implementsNode": false
-};
-Object.freeze(CheckoutCustomerAssociatePayload.fieldBaseTypes);
-var CheckoutCustomerAssociatePayload$1 = Object.freeze(CheckoutCustomerAssociatePayload);
-const CheckoutCustomerDisassociatePayload = {
-  "name": "CheckoutCustomerDisassociatePayload",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "checkout": "Checkout",
-    "userErrors": "UserError"
-  },
-  "implementsNode": false
-};
-Object.freeze(CheckoutCustomerDisassociatePayload.fieldBaseTypes);
-var CheckoutCustomerDisassociatePayload$1 = Object.freeze(CheckoutCustomerDisassociatePayload);
-const CheckoutEmailUpdatePayload = {
-  "name": "CheckoutEmailUpdatePayload",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "checkout": "Checkout",
-    "userErrors": "UserError"
-  },
-  "implementsNode": false
-};
-Object.freeze(CheckoutEmailUpdatePayload.fieldBaseTypes);
-var CheckoutEmailUpdatePayload$1 = Object.freeze(CheckoutEmailUpdatePayload);
-const CheckoutGiftCardApplyPayload = {
-  "name": "CheckoutGiftCardApplyPayload",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "checkout": "Checkout",
-    "userErrors": "UserError"
-  },
-  "implementsNode": false
-};
-Object.freeze(CheckoutGiftCardApplyPayload.fieldBaseTypes);
-var CheckoutGiftCardApplyPayload$1 = Object.freeze(CheckoutGiftCardApplyPayload);
-const CheckoutGiftCardRemovePayload = {
-  "name": "CheckoutGiftCardRemovePayload",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "checkout": "Checkout",
-    "userErrors": "UserError"
-  },
-  "implementsNode": false
-};
-Object.freeze(CheckoutGiftCardRemovePayload.fieldBaseTypes);
-var CheckoutGiftCardRemovePayload$1 = Object.freeze(CheckoutGiftCardRemovePayload);
-const CheckoutLineItemsAddPayload = {
-  "name": "CheckoutLineItemsAddPayload",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "checkout": "Checkout",
-    "userErrors": "UserError"
-  },
-  "implementsNode": false
-};
-Object.freeze(CheckoutLineItemsAddPayload.fieldBaseTypes);
-var CheckoutLineItemsAddPayload$1 = Object.freeze(CheckoutLineItemsAddPayload);
-const CheckoutLineItemsRemovePayload = {
-  "name": "CheckoutLineItemsRemovePayload",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "checkout": "Checkout",
-    "userErrors": "UserError"
-  },
-  "implementsNode": false
-};
-Object.freeze(CheckoutLineItemsRemovePayload.fieldBaseTypes);
-var CheckoutLineItemsRemovePayload$1 = Object.freeze(CheckoutLineItemsRemovePayload);
-const CheckoutLineItemsUpdatePayload = {
-  "name": "CheckoutLineItemsUpdatePayload",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "checkout": "Checkout",
-    "userErrors": "UserError"
-  },
-  "implementsNode": false
-};
-Object.freeze(CheckoutLineItemsUpdatePayload.fieldBaseTypes);
-var CheckoutLineItemsUpdatePayload$1 = Object.freeze(CheckoutLineItemsUpdatePayload);
-const CheckoutLineItemUpdateInput = {
-  "name": "CheckoutLineItemUpdateInput",
-  "kind": "INPUT_OBJECT",
-  "inputFieldBaseTypes": {
-    "id": "ID",
-    "variantId": "ID",
-    "quantity": "Int",
-    "customAttributes": "AttributeInput"
-  }
-};
-Object.freeze(CheckoutLineItemUpdateInput.inputFieldBaseTypes);
-var CheckoutLineItemUpdateInput$1 = Object.freeze(CheckoutLineItemUpdateInput);
-const CheckoutShippingAddressUpdatePayload = {
-  "name": "CheckoutShippingAddressUpdatePayload",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "checkout": "Checkout",
-    "userErrors": "UserError"
-  },
-  "implementsNode": false
-};
-Object.freeze(CheckoutShippingAddressUpdatePayload.fieldBaseTypes);
-var CheckoutShippingAddressUpdatePayload$1 = Object.freeze(CheckoutShippingAddressUpdatePayload);
-const CheckoutShippingLineUpdatePayload = {
-  "name": "CheckoutShippingLineUpdatePayload",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "checkout": "Checkout",
-    "userErrors": "UserError"
-  },
-  "implementsNode": false
-};
-Object.freeze(CheckoutShippingLineUpdatePayload.fieldBaseTypes);
-var CheckoutShippingLineUpdatePayload$1 = Object.freeze(CheckoutShippingLineUpdatePayload);
-const CustomerAccessTokenCreatePayload = {
-  "name": "CustomerAccessTokenCreatePayload",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "customerAccessToken": "CustomerAccessToken",
-    "userErrors": "UserError"
-  },
-  "implementsNode": false
-};
-Object.freeze(CustomerAccessTokenCreatePayload.fieldBaseTypes);
-var CustomerAccessTokenCreatePayload$1 = Object.freeze(CustomerAccessTokenCreatePayload);
-const CustomerAccessToken = {
-  "name": "CustomerAccessToken",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "accessToken": "String",
-    "expiresAt": "DateTime"
-  },
-  "implementsNode": false
-};
-Object.freeze(CustomerAccessToken.fieldBaseTypes);
-var CustomerAccessToken$1 = Object.freeze(CustomerAccessToken);
-const CustomerAccessTokenCreateInput = {
-  "name": "CustomerAccessTokenCreateInput",
-  "kind": "INPUT_OBJECT",
-  "inputFieldBaseTypes": {
-    "email": "String",
-    "password": "String"
-  }
-};
-Object.freeze(CustomerAccessTokenCreateInput.inputFieldBaseTypes);
-var CustomerAccessTokenCreateInput$1 = Object.freeze(CustomerAccessTokenCreateInput);
-const CustomerAccessTokenDeletePayload = {
-  "name": "CustomerAccessTokenDeletePayload",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "deletedAccessToken": "String",
-    "deletedCustomerAccessTokenId": "String",
-    "userErrors": "UserError"
-  },
-  "implementsNode": false
-};
-Object.freeze(CustomerAccessTokenDeletePayload.fieldBaseTypes);
-var CustomerAccessTokenDeletePayload$1 = Object.freeze(CustomerAccessTokenDeletePayload);
-const CustomerAccessTokenRenewPayload = {
-  "name": "CustomerAccessTokenRenewPayload",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "customerAccessToken": "CustomerAccessToken",
-    "userErrors": "UserError"
-  },
-  "implementsNode": false
-};
-Object.freeze(CustomerAccessTokenRenewPayload.fieldBaseTypes);
-var CustomerAccessTokenRenewPayload$1 = Object.freeze(CustomerAccessTokenRenewPayload);
-const CustomerActivatePayload = {
-  "name": "CustomerActivatePayload",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "customer": "Customer",
-    "userErrors": "UserError"
-  },
-  "implementsNode": false
-};
-Object.freeze(CustomerActivatePayload.fieldBaseTypes);
-var CustomerActivatePayload$1 = Object.freeze(CustomerActivatePayload);
-const CustomerActivateInput = {
-  "name": "CustomerActivateInput",
-  "kind": "INPUT_OBJECT",
-  "inputFieldBaseTypes": {
-    "activationToken": "String",
-    "password": "String"
-  }
-};
-Object.freeze(CustomerActivateInput.inputFieldBaseTypes);
-var CustomerActivateInput$1 = Object.freeze(CustomerActivateInput);
-const CustomerAddressCreatePayload = {
-  "name": "CustomerAddressCreatePayload",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "customerAddress": "MailingAddress",
-    "userErrors": "UserError"
-  },
-  "implementsNode": false
-};
-Object.freeze(CustomerAddressCreatePayload.fieldBaseTypes);
-var CustomerAddressCreatePayload$1 = Object.freeze(CustomerAddressCreatePayload);
-const CustomerAddressDeletePayload = {
-  "name": "CustomerAddressDeletePayload",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "deletedCustomerAddressId": "String",
-    "userErrors": "UserError"
-  },
-  "implementsNode": false
-};
-Object.freeze(CustomerAddressDeletePayload.fieldBaseTypes);
-var CustomerAddressDeletePayload$1 = Object.freeze(CustomerAddressDeletePayload);
-const CustomerAddressUpdatePayload = {
-  "name": "CustomerAddressUpdatePayload",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "customerAddress": "MailingAddress",
-    "userErrors": "UserError"
-  },
-  "implementsNode": false
-};
-Object.freeze(CustomerAddressUpdatePayload.fieldBaseTypes);
-var CustomerAddressUpdatePayload$1 = Object.freeze(CustomerAddressUpdatePayload);
-const CustomerCreatePayload = {
-  "name": "CustomerCreatePayload",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "customer": "Customer",
-    "userErrors": "UserError"
-  },
-  "implementsNode": false
-};
-Object.freeze(CustomerCreatePayload.fieldBaseTypes);
-var CustomerCreatePayload$1 = Object.freeze(CustomerCreatePayload);
-const CustomerCreateInput = {
-  "name": "CustomerCreateInput",
-  "kind": "INPUT_OBJECT",
-  "inputFieldBaseTypes": {
-    "firstName": "String",
-    "lastName": "String",
-    "email": "String",
-    "password": "String",
-    "acceptsMarketing": "Boolean"
-  }
-};
-Object.freeze(CustomerCreateInput.inputFieldBaseTypes);
-var CustomerCreateInput$1 = Object.freeze(CustomerCreateInput);
-const CustomerRecoverPayload = {
-  "name": "CustomerRecoverPayload",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "userErrors": "UserError"
-  },
-  "implementsNode": false
-};
-Object.freeze(CustomerRecoverPayload.fieldBaseTypes);
-var CustomerRecoverPayload$1 = Object.freeze(CustomerRecoverPayload);
-const CustomerResetPayload = {
-  "name": "CustomerResetPayload",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "customer": "Customer",
-    "userErrors": "UserError"
-  },
-  "implementsNode": false
-};
-Object.freeze(CustomerResetPayload.fieldBaseTypes);
-var CustomerResetPayload$1 = Object.freeze(CustomerResetPayload);
-const CustomerResetInput = {
-  "name": "CustomerResetInput",
-  "kind": "INPUT_OBJECT",
-  "inputFieldBaseTypes": {
-    "resetToken": "String",
-    "password": "String"
-  }
-};
-Object.freeze(CustomerResetInput.inputFieldBaseTypes);
-var CustomerResetInput$1 = Object.freeze(CustomerResetInput);
-const CustomerUpdatePayload = {
-  "name": "CustomerUpdatePayload",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "customer": "Customer",
-    "userErrors": "UserError"
-  },
-  "implementsNode": false
-};
-Object.freeze(CustomerUpdatePayload.fieldBaseTypes);
-var CustomerUpdatePayload$1 = Object.freeze(CustomerUpdatePayload);
-const CustomerUpdateInput = {
-  "name": "CustomerUpdateInput",
-  "kind": "INPUT_OBJECT",
-  "inputFieldBaseTypes": {
-    "firstName": "String",
-    "lastName": "String",
-    "email": "String",
-    "password": "String",
-    "acceptsMarketing": "Boolean"
-  }
-};
-Object.freeze(CustomerUpdateInput.inputFieldBaseTypes);
-var CustomerUpdateInput$1 = Object.freeze(CustomerUpdateInput);
-const __Schema = {
-  "name": "__Schema",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "directives": "__Directive",
-    "mutationType": "__Type",
-    "queryType": "__Type",
-    "subscriptionType": "__Type",
-    "types": "__Type"
-  },
-  "implementsNode": false
-};
-Object.freeze(__Schema.fieldBaseTypes);
-
-var __Schema$1 = Object.freeze(__Schema);
-
-const __Type = {
-  "name": "__Type",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "description": "String",
-    "enumValues": "__EnumValue",
-    "fields": "__Field",
-    "inputFields": "__InputValue",
-    "interfaces": "__Type",
-    "kind": "__TypeKind",
-    "name": "String",
-    "ofType": "__Type",
-    "possibleTypes": "__Type"
-  },
-  "implementsNode": false
-};
-Object.freeze(__Type.fieldBaseTypes);
-
-var __Type$1 = Object.freeze(__Type);
-
-const __TypeKind = {
-  "name": "__TypeKind",
-  "kind": "ENUM"
-};
-
-var __TypeKind$1 = Object.freeze(__TypeKind);
-
-const __Field = {
-  "name": "__Field",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "args": "__InputValue",
-    "deprecationReason": "String",
-    "description": "String",
-    "isDeprecated": "Boolean",
-    "name": "String",
-    "type": "__Type"
-  },
-  "implementsNode": false
-};
-Object.freeze(__Field.fieldBaseTypes);
-
-var __Field$1 = Object.freeze(__Field);
-
-const __InputValue = {
-  "name": "__InputValue",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "defaultValue": "String",
-    "description": "String",
-    "name": "String",
-    "type": "__Type"
-  },
-  "implementsNode": false
-};
-Object.freeze(__InputValue.fieldBaseTypes);
-
-var __InputValue$1 = Object.freeze(__InputValue);
-
-const __EnumValue = {
-  "name": "__EnumValue",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "deprecationReason": "String",
-    "description": "String",
-    "isDeprecated": "Boolean",
-    "name": "String"
-  },
-  "implementsNode": false
-};
-Object.freeze(__EnumValue.fieldBaseTypes);
-
-var __EnumValue$1 = Object.freeze(__EnumValue);
-
-const __Directive = {
-  "name": "__Directive",
-  "kind": "OBJECT",
-  "fieldBaseTypes": {
-    "args": "__InputValue",
-    "description": "String",
-    "locations": "__DirectiveLocation",
-    "name": "String",
-    "onField": "Boolean",
-    "onFragment": "Boolean",
-    "onOperation": "Boolean"
-  },
-  "implementsNode": false
-};
-Object.freeze(__Directive.fieldBaseTypes);
-
-var __Directive$1 = Object.freeze(__Directive);
-
-const __DirectiveLocation = {
-  "name": "__DirectiveLocation",
-  "kind": "ENUM"
-};
-
-var __DirectiveLocation$1 = Object.freeze(__DirectiveLocation);
-
-const Types = {
-  types: {}
-};
-Types.types["Checkout"] = Checkout$1;
-Types.types["ID"] = ID$1;
-Types.types["Boolean"] = Boolean$1;
-Types.types["CheckoutLineItemConnection"] = CheckoutLineItemConnection$1;
-Types.types["PageInfo"] = PageInfo$1;
-Types.types["CheckoutLineItemEdge"] = CheckoutLineItemEdge$1;
-Types.types["String"] = String$1;
-Types.types["CheckoutLineItem"] = CheckoutLineItem$1;
-Types.types["ProductVariant"] = ProductVariant$1;
-Types.types["Float"] = Float$1;
-Types.types["WeightUnit"] = WeightUnit$1;
-Types.types["Money"] = Money$1;
-Types.types["Image"] = Image$1;
-Types.types["URL"] = URL$1;
-Types.types["Int"] = Int$1;
-Types.types["CropRegion"] = CropRegion$1;
-Types.types["SelectedOption"] = SelectedOption$1;
-Types.types["Product"] = Product$1;
-Types.types["CollectionConnection"] = CollectionConnection$1;
-Types.types["CollectionEdge"] = CollectionEdge$1;
-Types.types["Collection"] = Collection$1;
-Types.types["HTML"] = HTML$1;
-Types.types["DateTime"] = DateTime$1;
-Types.types["ProductConnection"] = ProductConnection$1;
-Types.types["ProductEdge"] = ProductEdge$1;
-Types.types["Node"] = Node$1;
-Types.types["ImageConnection"] = ImageConnection$1;
-Types.types["ImageEdge"] = ImageEdge$1;
-Types.types["SelectedOptionInput"] = SelectedOptionInput$1;
-Types.types["ProductOption"] = ProductOption$1;
-Types.types["ProductVariantConnection"] = ProductVariantConnection$1;
-Types.types["ProductVariantEdge"] = ProductVariantEdge$1;
-Types.types["Attribute"] = Attribute$1;
-Types.types["MailingAddress"] = MailingAddress$1;
-Types.types["ShippingRate"] = ShippingRate$1;
-Types.types["AvailableShippingRates"] = AvailableShippingRates$1;
-Types.types["Customer"] = Customer$1;
-Types.types["MailingAddressConnection"] = MailingAddressConnection$1;
-Types.types["MailingAddressEdge"] = MailingAddressEdge$1;
-Types.types["OrderConnection"] = OrderConnection$1;
-Types.types["OrderEdge"] = OrderEdge$1;
-Types.types["Order"] = Order$1;
-Types.types["OrderCancelReason"] = OrderCancelReason$1;
-Types.types["CurrencyCode"] = CurrencyCode$1;
-Types.types["OrderDisplayFulfillmentStatus"] = OrderDisplayFulfillmentStatus$1;
-Types.types["OrderDisplayFinancialStatus"] = OrderDisplayFinancialStatus$1;
-Types.types["OrderLineItemConnection"] = OrderLineItemConnection$1;
-Types.types["OrderLineItemEdge"] = OrderLineItemEdge$1;
-Types.types["OrderLineItem"] = OrderLineItem$1;
-Types.types["OrderSortKeys"] = OrderSortKeys$1;
-Types.types["AppliedGiftCard"] = AppliedGiftCard$1;
-Types.types["QueryRoot"] = QueryRoot$1;
-Types.types["Shop"] = Shop$1;
-Types.types["Domain"] = Domain$1;
-Types.types["ShopPolicy"] = ShopPolicy$1;
-Types.types["CollectionSortKeys"] = CollectionSortKeys$1;
-Types.types["ProductSortKeys"] = ProductSortKeys$1;
-Types.types["Mutation"] = Mutation$1;
-Types.types["CheckoutAttributesUpdatePayload"] = CheckoutAttributesUpdatePayload$1;
-Types.types["UserError"] = UserError$1;
-Types.types["CheckoutAttributesUpdateInput"] = CheckoutAttributesUpdateInput$1;
-Types.types["AttributeInput"] = AttributeInput$1;
-Types.types["CheckoutCompleteFreePayload"] = CheckoutCompleteFreePayload$1;
-Types.types["CheckoutCompleteWithCreditCardPayload"] = CheckoutCompleteWithCreditCardPayload$1;
-Types.types["Payment"] = Payment$1;
-Types.types["CreditCard"] = CreditCard$1;
-Types.types["Transaction"] = Transaction$1;
-Types.types["TransactionKind"] = TransactionKind$1;
-Types.types["TransactionStatus"] = TransactionStatus$1;
-Types.types["CreditCardPaymentInput"] = CreditCardPaymentInput$1;
-Types.types["MailingAddressInput"] = MailingAddressInput$1;
-Types.types["CheckoutCompleteWithTokenizedPaymentPayload"] = CheckoutCompleteWithTokenizedPaymentPayload$1;
-Types.types["TokenizedPaymentInput"] = TokenizedPaymentInput$1;
-Types.types["CheckoutCreatePayload"] = CheckoutCreatePayload$1;
-Types.types["CheckoutCreateInput"] = CheckoutCreateInput$1;
-Types.types["CheckoutLineItemInput"] = CheckoutLineItemInput$1;
-Types.types["CheckoutCustomerAssociatePayload"] = CheckoutCustomerAssociatePayload$1;
-Types.types["CheckoutCustomerDisassociatePayload"] = CheckoutCustomerDisassociatePayload$1;
-Types.types["CheckoutEmailUpdatePayload"] = CheckoutEmailUpdatePayload$1;
-Types.types["CheckoutGiftCardApplyPayload"] = CheckoutGiftCardApplyPayload$1;
-Types.types["CheckoutGiftCardRemovePayload"] = CheckoutGiftCardRemovePayload$1;
-Types.types["CheckoutLineItemsAddPayload"] = CheckoutLineItemsAddPayload$1;
-Types.types["CheckoutLineItemsRemovePayload"] = CheckoutLineItemsRemovePayload$1;
-Types.types["CheckoutLineItemsUpdatePayload"] = CheckoutLineItemsUpdatePayload$1;
-Types.types["CheckoutLineItemUpdateInput"] = CheckoutLineItemUpdateInput$1;
-Types.types["CheckoutShippingAddressUpdatePayload"] = CheckoutShippingAddressUpdatePayload$1;
-Types.types["CheckoutShippingLineUpdatePayload"] = CheckoutShippingLineUpdatePayload$1;
-Types.types["CustomerAccessTokenCreatePayload"] = CustomerAccessTokenCreatePayload$1;
-Types.types["CustomerAccessToken"] = CustomerAccessToken$1;
-Types.types["CustomerAccessTokenCreateInput"] = CustomerAccessTokenCreateInput$1;
-Types.types["CustomerAccessTokenDeletePayload"] = CustomerAccessTokenDeletePayload$1;
-Types.types["CustomerAccessTokenRenewPayload"] = CustomerAccessTokenRenewPayload$1;
-Types.types["CustomerActivatePayload"] = CustomerActivatePayload$1;
-Types.types["CustomerActivateInput"] = CustomerActivateInput$1;
-Types.types["CustomerAddressCreatePayload"] = CustomerAddressCreatePayload$1;
-Types.types["CustomerAddressDeletePayload"] = CustomerAddressDeletePayload$1;
-Types.types["CustomerAddressUpdatePayload"] = CustomerAddressUpdatePayload$1;
-Types.types["CustomerCreatePayload"] = CustomerCreatePayload$1;
-Types.types["CustomerCreateInput"] = CustomerCreateInput$1;
-Types.types["CustomerRecoverPayload"] = CustomerRecoverPayload$1;
-Types.types["CustomerResetPayload"] = CustomerResetPayload$1;
-Types.types["CustomerResetInput"] = CustomerResetInput$1;
-Types.types["CustomerUpdatePayload"] = CustomerUpdatePayload$1;
-Types.types["CustomerUpdateInput"] = CustomerUpdateInput$1;
-Types.types["__Schema"] = __Schema$1;
-Types.types["__Type"] = __Type$1;
-Types.types["__TypeKind"] = __TypeKind$1;
-Types.types["__Field"] = __Field$1;
-Types.types["__InputValue"] = __InputValue$1;
-Types.types["__EnumValue"] = __EnumValue$1;
-Types.types["__Directive"] = __Directive$1;
-Types.types["__DirectiveLocation"] = __DirectiveLocation$1;
-Types.queryType = "QueryRoot";
-Types.mutationType = "Mutation";
-Types.subscriptionType = null;
-Object.freeze(Types.types);
-var types = Object.freeze(Types);
-/* harmony default export */ __webpack_exports__["default"] = (types);
+/* harmony default export */ __webpack_exports__["default"] = (Blog);
 
 /***/ }),
 
-/***/ 3:
+/***/ 5:
 /*!*****************************!*\
   !*** multi ./pages/blog.js ***!
   \*****************************/
@@ -2701,36 +2157,58 @@ module.exports = __webpack_require__(/*! /Users/rgrunest/Developer/react-portfol
 
 /***/ }),
 
-/***/ "babel-plugin-graphql-js-client-transform":
-/*!***********************************************************!*\
-  !*** external "babel-plugin-graphql-js-client-transform" ***!
-  \***********************************************************/
+/***/ "core-js/library/fn/object/define-property":
+/*!************************************************************!*\
+  !*** external "core-js/library/fn/object/define-property" ***!
+  \************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("babel-plugin-graphql-js-client-transform");
+module.exports = require("core-js/library/fn/object/define-property");
 
 /***/ }),
 
-/***/ "graphql-js-client":
-/*!************************************!*\
-  !*** external "graphql-js-client" ***!
-  \************************************/
+/***/ "core-js/library/fn/object/get-own-property-descriptor":
+/*!************************************************************************!*\
+  !*** external "core-js/library/fn/object/get-own-property-descriptor" ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("graphql-js-client");
+module.exports = require("core-js/library/fn/object/get-own-property-descriptor");
 
 /***/ }),
 
-/***/ "next/Link":
-/*!****************************!*\
-  !*** external "next/Link" ***!
-  \****************************/
+/***/ "core-js/library/fn/symbol":
+/*!********************************************!*\
+  !*** external "core-js/library/fn/symbol" ***!
+  \********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("next/Link");
+module.exports = require("core-js/library/fn/symbol");
+
+/***/ }),
+
+/***/ "core-js/library/fn/symbol/iterator":
+/*!*****************************************************!*\
+  !*** external "core-js/library/fn/symbol/iterator" ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/symbol/iterator");
+
+/***/ }),
+
+/***/ "core-js/library/fn/weak-map":
+/*!**********************************************!*\
+  !*** external "core-js/library/fn/weak-map" ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/weak-map");
 
 /***/ }),
 
@@ -2745,14 +2223,25 @@ module.exports = require("next/head");
 
 /***/ }),
 
-/***/ "next/router":
-/*!******************************!*\
-  !*** external "next/router" ***!
-  \******************************/
+/***/ "prop-types":
+/*!*****************************!*\
+  !*** external "prop-types" ***!
+  \*****************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("next/router");
+module.exports = require("prop-types");
+
+/***/ }),
+
+/***/ "prop-types-exact":
+/*!***********************************!*\
+  !*** external "prop-types-exact" ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("prop-types-exact");
 
 /***/ }),
 
@@ -2767,6 +2256,17 @@ module.exports = require("react");
 
 /***/ }),
 
+/***/ "react-is":
+/*!***************************!*\
+  !*** external "react-is" ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-is");
+
+/***/ }),
+
 /***/ "styled-jsx/style":
 /*!***********************************!*\
   !*** external "styled-jsx/style" ***!
@@ -2775,6 +2275,17 @@ module.exports = require("react");
 /***/ (function(module, exports) {
 
 module.exports = require("styled-jsx/style");
+
+/***/ }),
+
+/***/ "url":
+/*!**********************!*\
+  !*** external "url" ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("url");
 
 /***/ })
 

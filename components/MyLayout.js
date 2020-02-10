@@ -1,4 +1,4 @@
-import Header from "./Header";
+import MyHeader from "./MyHeader";
 import MyHead from "./MyHead";
 
 const layoutStyle = {
@@ -10,14 +10,18 @@ const Layout = props => {
     <>
       <MyHead page={props.page} />
       <div style={layoutStyle}>
-        <Header />
+        <MyHeader />
         {props.children}
       </div>
       <style jsx global>{`
         html,
         body {
+          position: relative;
           font-family: "Dosis", sans-serif;
           letter-spacing: 1px;
+          margin: 0;
+          padding: 0;
+          overflow-x: hidden;
         }
         a {
           text-decoration: none;
