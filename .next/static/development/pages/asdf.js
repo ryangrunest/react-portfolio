@@ -37340,6 +37340,13 @@ function (_Component) {
             lineNumber: 46
           },
           __self: this
+        }, __jsx("div", {
+          className: "form-container",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 51
+          },
+          __self: this
         }, __jsx("form", {
           onSubmit: function _callee(event) {
             return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.async(function _callee$(_context) {
@@ -37369,87 +37376,88 @@ function (_Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 51
+            lineNumber: 52
           },
           __self: this
         }, __jsx("div", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 65
+            lineNumber: 66
           },
           __self: this
         }, __jsx("label", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 66
+            lineNumber: 67
           },
           __self: this
-        }, "title", __jsx("input", {
+        }, "title:", __jsx("input", {
           type: "text",
           name: "title",
           onChange: _this2.handleChange,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 68
+            lineNumber: 69
           },
           __self: this
         }))), __jsx("div", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 75
-          },
-          __self: this
-        }, __jsx("label", {
-          __source: {
-            fileName: _jsxFileName,
             lineNumber: 76
           },
           __self: this
-        }, "Image Path (from root / public folder)"), __jsx("input", {
-          type: "text",
-          name: "imgPath",
-          onChange: _this2.handleChange,
+        }, __jsx("label", {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 77
           },
           __self: this
-        })), __jsx("div", {
+        }, "image path (from root / public folder):"), __jsx("input", {
+          type: "text",
+          name: "imgPath",
+          onChange: _this2.handleChange,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 83
+            lineNumber: 78
           },
           __self: this
-        }, __jsx("label", {
+        })), __jsx("div", {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 84
           },
           __self: this
-        }, "text", __jsx("textarea", {
+        }, __jsx("label", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 85
+          },
+          __self: this
+        }, "text:", __jsx("textarea", {
           type: "textarea",
           name: "text",
           onChange: _this2.handleChange,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 86
+            lineNumber: 87
           },
           __self: this
         }))), __jsx("input", {
+          className: "submit-btn",
           type: "submit",
-          value: "Submit",
+          value: "SUBMIT",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 93
+            lineNumber: 94
           },
           __self: this
-        })), __jsx("style", {
+        }))), __jsx("style", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 95
+            lineNumber: 97
           },
           __self: this
-        }, "\n        form {\n          width: 100%;\n          height: 100%;\n        }\n        input, textarea {\n          display: block;\n        }\n\n      "));
+        }, "\n        form {\n          display: block;\n          margin: auto;\n        }\n        .form-container {\n          position: relative;\n          width: 96vw;\n          display: flex;\n          margin: 0 auto;\n        }\n        input, textarea {\n          display: block;\n          padding: 0.5rem 0.8rem;\n          border: none;\n          margin: 1rem 0;\n          margin-top: 0.2rem;\n          width: 450px;\n          box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.1);\n          transition: 0.3s all;\n          border-radius: 5px;\n        }\n        input:hover, textarea:hover {\n          box-shadow: 3px 2px 0px 1px rgba(0,0,0,0.3);\n        }\n        textarea:focus, input:focus {\n          outline: none;\n          box-shadow: 10px 10px 10px rgba(0,0,0,0.3);\n        }\n        .submit-btn {\n          background-color: #1e1e1e;\n          color: #f0f0f0;\n          font-size: 20px;\n          width: 20rem;\n          border-radius: 5px;\n        }\n\n      "));
       }));
     }
   }]);

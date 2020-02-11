@@ -2080,6 +2080,13 @@ class ASDF extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
         lineNumber: 46
       },
       __self: this
+    }, __jsx("div", {
+      className: "form-container",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 51
+      },
+      __self: this
     }, __jsx("form", {
       onSubmit: async event => {
         event.preventDefault();
@@ -2095,93 +2102,122 @@ class ASDF extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 51
+        lineNumber: 52
       },
       __self: this
     }, __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 65
+        lineNumber: 66
       },
       __self: this
     }, __jsx("label", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 66
+        lineNumber: 67
       },
       __self: this
-    }, "title", __jsx("input", {
+    }, "title:", __jsx("input", {
       type: "text",
       name: "title",
       onChange: this.handleChange,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 68
+        lineNumber: 69
       },
       __self: this
     }))), __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 75
-      },
-      __self: this
-    }, __jsx("label", {
-      __source: {
-        fileName: _jsxFileName,
         lineNumber: 76
       },
       __self: this
-    }, "Image Path (from root / public folder)"), __jsx("input", {
-      type: "text",
-      name: "imgPath",
-      onChange: this.handleChange,
+    }, __jsx("label", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 77
       },
       __self: this
-    })), __jsx("div", {
+    }, "image path (from root / public folder):"), __jsx("input", {
+      type: "text",
+      name: "imgPath",
+      onChange: this.handleChange,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 83
+        lineNumber: 78
       },
       __self: this
-    }, __jsx("label", {
+    })), __jsx("div", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 84
       },
       __self: this
-    }, "text", __jsx("textarea", {
+    }, __jsx("label", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 85
+      },
+      __self: this
+    }, "text:", __jsx("textarea", {
       type: "textarea",
       name: "text",
       onChange: this.handleChange,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 86
+        lineNumber: 87
       },
       __self: this
     }))), __jsx("input", {
+      className: "submit-btn",
       type: "submit",
-      value: "Submit",
+      value: "SUBMIT",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 93
+        lineNumber: 94
       },
       __self: this
-    })), __jsx("style", {
+    }))), __jsx("style", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 95
+        lineNumber: 97
       },
       __self: this
     }, `
         form {
-          width: 100%;
-          height: 100%;
+          display: block;
+          margin: auto;
+        }
+        .form-container {
+          position: relative;
+          width: 96vw;
+          display: flex;
+          margin: 0 auto;
         }
         input, textarea {
           display: block;
+          padding: 0.5rem 0.8rem;
+          border: none;
+          margin: 1rem 0;
+          margin-top: 0.2rem;
+          width: 450px;
+          box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.1);
+          transition: 0.3s all;
+          border-radius: 5px;
+        }
+        input:hover, textarea:hover {
+          box-shadow: 3px 2px 0px 1px rgba(0,0,0,0.3);
+        }
+        textarea:focus, input:focus {
+          outline: none;
+          box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+        }
+        .submit-btn {
+          background-color: #1e1e1e;
+          color: #f0f0f0;
+          font-size: 20px;
+          width: 20rem;
+          border-radius: 5px;
         }
 
       `))));
