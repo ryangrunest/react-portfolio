@@ -1,20 +1,37 @@
 export default function BlogPost(props) {
   return (
     <div className="BlogPost">
-      <div className="title">{props.title}</div>
-      <img src={props.imgPath}></img>
+      <h1 className="title">{props.title}</h1>
+      <div className="image-container">
+        <img src={props.imgPath}></img>
+      </div>
+      <h3 className="date">{props.date}</h3>
       <div className="text">
-        {props.text.map(line => (
+        {/* {props.text.map(line => (
           <p>{line}</p>
-        ))}
+        ))} */}
+        <p>{props.text}</p>
       </div>
       <style>{`
       .BlogPost {
+        background: white;
+        border-radius: 5px;
+        box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
       }
-  img {
-    width: calc(100% + 40px);
-    transform: translateX(-20px);
-  }
+      .title {
+        text-align: center;
+        padding-top: 1rem;
+      }
+      .image-container {
+        width: 100%;
+        text-align: center;
+      }
+      img {
+        width: 100%;
+      }
+      .text {
+        padding: 1rem 2rem;
+      }
   `}</style>
     </div>
   );

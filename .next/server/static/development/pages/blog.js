@@ -93,24 +93,6 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
-/***/ "./blogposts.js":
-/*!**********************!*\
-  !*** ./blogposts.js ***!
-  \**********************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-const blogArray = [{
-  title: "First Blog Post",
-  text: ["Some Sample text Some Sample text Some Sample text Some Sample text Some Sample text Some Sample text Some Sample text Some Sample text Some Sample text", "This is more sample text"],
-  imgPath: "/blog-1.jpg"
-}];
-/* harmony default export */ __webpack_exports__["default"] = (blogArray);
-
-/***/ }),
-
 /***/ "./components/BlogPost.js":
 /*!********************************!*\
   !*** ./components/BlogPost.js ***!
@@ -134,46 +116,73 @@ function BlogPost(props) {
       lineNumber: 3
     },
     __self: this
-  }, __jsx("div", {
+  }, __jsx("h1", {
     className: "title",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 4
     },
     __self: this
-  }, props.title), __jsx("img", {
-    src: props.imgPath,
+  }, props.title), __jsx("div", {
+    className: "image-container",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 5
     },
     __self: this
-  }), __jsx("div", {
-    className: "text",
+  }, __jsx("img", {
+    src: props.imgPath,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
     },
     __self: this
-  }, props.text.map(line => __jsx("p", {
+  })), __jsx("h3", {
+    className: "date",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     },
     __self: this
-  }, line))), __jsx("style", {
+  }, props.date), __jsx("div", {
+    className: "text",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 9
+    },
+    __self: this
+  }, __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, props.text)), __jsx("style", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
     },
     __self: this
   }, `
       .BlogPost {
+        background: white;
+        border-radius: 5px;
+        box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
       }
-  img {
-    width: calc(100% + 40px);
-    transform: translateX(-20px);
-  }
+      .title {
+        text-align: center;
+        padding-top: 1rem;
+      }
+      .image-container {
+        width: 100%;
+        text-align: center;
+      }
+      img {
+        width: 100%;
+      }
+      .text {
+        padding: 1rem 2rem;
+      }
   `));
 }
 
@@ -255,14 +264,14 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 const MyHeader = () => __jsx("header", {
-  className: "jsx-164391395",
+  className: "jsx-3337372646",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 4
   },
   __self: undefined
 }, __jsx("div", {
-  className: "jsx-164391395" + " " + "header-left",
+  className: "jsx-3337372646" + " " + "header-left",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 5
@@ -276,14 +285,14 @@ const MyHeader = () => __jsx("header", {
   },
   __self: undefined
 }, __jsx("a", {
-  className: "jsx-164391395",
+  className: "jsx-3337372646",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 7
   },
   __self: undefined
-}, "Ryan"))), __jsx("div", {
-  className: "jsx-164391395" + " " + "header-right",
+}, "Ryan Grunest"))), __jsx("div", {
+  className: "jsx-3337372646" + " " + "header-right",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 10
@@ -297,7 +306,7 @@ const MyHeader = () => __jsx("header", {
   },
   __self: undefined
 }, __jsx("a", {
-  className: "jsx-164391395",
+  className: "jsx-3337372646",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 12
@@ -311,16 +320,16 @@ const MyHeader = () => __jsx("header", {
   },
   __self: undefined
 }, __jsx("a", {
-  className: "jsx-164391395",
+  className: "jsx-3337372646",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 15
   },
   __self: undefined
 }, "Shop"))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-  id: "164391395",
+  id: "3337372646",
   __self: undefined
-}, "header.jsx-164391395{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;padding-bottom:1rem;}.header-right.jsx-164391395 a.jsx-164391395{margin:0 1rem;padding:0 0.2rem;padding-bottom:0.2rem;border-bottom:1px solid black;}.header-right.jsx-164391395 a.jsx-164391395:hover{border:none;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9yZ3J1bmVzdC9EZXZlbG9wZXIvcmVhY3QtcG9ydGZvbGlvL2NvbXBvbmVudHMvTXlIZWFkZXIuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBa0JnQixBQUdzQixBQUtDLEFBTUYsWUFDZCxFQU5tQixpQkFDSyxzQkFDUSxxQkFQQSxTQVFoQywwR0FQc0Isb0JBQ3RCIiwiZmlsZSI6Ii9Vc2Vycy9yZ3J1bmVzdC9EZXZlbG9wZXIvcmVhY3QtcG9ydGZvbGlvL2NvbXBvbmVudHMvTXlIZWFkZXIuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgTGluayBmcm9tIFwibmV4dC9saW5rXCI7XG5cbmNvbnN0IE15SGVhZGVyID0gKCkgPT4gKFxuICA8aGVhZGVyPlxuICAgIDxkaXYgY2xhc3NOYW1lPVwiaGVhZGVyLWxlZnRcIj5cbiAgICAgIDxMaW5rIGhyZWY9XCIvXCI+XG4gICAgICAgIDxhPlJ5YW48L2E+XG4gICAgICA8L0xpbms+XG4gICAgPC9kaXY+XG4gICAgPGRpdiBjbGFzc05hbWU9XCJoZWFkZXItcmlnaHRcIj5cbiAgICAgIDxMaW5rIGhyZWY9XCIvYmxvZ1wiPlxuICAgICAgICA8YT5CbG9nPC9hPlxuICAgICAgPC9MaW5rPlxuICAgICAgPExpbmsgaHJlZj1cIi9zaG9wXCI+XG4gICAgICAgIDxhPlNob3A8L2E+XG4gICAgICA8L0xpbms+XG4gICAgPC9kaXY+XG5cbiAgICA8c3R5bGUganN4PntgXG4gICAgICBoZWFkZXIge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgICAgIHBhZGRpbmctYm90dG9tOiAxcmVtO1xuICAgICAgfVxuICAgICAgLmhlYWRlci1yaWdodCBhIHtcbiAgICAgICAgbWFyZ2luOiAwIDFyZW07XG4gICAgICAgIHBhZGRpbmc6IDAgMC4ycmVtO1xuICAgICAgICBwYWRkaW5nLWJvdHRvbTogMC4ycmVtO1xuICAgICAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgYmxhY2s7XG4gICAgICB9XG4gICAgICAuaGVhZGVyLXJpZ2h0IGE6aG92ZXIge1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG4gICAgYH08L3N0eWxlPlxuICA8L2hlYWRlcj5cbik7XG5cbmV4cG9ydCBkZWZhdWx0IE15SGVhZGVyO1xuIl19 */\n/*@ sourceURL=/Users/rgrunest/Developer/react-portfolio/components/MyHeader.js */"));
+}, "header.jsx-3337372646{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;padding-bottom:1rem;}.header-right.jsx-3337372646 a.jsx-3337372646{margin:0 1rem;padding:0 0.2rem;padding-bottom:0.2rem;border-bottom:1px solid black;}.header-right.jsx-3337372646 a.jsx-3337372646:hover{color:#ccbba2;}.header-right.jsx-3337372646 a.jsx-3337372646:hover{border:none;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9yZ3J1bmVzdC9EZXZlbG9wZXIvcmVhY3QtcG9ydGZvbGlvL2NvbXBvbmVudHMvTXlIZWFkZXIuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBa0JnQixBQUdzQixBQUtDLEFBTUEsQUFHRixZQUNkLEVBVG1CLEFBTW5CLGlCQUx3QixzQkFDUSxxQkFQQSxTQVFoQywwR0FQc0Isb0JBQ3RCIiwiZmlsZSI6Ii9Vc2Vycy9yZ3J1bmVzdC9EZXZlbG9wZXIvcmVhY3QtcG9ydGZvbGlvL2NvbXBvbmVudHMvTXlIZWFkZXIuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgTGluayBmcm9tIFwibmV4dC9saW5rXCI7XG5cbmNvbnN0IE15SGVhZGVyID0gKCkgPT4gKFxuICA8aGVhZGVyPlxuICAgIDxkaXYgY2xhc3NOYW1lPVwiaGVhZGVyLWxlZnRcIj5cbiAgICAgIDxMaW5rIGhyZWY9XCIvXCI+XG4gICAgICAgIDxhPlJ5YW4gR3J1bmVzdDwvYT5cbiAgICAgIDwvTGluaz5cbiAgICA8L2Rpdj5cbiAgICA8ZGl2IGNsYXNzTmFtZT1cImhlYWRlci1yaWdodFwiPlxuICAgICAgPExpbmsgaHJlZj1cIi9ibG9nXCI+XG4gICAgICAgIDxhPkJsb2c8L2E+XG4gICAgICA8L0xpbms+XG4gICAgICA8TGluayBocmVmPVwiL3Nob3BcIj5cbiAgICAgICAgPGE+U2hvcDwvYT5cbiAgICAgIDwvTGluaz5cbiAgICA8L2Rpdj5cblxuICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgIGhlYWRlciB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICAgICAgcGFkZGluZy1ib3R0b206IDFyZW07XG4gICAgICB9XG4gICAgICAuaGVhZGVyLXJpZ2h0IGEge1xuICAgICAgICBtYXJnaW46IDAgMXJlbTtcbiAgICAgICAgcGFkZGluZzogMCAwLjJyZW07XG4gICAgICAgIHBhZGRpbmctYm90dG9tOiAwLjJyZW07XG4gICAgICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCBibGFjaztcbiAgICAgIH1cbiAgICAgIC5oZWFkZXItcmlnaHQgYTpob3ZlciB7XG4gICAgICAgIGNvbG9yOiAjY2NiYmEyO1xuICAgICAgfVxuICAgICAgLmhlYWRlci1yaWdodCBhOmhvdmVyIHtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuICAgIGB9PC9zdHlsZT5cbiAgPC9oZWFkZXI+XG4pO1xuXG5leHBvcnQgZGVmYXVsdCBNeUhlYWRlcjtcbiJdfQ== */\n/*@ sourceURL=/Users/rgrunest/Developer/react-portfolio/components/MyHeader.js */"));
 
 /* harmony default export */ __webpack_exports__["default"] = (MyHeader);
 
@@ -361,7 +370,7 @@ const Layout = props => {
     __self: undefined
   }), __jsx("div", {
     style: layoutStyle,
-    className: "jsx-1280677389",
+    className: "jsx-1270247444",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
@@ -374,12 +383,35 @@ const Layout = props => {
     },
     __self: undefined
   }), props.children), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "1280677389",
+    id: "1270247444",
     __self: undefined
-  }, "html,body{position:relative;font-family:\"Dosis\",sans-serif;-webkit-letter-spacing:1px;-moz-letter-spacing:1px;-ms-letter-spacing:1px;letter-spacing:1px;margin:0;padding:0;overflow-x:hidden;}a{-webkit-text-decoration:none;text-decoration:none;color:black;}a:hover,a:active,a:focus,a: visited{color:gray;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9yZ3J1bmVzdC9EZXZlbG9wZXIvcmVhY3QtcG9ydGZvbGlvL2NvbXBvbmVudHMvTXlMYXlvdXQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBZXlCLEFBSTZCLEFBUUcsQUFPVixXQUNiLE9BZmtDLCtCQUNiLENBT1AsWUFDZCxnRkFQVyxTQUNDLFVBQ1Esa0JBQ3BCIiwiZmlsZSI6Ii9Vc2Vycy9yZ3J1bmVzdC9EZXZlbG9wZXIvcmVhY3QtcG9ydGZvbGlvL2NvbXBvbmVudHMvTXlMYXlvdXQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgTXlIZWFkZXIgZnJvbSBcIi4vTXlIZWFkZXJcIjtcbmltcG9ydCBNeUhlYWQgZnJvbSBcIi4vTXlIZWFkXCI7XG5cbmNvbnN0IGxheW91dFN0eWxlID0ge1xuICBtYXJnaW46IDIwXG59O1xuXG5jb25zdCBMYXlvdXQgPSBwcm9wcyA9PiB7XG4gIHJldHVybiAoXG4gICAgPD5cbiAgICAgIDxNeUhlYWQgcGFnZT17cHJvcHMucGFnZX0gLz5cbiAgICAgIDxkaXYgc3R5bGU9e2xheW91dFN0eWxlfT5cbiAgICAgICAgPE15SGVhZGVyIC8+XG4gICAgICAgIHtwcm9wcy5jaGlsZHJlbn1cbiAgICAgIDwvZGl2PlxuICAgICAgPHN0eWxlIGpzeCBnbG9iYWw+e2BcbiAgICAgICAgaHRtbCxcbiAgICAgICAgYm9keSB7XG4gICAgICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgICAgIGZvbnQtZmFtaWx5OiBcIkRvc2lzXCIsIHNhbnMtc2VyaWY7XG4gICAgICAgICAgbGV0dGVyLXNwYWNpbmc6IDFweDtcbiAgICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgICBvdmVyZmxvdy14OiBoaWRkZW47XG4gICAgICAgIH1cbiAgICAgICAgYSB7XG4gICAgICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICAgICAgICAgIGNvbG9yOiBibGFjaztcbiAgICAgICAgfVxuICAgICAgICBhOmhvdmVyLFxuICAgICAgICBhOmFjdGl2ZSxcbiAgICAgICAgYTpmb2N1cyxcbiAgICAgICAgYTogdmlzaXRlZCB7XG4gICAgICAgICAgY29sb3I6IGdyYXk7XG4gICAgICAgIH1cbiAgICAgIGB9PC9zdHlsZT5cbiAgICA8Lz5cbiAgKTtcbn07XG5cbmV4cG9ydCBkZWZhdWx0IExheW91dDtcbiJdfQ== */\n/*@ sourceURL=/Users/rgrunest/Developer/react-portfolio/components/MyLayout.js */"));
+  }, "html,body{background:linear-gradient(225deg,#fff,#f0f0f0);position:relative;font-family:\"Dosis\",sans-serif;-webkit-letter-spacing:1px;-moz-letter-spacing:1px;-ms-letter-spacing:1px;letter-spacing:1px;margin:0;padding:0;overflow-x:hidden;color:#292929;}a{-webkit-text-decoration:none;text-decoration:none;color:#292929;}a:hover,a:active,a:focus,a: visited{color:gray;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9yZ3J1bmVzdC9EZXZlbG9wZXIvcmVhY3QtcG9ydGZvbGlvL2NvbXBvbmVudHMvTXlMYXlvdXQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBZXlCLEFBSTZELEFBVTdCLEFBT1YsV0FDYixxQ0FqQm9CLEVBVUosY0FDaEIsRUFWa0MsK0JBQ2IsNkZBQ1YsU0FDQyxVQUNRLGtCQUNKLGNBQ2hCIiwiZmlsZSI6Ii9Vc2Vycy9yZ3J1bmVzdC9EZXZlbG9wZXIvcmVhY3QtcG9ydGZvbGlvL2NvbXBvbmVudHMvTXlMYXlvdXQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgTXlIZWFkZXIgZnJvbSBcIi4vTXlIZWFkZXJcIjtcbmltcG9ydCBNeUhlYWQgZnJvbSBcIi4vTXlIZWFkXCI7XG5cbmNvbnN0IGxheW91dFN0eWxlID0ge1xuICBtYXJnaW46IDIwXG59O1xuXG5jb25zdCBMYXlvdXQgPSBwcm9wcyA9PiB7XG4gIHJldHVybiAoXG4gICAgPD5cbiAgICAgIDxNeUhlYWQgcGFnZT17cHJvcHMucGFnZX0gLz5cbiAgICAgIDxkaXYgc3R5bGU9e2xheW91dFN0eWxlfT5cbiAgICAgICAgPE15SGVhZGVyIC8+XG4gICAgICAgIHtwcm9wcy5jaGlsZHJlbn1cbiAgICAgIDwvZGl2PlxuICAgICAgPHN0eWxlIGpzeCBnbG9iYWw+e2BcbiAgICAgICAgaHRtbCxcbiAgICAgICAgYm9keSB7XG4gICAgICAgICAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KDIyNWRlZywgI2ZmZiwgI2YwZjBmMCk7XG4gICAgICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgICAgIGZvbnQtZmFtaWx5OiBcIkRvc2lzXCIsIHNhbnMtc2VyaWY7XG4gICAgICAgICAgbGV0dGVyLXNwYWNpbmc6IDFweDtcbiAgICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgICBvdmVyZmxvdy14OiBoaWRkZW47XG4gICAgICAgICAgY29sb3I6ICMyOTI5Mjk7XG4gICAgICAgIH1cbiAgICAgICAgYSB7XG4gICAgICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICAgICAgICAgIGNvbG9yOiAjMjkyOTI5O1xuICAgICAgICB9XG4gICAgICAgIGE6aG92ZXIsXG4gICAgICAgIGE6YWN0aXZlLFxuICAgICAgICBhOmZvY3VzLFxuICAgICAgICBhOiB2aXNpdGVkIHtcbiAgICAgICAgICBjb2xvcjogZ3JheTtcbiAgICAgICAgfVxuICAgICAgYH08L3N0eWxlPlxuICAgIDwvPlxuICApO1xufTtcblxuZXhwb3J0IGRlZmF1bHQgTGF5b3V0O1xuIl19 */\n/*@ sourceURL=/Users/rgrunest/Developer/react-portfolio/components/MyLayout.js */"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
+
+/***/ }),
+
+/***/ "./dbconfig.js":
+/*!*********************!*\
+  !*** ./dbconfig.js ***!
+  \*********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const config = {
+  apiKey: "AIzaSyCYBzQ6yAAZFpTIMUAjuei6bl0iolSmbjA",
+  authDomain: "myblog-3536b.firebaseapp.com",
+  databaseURL: "https://myblog-3536b.firebaseio.com",
+  projectId: "myblog-3536b",
+  storageBucket: "myblog-3536b.appspot.com",
+  messagingSenderId: "496062853871",
+  appId: "1:496062853871:web:30a427c740d371018f611a",
+  measurementId: "G-8JPJ4BEEWT"
+};
+/* harmony default export */ __webpack_exports__["default"] = (config);
 
 /***/ }),
 
@@ -2065,13 +2097,22 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_MyLayout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/MyLayout */ "./components/MyLayout.js");
-/* harmony import */ var _components_BlogPost__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/BlogPost */ "./components/BlogPost.js");
-/* harmony import */ var _blogposts_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../blogposts.js */ "./blogposts.js");
+/* harmony import */ var firebase_app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! firebase/app */ "firebase/app");
+/* harmony import */ var firebase_app__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(firebase_app__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var firebase_database__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! firebase/database */ "firebase/database");
+/* harmony import */ var firebase_database__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(firebase_database__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _react_firebase_database__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @react-firebase/database */ "@react-firebase/database");
+/* harmony import */ var _react_firebase_database__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_react_firebase_database__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _dbconfig__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../dbconfig */ "./dbconfig.js");
+/* harmony import */ var _components_MyLayout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/MyLayout */ "./components/MyLayout.js");
+/* harmony import */ var _components_BlogPost__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/BlogPost */ "./components/BlogPost.js");
 var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/pages/blog.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+
+
 
 
 
@@ -2081,62 +2122,72 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 class Blog extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   constructor(props) {
     super(props);
-
-    _defineProperty(this, "buttonClick", event => {
-      event.preventDefault();
-      this.setState({
-        numBlogs: this.state.numBlogs + 1
-      });
-    });
-
     this.state = {
-      numBlogs: _blogposts_js__WEBPACK_IMPORTED_MODULE_3__["default"].length
+      numBlogs: 0,
+      blogData: []
     };
-    this.buttonClick = this.buttonClick.bind(this);
   }
 
   render() {
-    console.log(_blogposts_js__WEBPACK_IMPORTED_MODULE_3__["default"]);
-    return __jsx(_components_MyLayout__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      page: "Blog",
+    return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_react_firebase_database__WEBPACK_IMPORTED_MODULE_3__["FirebaseDatabaseProvider"], _extends({
+      firebase: firebase_app__WEBPACK_IMPORTED_MODULE_1___default.a
+    }, _dbconfig__WEBPACK_IMPORTED_MODULE_4__["default"], {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 23
       },
       __self: this
-    }, __jsx("h1", {
+    }), __jsx(_components_MyLayout__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      page: "Blog",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 24
       },
       __self: this
-    }, "This is the blog page. There are currently ", this.state.numBlogs, " ", "posts."), _blogposts_js__WEBPACK_IMPORTED_MODULE_3__["default"].map((blog, index) => {
-      return __jsx(_components_BlogPost__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    }, __jsx(_react_firebase_database__WEBPACK_IMPORTED_MODULE_3__["FirebaseDatabaseNode"], {
+      path: "BlogPosts/",
+      orderByKey: true,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29
+      },
+      __self: this
+    }, data => {
+      if (data.value) {
+        this.setState({
+          blogData: Object.entries(data.value)
+        });
+        return "";
+      } else {
+        return __jsx("div", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 37
+          },
+          __self: this
+        }, "Could not get data");
+      }
+    }), this.state.blogData.map((blog, index) => {
+      return __jsx(_components_BlogPost__WEBPACK_IMPORTED_MODULE_6__["default"], {
         key: index,
-        title: blog.title,
-        text: blog.text,
-        imgPath: blog.imgPath,
+        title: blog[1].title,
+        text: blog[1].text,
+        imgPath: blog[1].imgPath,
+        date: blog[1].date,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30
+          lineNumber: 43
         },
         __self: this
       });
-    }), __jsx("button", {
-      onClick: this.buttonClick,
+    }), __jsx("style", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 38
-      },
-      __self: this
-    }, "Add A Post"), __jsx("style", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 40
+        lineNumber: 52
       },
       __self: this
     }, `
-    `));
+    `))));
   }
 
 }
@@ -2154,6 +2205,17 @@ class Blog extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 
 module.exports = __webpack_require__(/*! /Users/rgrunest/Developer/react-portfolio/pages/blog.js */"./pages/blog.js");
 
+
+/***/ }),
+
+/***/ "@react-firebase/database":
+/*!*******************************************!*\
+  !*** external "@react-firebase/database" ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@react-firebase/database");
 
 /***/ }),
 
@@ -2209,6 +2271,28 @@ module.exports = require("core-js/library/fn/symbol/iterator");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/weak-map");
+
+/***/ }),
+
+/***/ "firebase/app":
+/*!*******************************!*\
+  !*** external "firebase/app" ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("firebase/app");
+
+/***/ }),
+
+/***/ "firebase/database":
+/*!************************************!*\
+  !*** external "firebase/database" ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("firebase/database");
 
 /***/ }),
 

@@ -26,24 +26,29 @@ class Blog extends Component {
               This is the blog page. There are currently {this.state.numBlogs}{" "}
               posts.
             </h1> */}
-            <FirebaseDatabaseNode path="BlogPosts/" limitToFirst={3} orderByKey>
+            <FirebaseDatabaseNode path="BlogPosts/" orderByKey>
               {data => {
-                this.setState({ blogData: data.value });
-                return "";
+                if (data.value) {
+                  this.setState({
+                    blogData: Object.entries(data.value)
+                  });
+                  return "";
+                } else {
+                  return <div>Could not get data</div>;
+                }
               }}
             </FirebaseDatabaseNode>
-            {this.state.blogData != null
-              ? this.state.blogData.map((blog, index) => {
-                  return (
-                    <BlogPost
-                      key={index}
-                      title={blog.title}
-                      text={blog.text}
-                      imgPath={blog.imgPath}
-                    />
-                  );
-                })
-              : ""}
+            {this.state.blogData.map((blog, index) => {
+              return (
+                <BlogPost
+                  key={index}
+                  title={blog[1].title}
+                  text={blog[1].text}
+                  imgPath={blog[1].imgPath}
+                  date={blog[1].date}
+                />
+              );
+            })}
             <style>{`
     `}</style>
           </Layout>

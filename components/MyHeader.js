@@ -4,7 +4,7 @@ const MyHeader = () => (
   <header>
     <div className="header-left">
       <Link href="/">
-        <a>Ryan</a>
+        <a>Ryan Grunest</a>
       </Link>
     </div>
     <div className="header-right">
@@ -27,6 +27,9 @@ const MyHeader = () => (
         padding: 0 0.2rem;
         padding-bottom: 0.2rem;
         border-bottom: 1px solid black;
+      }
+      .header-right a:hover {
+        color: #ccbba2;
       }
       .header-right a:hover {
         border: none;

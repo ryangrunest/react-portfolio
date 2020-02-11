@@ -16,16 +16,18 @@ const Layout = props => {
       <style jsx global>{`
         html,
         body {
+          background: linear-gradient(225deg, #fff, #f0f0f0);
           position: relative;
           font-family: "Dosis", sans-serif;
           letter-spacing: 1px;
           margin: 0;
           padding: 0;
           overflow-x: hidden;
+          color: #292929;
         }
         a {
           text-decoration: none;
-          color: black;
+          color: #292929;
         }
         a:hover,
         a:active,
