@@ -17,11 +17,10 @@ export default function Index() {
         <style jsx>{`
           h1 {
             text-align: center;
-            padding-top: 40vh;
             transition: 0.3s all;
             transform: rotate(-5deg);
             text-transform: uppercase;
-            color: white;
+            color: #f0f0f0;
             width: 94%;
             animation-name: slidein;
             animation-duration: 2s;
@@ -37,8 +36,7 @@ export default function Index() {
             color: white;
             font-size: 15px;
             font-weight: 700;
-            animation-name: opacity;
-            animation-duration: 4s;
+            animation: opacity 2s ease-out;
           }
           .index {
             position: relative;
@@ -51,29 +49,35 @@ export default function Index() {
             height: 100%;
             background-color: rgba(0, 0, 0, 0.3);
             position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
           }
           a {
-            color: white;
+            color: #f0f0f0;
           }
           a:hover {
-            color: #a5faf3;
+            color: #ccbba2;
           }
           @keyframes slidein {
             from {
               opacity: 0;
-              padding-top: 60vh;
+              transform: translateX(100%) rotate(-5deg);
             }
             to {
               opacity: 1;
-              padding-top: 40vh;
+              transform: translateX(0) rotate(-5deg);
             }
           }
           @keyframes opacity {
             from {
               opacity: 0;
+              transform: translateX(-100%);
             }
             to {
               opacity: 1;
+              transform: translateX(0);
             }
           }
         `}</style>

@@ -1,45 +1,54 @@
 import React, { Component } from "react";
+import firebase from "firebase/app";
+import "firebase/database";
+import {
+  FirebaseDatabaseProvider,
+  FirebaseDatabaseNode
+} from "@react-firebase/database";
+import dbconfig from "../dbconfig";
 import Layout from "../components/MyLayout";
 import BlogPost from "../components/BlogPost";
-import BlogArray from "../blogposts.js";
 
 class Blog extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      numBlogs: BlogArray.length
+      numBlogs: 0,
+      blogData: []
     };
-    this.buttonClick = this.buttonClick.bind(this);
   }
-
-  buttonClick = event => {
-    event.preventDefault();
-    this.setState({ numBlogs: this.state.numBlogs + 1 });
-  };
-
   render() {
-    console.log(BlogArray);
     return (
-      <Layout page="Blog">
-        <h1>
-          This is the blog page. There are currently {this.state.numBlogs}{" "}
-          posts.
-        </h1>
-        {BlogArray.map((blog, index) => {
-          return (
-            <BlogPost
-              key={index}
-              title={blog.title}
-              text={blog.text}
-              imgPath={blog.imgPath}
-            />
-          );
-        })}
-        <button onClick={this.buttonClick}>Add A Post</button>
-
-        <style>{`
+      <>
+        <FirebaseDatabaseProvider firebase={firebase} {...dbconfig}>
+          <Layout page="Blog">
+            {/* <h1>
+              This is the blog page. There are currently {this.state.numBlogs}{" "}
+              posts.
+            </h1> */}
+            <FirebaseDatabaseNode path="BlogPosts/" limitToFirst={3} orderByKey>
+              {data => {
+                this.setState({ blogData: data.value });
+                return "";
+              }}
+            </FirebaseDatabaseNode>
+            {this.state.blogData != null
+              ? this.state.blogData.map((blog, index) => {
+                  return (
+                    <BlogPost
+                      key={index}
+                      title={blog.title}
+                      text={blog.text}
+                      imgPath={blog.imgPath}
+                    />
+                  );
+                })
+              : ""}
+            <style>{`
     `}</style>
-      </Layout>
+          </Layout>
+        </FirebaseDatabaseProvider>
+      </>
     );
   }
 }
