@@ -53,6 +53,7 @@ export default function BlogPost(props) {
         font-size: 1.3rem;
         word-wrap: break-word;
         margin: 0;
+        margin-bottom: 1rem;
       }
   `}</style>
     </div>

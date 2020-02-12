@@ -83,7 +83,7 @@ function BlogPost(props) {
       lineNumber: 19
     },
     __self: this
-  }, "\n      .BlogPost {\n        background: white;\n        border-radius: 5px;\n        box-shadow: 0px 0px 20px rgba(0,0,0,0.1);\n        padding-bottom: 3rem;\n      }\n      .title {\n        margin: 0;\n        padding: 1.5rem;\n        padding-bottom: 0;\n        text-transform: uppercase;\n      }\n      .date {\n        padding: 1.5rem;\n        padding-top: 0.3rem;\n        margin: 0;\n        color: #687079;\n        font-size: 1rem;\n      }\n      .image-container {\n        width: 100%;\n        text-align: center;\n      }\n      img {\n        width: 100%;\n      }\n      \n      .text {\n        padding: 1rem 2rem;\n        padding-bottom: 3rem;\n      }\n      .text p {\n        text-indent: 2rem;\n        font-size: 1.3rem;\n        word-wrap: break-word;\n        margin: 0;\n      }\n  "));
+  }, "\n      .BlogPost {\n        background: white;\n        border-radius: 5px;\n        box-shadow: 0px 0px 20px rgba(0,0,0,0.1);\n        padding-bottom: 3rem;\n      }\n      .title {\n        margin: 0;\n        padding: 1.5rem;\n        padding-bottom: 0;\n        text-transform: uppercase;\n      }\n      .date {\n        padding: 1.5rem;\n        padding-top: 0.3rem;\n        margin: 0;\n        color: #687079;\n        font-size: 1rem;\n      }\n      .image-container {\n        width: 100%;\n        text-align: center;\n      }\n      img {\n        width: 100%;\n      }\n      \n      .text {\n        padding: 1rem 2rem;\n        padding-bottom: 3rem;\n      }\n      .text p {\n        text-indent: 2rem;\n        font-size: 1.3rem;\n        word-wrap: break-word;\n        margin: 0;\n        margin-bottom: 1rem;\n      }\n  "));
 }
 
 /***/ }),
@@ -37536,7 +37536,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!****************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fblog&absolutePagePath=%2FUsers%2Frgrunest%2FDeveloper%2Freact-portfolio%2Fpages%2Fblog.js ***!
   \****************************************************************************************************************************************/
@@ -37559,5 +37559,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=blog.js.map
