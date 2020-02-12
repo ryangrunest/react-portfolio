@@ -76,6 +76,7 @@
 }
 .slide-left-opacity {
   animation: slide-left-opacity 0.4s ease-out;
+  -webkit-animation: slide-left-opacity 0.3s ease-out;
   opacity: 1 !important;
   transform: translate(0, 0) !important;
 }
