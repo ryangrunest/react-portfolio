@@ -77,13 +77,7 @@ function BlogPost(props) {
       lineNumber: 18
     },
     __self: this
-  }), __jsx("style", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }, "\n      .BlogPost {\n        background: white;\n        border-radius: 5px;\n        box-shadow: 0px 0px 20px rgba(0,0,0,0.1);\n        padding-bottom: 3rem;\n      }\n      .title {\n        margin: 0;\n        padding: 1.5rem;\n        padding-bottom: 0;\n        text-transform: uppercase;\n      }\n      .date {\n        padding: 1.5rem;\n        padding-top: 0.3rem;\n        margin: 0;\n        color: #687079;\n        font-size: 1rem;\n      }\n      .image-container {\n        width: 100%;\n        text-align: center;\n      }\n      img {\n        width: 100%;\n      }\n      \n      .text {\n        padding: 1rem 2rem;\n        padding-bottom: 3rem;\n      }\n      .text p {\n        text-indent: 2rem;\n        font-size: 1.3rem;\n        word-wrap: break-word;\n        margin: 0;\n        margin-bottom: 1rem;\n      }\n  "));
+  }));
 }
 
 /***/ }),
@@ -133,6 +127,14 @@ var MyHead = function MyHead(props) {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
+    },
+    __self: this
+  }), __jsx("link", {
+    href: "/index.css",
+    rel: "stylesheet",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
     },
     __self: this
   }));
@@ -37458,7 +37460,14 @@ function (_Component) {
     value: function render() {
       var _this2 = this;
 
-      return __jsx(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, __jsx(_react_firebase_database__WEBPACK_IMPORTED_MODULE_10__["FirebaseDatabaseProvider"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+      return __jsx("div", {
+        className: "blog",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 23
+        },
+        __self: this
+      }, __jsx(_react_firebase_database__WEBPACK_IMPORTED_MODULE_10__["FirebaseDatabaseProvider"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
         firebase: firebase_app__WEBPACK_IMPORTED_MODULE_8___default.a
       }, _dbconfig__WEBPACK_IMPORTED_MODULE_11__["default"], {
         __source: {
@@ -37525,7 +37534,7 @@ function (_Component) {
           lineNumber: 55
         },
         __self: this
-      }, "\n            h1 {\n              padding: 1rem;\n              margin: 0;\n            }\n    "))));
+      }, "\n            \n    "))));
     }
   }]);
 
@@ -37536,7 +37545,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 1:
+/***/ 3:
 /*!****************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fblog&absolutePagePath=%2FUsers%2Frgrunest%2FDeveloper%2Freact-portfolio%2Fpages%2Fblog.js ***!
   \****************************************************************************************************************************************/
@@ -37559,5 +37568,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=blog.js.map

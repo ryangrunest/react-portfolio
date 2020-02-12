@@ -9,6 +9,7 @@ const MyHead = props => {
         href="https://fonts.googleapis.com/css?family=Dosis&display=swap"
         rel="stylesheet"
       ></link>
+      <link href="/index.css" rel="stylesheet"></link>
     </Head>
   );
 };

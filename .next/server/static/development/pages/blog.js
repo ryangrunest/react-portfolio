@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -168,52 +168,7 @@ function BlogPost(props) {
       lineNumber: 18
     },
     __self: this
-  }), __jsx("style", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }, `
-      .BlogPost {
-        background: white;
-        border-radius: 5px;
-        box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
-        padding-bottom: 3rem;
-      }
-      .title {
-        margin: 0;
-        padding: 1.5rem;
-        padding-bottom: 0;
-        text-transform: uppercase;
-      }
-      .date {
-        padding: 1.5rem;
-        padding-top: 0.3rem;
-        margin: 0;
-        color: #687079;
-        font-size: 1rem;
-      }
-      .image-container {
-        width: 100%;
-        text-align: center;
-      }
-      img {
-        width: 100%;
-      }
-      
-      .text {
-        padding: 1rem 2rem;
-        padding-bottom: 3rem;
-      }
-      .text p {
-        text-indent: 2rem;
-        font-size: 1.3rem;
-        word-wrap: break-word;
-        margin: 0;
-        margin-bottom: 1rem;
-      }
-  `));
+  }));
 }
 
 /***/ }),
@@ -263,6 +218,14 @@ const MyHead = props => {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
+    },
+    __self: undefined
+  }), __jsx("link", {
+    href: "/index.css",
+    rel: "stylesheet",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
     },
     __self: undefined
   }));
@@ -2200,7 +2163,14 @@ class Blog extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   }
 
   render() {
-    return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_react_firebase_database__WEBPACK_IMPORTED_MODULE_3__["FirebaseDatabaseProvider"], _extends({
+    return __jsx("div", {
+      className: "blog",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 23
+      },
+      __self: this
+    }, __jsx(_react_firebase_database__WEBPACK_IMPORTED_MODULE_3__["FirebaseDatabaseProvider"], _extends({
       firebase: firebase_app__WEBPACK_IMPORTED_MODULE_1___default.a
     }, _dbconfig__WEBPACK_IMPORTED_MODULE_4__["default"], {
       __source: {
@@ -2267,10 +2237,7 @@ class Blog extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       },
       __self: this
     }, `
-            h1 {
-              padding: 1rem;
-              margin: 0;
-            }
+            
     `))));
   }
 
@@ -2280,7 +2247,7 @@ class Blog extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 
 /***/ }),
 
-/***/ 3:
+/***/ 5:
 /*!*****************************!*\
   !*** multi ./pages/blog.js ***!
   \*****************************/

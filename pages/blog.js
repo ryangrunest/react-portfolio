@@ -20,7 +20,7 @@ class Blog extends Component {
   }
   render() {
     return (
-      <>
+      <div className="blog">
         <FirebaseDatabaseProvider firebase={firebase} {...dbconfig}>
           <Layout page="Blog">
             <h1>
@@ -53,14 +53,11 @@ class Blog extends Component {
               );
             })}
             <style>{`
-            h1 {
-              padding: 1rem;
-              margin: 0;
-            }
+            
     `}</style>
           </Layout>
         </FirebaseDatabaseProvider>
-      </>
+      </div>
     );
   }
 }
