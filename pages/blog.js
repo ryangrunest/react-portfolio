@@ -22,15 +22,17 @@ class Blog extends Component {
       <>
         <FirebaseDatabaseProvider firebase={firebase} {...dbconfig}>
           <Layout page="Blog">
-            {/* <h1>
+            <h1>
               This is the blog page. There are currently {this.state.numBlogs}{" "}
               posts.
-            </h1> */}
+            </h1>
             <FirebaseDatabaseNode path="BlogPosts/" orderByKey>
               {data => {
+                console.log(data);
                 if (data.value) {
                   this.setState({
-                    blogData: Object.entries(data.value)
+                    blogData: Object.entries(data.value),
+                    numBlogs: Object.entries(data.value).length
                   });
                   return "";
                 } else {

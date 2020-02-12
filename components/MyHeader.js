@@ -27,6 +27,7 @@ const MyHeader = () => (
         padding: 0 0.2rem;
         padding-bottom: 0.2rem;
         border-bottom: 1px solid black;
+        transition: 0.3s all;
       }
       .header-right a:hover {
         color: #ccbba2;

@@ -16,61 +16,66 @@ var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/components/BlogPos
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 function BlogPost(props) {
+  var splitText = props.text.split("\n");
+  console.log(splitText);
+  console.log(props);
   return __jsx("div", {
     className: "BlogPost",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 3
+      lineNumber: 6
     },
     __self: this
   }, __jsx("h1", {
     className: "title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
+      lineNumber: 7
     },
     __self: this
   }, props.title), __jsx("div", {
     className: "image-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 8
     },
     __self: this
   }, __jsx("img", {
     src: props.imgPath,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 9
     },
     __self: this
   })), __jsx("h3", {
     className: "date",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 11
     },
     __self: this
   }, props.date), __jsx("div", {
     className: "text",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 12
     },
     __self: this
-  }, __jsx("p", {
+  }, splitText.map(function (line) {
+    return __jsx("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 14
+      },
+      __self: this
+    }, line);
+  })), __jsx("style", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 17
     },
     __self: this
-  }, props.text)), __jsx("style", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }, "\n      .BlogPost {\n        background: white;\n        border-radius: 5px;\n        box-shadow: 0px 0px 20px rgba(0,0,0,0.1);\n      }\n      .title {\n        text-align: center;\n        padding-top: 1rem;\n      }\n      .image-container {\n        width: 100%;\n        text-align: center;\n      }\n      img {\n        width: 100%;\n      }\n      .text {\n        padding: 1rem 2rem;\n      }\n  "));
+  }, "\n      .BlogPost {\n        background: white;\n        border-radius: 5px;\n        box-shadow: 0px 0px 20px rgba(0,0,0,0.1);\n      }\n      .title {\n        text-align: center;\n        padding-top: 1rem;\n      }\n      .image-container {\n        width: 100%;\n        text-align: center;\n      }\n      img {\n        width: 100%;\n      }\n      .date {\n        padding: 0 2rem;\n      }\n      .text {\n        padding: 1rem 2rem;\n      }\n      .text p {\n        text-indent: 2rem;\n        font-size: 1.5rem;\n      }\n  "));
 }
 
 /***/ }),
@@ -152,14 +157,14 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 var MyHeader = function MyHeader() {
   return __jsx("header", {
-    className: "jsx-3337372646",
+    className: "jsx-1971176512",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 4
     },
     __self: this
   }, __jsx("div", {
-    className: "jsx-3337372646" + " " + "header-left",
+    className: "jsx-1971176512" + " " + "header-left",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 5
@@ -173,14 +178,14 @@ var MyHeader = function MyHeader() {
     },
     __self: this
   }, __jsx("a", {
-    className: "jsx-3337372646",
+    className: "jsx-1971176512",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     },
     __self: this
   }, "Ryan Grunest"))), __jsx("div", {
-    className: "jsx-3337372646" + " " + "header-right",
+    className: "jsx-1971176512" + " " + "header-right",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
@@ -194,7 +199,7 @@ var MyHeader = function MyHeader() {
     },
     __self: this
   }, __jsx("a", {
-    className: "jsx-3337372646",
+    className: "jsx-1971176512",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
@@ -208,16 +213,16 @@ var MyHeader = function MyHeader() {
     },
     __self: this
   }, __jsx("a", {
-    className: "jsx-3337372646",
+    className: "jsx-1971176512",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15
     },
     __self: this
   }, "Shop"))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "3337372646",
+    id: "1971176512",
     __self: this
-  }, "header.jsx-3337372646{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;padding-bottom:1rem;}.header-right.jsx-3337372646 a.jsx-3337372646{margin:0 1rem;padding:0 0.2rem;padding-bottom:0.2rem;border-bottom:1px solid black;}.header-right.jsx-3337372646 a.jsx-3337372646:hover{color:#ccbba2;}.header-right.jsx-3337372646 a.jsx-3337372646:hover{border:none;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9yZ3J1bmVzdC9EZXZlbG9wZXIvcmVhY3QtcG9ydGZvbGlvL2NvbXBvbmVudHMvTXlIZWFkZXIuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBa0JnQixBQUdzQixBQUtDLEFBTUEsQUFHRixZQUNkLEVBVG1CLEFBTW5CLGlCQUx3QixzQkFDUSxxQkFQQSxTQVFoQywwR0FQc0Isb0JBQ3RCIiwiZmlsZSI6Ii9Vc2Vycy9yZ3J1bmVzdC9EZXZlbG9wZXIvcmVhY3QtcG9ydGZvbGlvL2NvbXBvbmVudHMvTXlIZWFkZXIuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgTGluayBmcm9tIFwibmV4dC9saW5rXCI7XG5cbmNvbnN0IE15SGVhZGVyID0gKCkgPT4gKFxuICA8aGVhZGVyPlxuICAgIDxkaXYgY2xhc3NOYW1lPVwiaGVhZGVyLWxlZnRcIj5cbiAgICAgIDxMaW5rIGhyZWY9XCIvXCI+XG4gICAgICAgIDxhPlJ5YW4gR3J1bmVzdDwvYT5cbiAgICAgIDwvTGluaz5cbiAgICA8L2Rpdj5cbiAgICA8ZGl2IGNsYXNzTmFtZT1cImhlYWRlci1yaWdodFwiPlxuICAgICAgPExpbmsgaHJlZj1cIi9ibG9nXCI+XG4gICAgICAgIDxhPkJsb2c8L2E+XG4gICAgICA8L0xpbms+XG4gICAgICA8TGluayBocmVmPVwiL3Nob3BcIj5cbiAgICAgICAgPGE+U2hvcDwvYT5cbiAgICAgIDwvTGluaz5cbiAgICA8L2Rpdj5cblxuICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgIGhlYWRlciB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICAgICAgcGFkZGluZy1ib3R0b206IDFyZW07XG4gICAgICB9XG4gICAgICAuaGVhZGVyLXJpZ2h0IGEge1xuICAgICAgICBtYXJnaW46IDAgMXJlbTtcbiAgICAgICAgcGFkZGluZzogMCAwLjJyZW07XG4gICAgICAgIHBhZGRpbmctYm90dG9tOiAwLjJyZW07XG4gICAgICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCBibGFjaztcbiAgICAgIH1cbiAgICAgIC5oZWFkZXItcmlnaHQgYTpob3ZlciB7XG4gICAgICAgIGNvbG9yOiAjY2NiYmEyO1xuICAgICAgfVxuICAgICAgLmhlYWRlci1yaWdodCBhOmhvdmVyIHtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuICAgIGB9PC9zdHlsZT5cbiAgPC9oZWFkZXI+XG4pO1xuXG5leHBvcnQgZGVmYXVsdCBNeUhlYWRlcjtcbiJdfQ== */\n/*@ sourceURL=/Users/rgrunest/Developer/react-portfolio/components/MyHeader.js */"));
+  }, "header.jsx-1971176512{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;padding-bottom:1rem;}.header-right.jsx-1971176512 a.jsx-1971176512{margin:0 1rem;padding:0 0.2rem;padding-bottom:0.2rem;border-bottom:1px solid black;-webkit-transition:0.3s all;transition:0.3s all;}.header-right.jsx-1971176512 a.jsx-1971176512:hover{color:#ccbba2;}.header-right.jsx-1971176512 a.jsx-1971176512:hover{border:none;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9yZ3J1bmVzdC9EZXZlbG9wZXIvcmVhY3QtcG9ydGZvbGlvL2NvbXBvbmVudHMvTXlIZWFkZXIuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBa0JnQixBQUdzQixBQUtDLEFBT0EsQUFHRixZQUNkLEVBVm1CLEFBT25CLGlCQU53QixzQkFDUSxxQkFQQSxTQVFWLGdEQUN0QiwwREFSc0Isb0JBQ3RCIiwiZmlsZSI6Ii9Vc2Vycy9yZ3J1bmVzdC9EZXZlbG9wZXIvcmVhY3QtcG9ydGZvbGlvL2NvbXBvbmVudHMvTXlIZWFkZXIuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgTGluayBmcm9tIFwibmV4dC9saW5rXCI7XG5cbmNvbnN0IE15SGVhZGVyID0gKCkgPT4gKFxuICA8aGVhZGVyPlxuICAgIDxkaXYgY2xhc3NOYW1lPVwiaGVhZGVyLWxlZnRcIj5cbiAgICAgIDxMaW5rIGhyZWY9XCIvXCI+XG4gICAgICAgIDxhPlJ5YW4gR3J1bmVzdDwvYT5cbiAgICAgIDwvTGluaz5cbiAgICA8L2Rpdj5cbiAgICA8ZGl2IGNsYXNzTmFtZT1cImhlYWRlci1yaWdodFwiPlxuICAgICAgPExpbmsgaHJlZj1cIi9ibG9nXCI+XG4gICAgICAgIDxhPkJsb2c8L2E+XG4gICAgICA8L0xpbms+XG4gICAgICA8TGluayBocmVmPVwiL3Nob3BcIj5cbiAgICAgICAgPGE+U2hvcDwvYT5cbiAgICAgIDwvTGluaz5cbiAgICA8L2Rpdj5cblxuICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgIGhlYWRlciB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICAgICAgcGFkZGluZy1ib3R0b206IDFyZW07XG4gICAgICB9XG4gICAgICAuaGVhZGVyLXJpZ2h0IGEge1xuICAgICAgICBtYXJnaW46IDAgMXJlbTtcbiAgICAgICAgcGFkZGluZzogMCAwLjJyZW07XG4gICAgICAgIHBhZGRpbmctYm90dG9tOiAwLjJyZW07XG4gICAgICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCBibGFjaztcbiAgICAgICAgdHJhbnNpdGlvbjogMC4zcyBhbGw7XG4gICAgICB9XG4gICAgICAuaGVhZGVyLXJpZ2h0IGE6aG92ZXIge1xuICAgICAgICBjb2xvcjogI2NjYmJhMjtcbiAgICAgIH1cbiAgICAgIC5oZWFkZXItcmlnaHQgYTpob3ZlciB7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cbiAgICBgfTwvc3R5bGU+XG4gIDwvaGVhZGVyPlxuKTtcblxuZXhwb3J0IGRlZmF1bHQgTXlIZWFkZXI7XG4iXX0= */\n/*@ sourceURL=/Users/rgrunest/Developer/react-portfolio/components/MyHeader.js */"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (MyHeader);
@@ -37426,7 +37431,13 @@ function (_Component) {
           lineNumber: 24
         },
         __self: this
-      }, __jsx(_react_firebase_database__WEBPACK_IMPORTED_MODULE_10__["FirebaseDatabaseNode"], {
+      }, __jsx("h1", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25
+        },
+        __self: this
+      }, "This is the blog page. There are currently ", this.state.numBlogs, " ", "posts."), __jsx(_react_firebase_database__WEBPACK_IMPORTED_MODULE_10__["FirebaseDatabaseNode"], {
         path: "BlogPosts/",
         orderByKey: true,
         __source: {
@@ -37435,9 +37446,12 @@ function (_Component) {
         },
         __self: this
       }, function (data) {
+        console.log(data);
+
         if (data.value) {
           _this2.setState({
-            blogData: _babel_runtime_corejs2_core_js_object_entries__WEBPACK_IMPORTED_MODULE_1___default()(data.value)
+            blogData: _babel_runtime_corejs2_core_js_object_entries__WEBPACK_IMPORTED_MODULE_1___default()(data.value),
+            numBlogs: _babel_runtime_corejs2_core_js_object_entries__WEBPACK_IMPORTED_MODULE_1___default()(data.value).length
           });
 
           return "";
@@ -37445,7 +37459,7 @@ function (_Component) {
           return __jsx("div", {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 37
+              lineNumber: 39
             },
             __self: this
           }, "Could not get data");
@@ -37459,14 +37473,14 @@ function (_Component) {
           date: blog[1].date,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 43
+            lineNumber: 45
           },
           __self: this
         });
       }), __jsx("style", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52
+          lineNumber: 54
         },
         __self: this
       }, "\n    "))));

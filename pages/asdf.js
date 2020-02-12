@@ -70,6 +70,7 @@ class ASDF extends Component {
                         type="text"
                         name="title"
                         onChange={this.handleChange}
+                        required
                       />
                     </label>
                   </div>
@@ -79,6 +80,7 @@ class ASDF extends Component {
                       type="text"
                       name="imgPath"
                       onChange={this.handleChange}
+                      required
                     />
                   </div>
                   <div>
@@ -88,6 +90,7 @@ class ASDF extends Component {
                         type="textarea"
                         name="text"
                         onChange={this.handleChange}
+                        required
                       />
                     </label>
                   </div>

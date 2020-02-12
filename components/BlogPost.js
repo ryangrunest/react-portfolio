@@ -1,4 +1,7 @@
 export default function BlogPost(props) {
+  let splitText = props.text.split("\n");
+  console.log(splitText);
+  console.log(props);
   return (
     <div className="BlogPost">
       <h1 className="title">{props.title}</h1>
@@ -7,10 +10,9 @@ export default function BlogPost(props) {
       </div>
       <h3 className="date">{props.date}</h3>
       <div className="text">
-        {/* {props.text.map(line => (
+        {splitText.map(line => (
           <p>{line}</p>
-        ))} */}
-        <p>{props.text}</p>
+        ))}
       </div>
       <style>{`
       .BlogPost {
@@ -29,8 +31,15 @@ export default function BlogPost(props) {
       img {
         width: 100%;
       }
+      .date {
+        padding: 0 2rem;
+      }
       .text {
         padding: 1rem 2rem;
+      }
+      .text p {
+        text-indent: 2rem;
+        font-size: 1.5rem;
       }
   `}</style>
     </div>
