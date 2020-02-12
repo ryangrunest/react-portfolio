@@ -12,9 +12,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return BlogPost; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _WordBreak__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./WordBreak */ "./components/WordBreak.js");
 var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/components/BlogPost.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 function BlogPost(props) {
   var splitText = props.text.split("\n");
   console.log(splitText);
@@ -23,59 +25,65 @@ function BlogPost(props) {
     className: "BlogPost",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, __jsx("h1", {
-    className: "title",
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 7
     },
     __self: this
-  }, props.title), __jsx("div", {
-    className: "image-container",
+  }, __jsx("h2", {
+    className: "title",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
+    },
+    __self: this
+  }, props.title), __jsx("h3", {
+    className: "date",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, props.date), __jsx("div", {
+    className: "image-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
     },
     __self: this
   }, __jsx("img", {
     src: props.imgPath,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  })), __jsx("h3", {
-    className: "date",
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 11
     },
     __self: this
-  }, props.date), __jsx("div", {
+  })), __jsx("div", {
     className: "text",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 13
     },
     __self: this
   }, splitText.map(function (line) {
     return __jsx("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 14
+        lineNumber: 15
       },
       __self: this
     }, line);
-  })), __jsx("style", {
+  })), __jsx(_WordBreak__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 18
     },
     __self: this
-  }, "\n      .BlogPost {\n        background: white;\n        border-radius: 5px;\n        box-shadow: 0px 0px 20px rgba(0,0,0,0.1);\n      }\n      .title {\n        text-align: center;\n        padding-top: 1rem;\n      }\n      .image-container {\n        width: 100%;\n        text-align: center;\n      }\n      img {\n        width: 100%;\n      }\n      .date {\n        padding: 0 2rem;\n      }\n      .text {\n        padding: 1rem 2rem;\n      }\n      .text p {\n        text-indent: 2rem;\n        font-size: 1.5rem;\n      }\n  "));
+  }), __jsx("style", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, "\n      .BlogPost {\n        background: white;\n        border-radius: 5px;\n        box-shadow: 0px 0px 20px rgba(0,0,0,0.1);\n        padding-bottom: 3rem;\n      }\n      .title {\n        margin: 0;\n        padding: 1.5rem;\n        padding-bottom: 0;\n        text-transform: uppercase;\n      }\n      .date {\n        padding: 1.5rem;\n        padding-top: 0.3rem;\n        margin: 0;\n        color: #687079;\n        font-size: 1rem;\n      }\n      .image-container {\n        width: 100%;\n        text-align: center;\n      }\n      img {\n        width: 100%;\n      }\n      \n      .text {\n        padding: 1rem 2rem;\n        padding-bottom: 3rem;\n      }\n      .text p {\n        text-indent: 2rem;\n        font-size: 1.3rem;\n        word-wrap: break-word;\n        margin: 0;\n      }\n  "));
 }
 
 /***/ }),
@@ -279,6 +287,42 @@ var Layout = function Layout(props) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
+
+/***/ }),
+
+/***/ "./components/WordBreak.js":
+/*!*********************************!*\
+  !*** ./components/WordBreak.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/components/WordBreak.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+var WordBreak = function WordBreak(props) {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
+    className: "wordbreak",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), __jsx("style", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }, "\n    .wordbreak {\n      width: 60%;\n      height: 1px;\n      background-color: #252b3338;\n      margin: 1rem auto;\n    }\n  "));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (WordBreak);
 
 /***/ }),
 
@@ -37372,6 +37416,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _dbconfig__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../dbconfig */ "./dbconfig.js");
 /* harmony import */ var _components_MyLayout__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/MyLayout */ "./components/MyLayout.js");
 /* harmony import */ var _components_BlogPost__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/BlogPost */ "./components/BlogPost.js");
+/* harmony import */ var _components_WordBreak__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../components/WordBreak */ "./components/WordBreak.js");
 
 
 
@@ -37381,6 +37426,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/pages/blog.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement;
+
 
 
 
@@ -37417,28 +37463,28 @@ function (_Component) {
       }, _dbconfig__WEBPACK_IMPORTED_MODULE_11__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 24
         },
         __self: this
       }), __jsx(_components_MyLayout__WEBPACK_IMPORTED_MODULE_12__["default"], {
         page: "Blog",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 25
         },
         __self: this
       }, __jsx("h1", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25
+          lineNumber: 26
         },
         __self: this
-      }, "This is the blog page. There are currently ", this.state.numBlogs, " ", "posts."), __jsx(_react_firebase_database__WEBPACK_IMPORTED_MODULE_10__["FirebaseDatabaseNode"], {
+      }, "This is the blog page. There are currently ", this.state.numBlogs, " ", "posts..."), __jsx(_react_firebase_database__WEBPACK_IMPORTED_MODULE_10__["FirebaseDatabaseNode"], {
         path: "BlogPosts/",
         orderByKey: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29
+          lineNumber: 30
         },
         __self: this
       }, function (data) {
@@ -37455,7 +37501,7 @@ function (_Component) {
           return __jsx("div", {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 39
+              lineNumber: 40
             },
             __self: this
           }, "Could not get data");
@@ -37469,17 +37515,17 @@ function (_Component) {
           date: blog[1].date,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 45
+            lineNumber: 46
           },
           __self: this
         });
       }), __jsx("style", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 54
+          lineNumber: 55
         },
         __self: this
-      }, "\n    "))));
+      }, "\n            h1 {\n              padding: 1rem;\n              margin: 0;\n            }\n    "))));
     }
   }]);
 
@@ -37490,7 +37536,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!****************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fblog&absolutePagePath=%2FUsers%2Frgrunest%2FDeveloper%2Freact-portfolio%2Fpages%2Fblog.js ***!
   \****************************************************************************************************************************************/
@@ -37513,5 +37559,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=blog.js.map

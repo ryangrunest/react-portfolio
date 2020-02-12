@@ -8,6 +8,7 @@ import {
 import dbconfig from "../dbconfig";
 import Layout from "../components/MyLayout";
 import BlogPost from "../components/BlogPost";
+import WordBreak from "../components/WordBreak";
 
 class Blog extends Component {
   constructor(props) {
@@ -24,7 +25,7 @@ class Blog extends Component {
           <Layout page="Blog">
             <h1>
               This is the blog page. There are currently {this.state.numBlogs}{" "}
-              posts.
+              posts...
             </h1>
             <FirebaseDatabaseNode path="BlogPosts/" orderByKey>
               {data => {
@@ -52,6 +53,10 @@ class Blog extends Component {
               );
             })}
             <style>{`
+            h1 {
+              padding: 1rem;
+              margin: 0;
+            }
     `}</style>
           </Layout>
         </FirebaseDatabaseProvider>
