@@ -21,6 +21,10 @@ const MyHeader = () => (
         display: flex;
         justify-content: space-between;
         padding-bottom: 1rem;
+        padding: 20px;
+      }
+      .header-left a {
+        font-size: 1.2rem;
       }
       .header-right a {
         margin: 0 1rem;
@@ -30,7 +34,7 @@ const MyHeader = () => (
         transition: 0.3s all;
       }
       .header-right a:hover {
-        color: #ccbba2;
+        color: rgb(120, 169, 152);
       }
       .header-right a:hover {
         border: none;

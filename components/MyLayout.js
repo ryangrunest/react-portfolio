@@ -1,33 +1,50 @@
 import MyHeader from "./MyHeader";
 import MyHead from "./MyHead";
 
-const layoutStyle = {
-  margin: 20
-};
-
 const Layout = props => {
   return (
     <>
       <MyHead page={props.page} />
-      <div style={layoutStyle}>
+      <div>
         <MyHeader />
         {props.children}
       </div>
       <style jsx global>{`
         html,
         body {
-          background: linear-gradient(225deg, #fff, #f0f0f0);
+          background: #f3f5f6;
           position: relative;
           font-family: "Dosis", sans-serif;
           letter-spacing: 1px;
           margin: 0;
           padding: 0;
           overflow-x: hidden;
-          color: #292929;
+          color: #252b33;
+        }
+        body {
+          padding: 20px;
+        }
+        @media only screen and (max-width: 600px) {
+          body {
+            padding: 0;
+          }
+        }
+        p::selection,
+        h1::selection,
+        h2::selection,
+        h3::selection,
+        li::selection {
+          color: #f3f5f6;
+          background-color: rgb(120, 169, 152);
         }
         a {
           text-decoration: none;
-          color: #292929;
+          color: #252b33;
+          transition: 0.3s all;
+        }
+        p strong {
+          font-weight: bold;
+          font-size: 1.1rem;
         }
         a:hover,
         a:active,

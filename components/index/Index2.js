@@ -6,18 +6,18 @@ const Index2 = props => {
       <Controller>
         <h1>Who Am I?</h1>
         <Scene
-          duration={500}
+          duration={700}
           classToggle="slide-left-opacity"
           triggerElement="#trigger"
-          indicators={true}
+          indicators={false}
         >
           {(progress, event) => (
             <div className="container">
               <div className="left">
-                <p>
-                  I'm a software developer based in portland, oregon with
-                  experience in...
-                </p>
+                <h2>
+                  I'm a software developer from Portland, currently residing in
+                  San Diego with experience in...
+                </h2>
                 <ul>
                   <li>Javascript</li>
                   <li>Ruby</li>
@@ -28,6 +28,14 @@ const Index2 = props => {
                   <li>Rails</li>
                   <li>Django</li>
                 </ul>
+                <p>
+                  ... and more. I think{" "}
+                  <strong>javascript is a great language</strong>, and I'm
+                  constantly wow'd by the amount of technology people have
+                  created and built using it. That being said, I don't believe
+                  that everything needs / should be created using javascript.
+                  Always pick the right tool for the job!
+                </p>
               </div>
             </div>
           )}
@@ -37,35 +45,68 @@ const Index2 = props => {
           duration={500}
           classToggle="slide-right-opacity"
           triggerElement="#trigger-2"
-          indicators={true}
+          indicators={false}
         >
           {(progress, event) => (
             <div className="container">
               <div className="right">
-                <p>I'm passionate about...</p>
+                <h2>I'm passionate about...</h2>
                 <ul>
-                  <li>Javascript</li>
-                  <li>Ruby</li>
-                  <li>Python</li>
+                  <li>Coding</li>
+                  <li>eCommerce</li>
+                  <li>Entrepeneurship</li>
                 </ul>
                 <ul>
-                  <li>React</li>
-                  <li>Rails</li>
-                  <li>Django</li>
+                  <li>Music</li>
+                  <li>Art</li>
+                  <li>Learning</li>
                 </ul>
+                <p>
+                  I believe that it's important to have a{" "}
+                  <strong>well balanced lifestyle</strong>. Working as a
+                  software developer means that I spend a lot of time staring at
+                  a computer, thinking quietly to myself.
+                </p>
+                <p>
+                  Because of this, I actively try to seek out opportunity to
+                  connect with other people. Music, Art, and continual learning
+                  are some of the outlets I've found to help with that.
+                </p>
               </div>
             </div>
           )}
         </Scene>
       </Controller>
       <style jsx>{`
+        h1 {
+          margin: 0;
+          padding-left: 20px;
+        }
         .index-2 {
-          height: 50rem;
-          margin-top: 3rem;
+          min-height: 70rem;
+          margin-top: 2rem;
+          background: #f3f5f6;
         }
         .container {
+          color: #252b33;
+          margin-top: 2rem;
           transition: 0.7s all;
           opacity: 0;
+          border-radius: 5px;
+          background: #f3f5f6;
+          padding: 1rem;
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        }
+        @media only screen and (max-width: 600px) {
+          .container {
+            margin-top: 0;
+            box-shadow: none;
+            background: #f5f5f5;
+          }
+        }
+        .container.dark {
+          color: #f3f5f6;
+          background-color: #252b33;
         }
         ul {
           display: inline-block;

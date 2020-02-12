@@ -23,7 +23,8 @@ export default function Index() {
           transition: 0.3s all;
           transform: rotate(-5deg);
           text-transform: uppercase;
-          color: #f0f0f0;
+          padding: 0 0.5rem;
+          color: #f3f5f6;
           animation-name: slidein;
           animation-duration: 2s;
         }
@@ -35,10 +36,10 @@ export default function Index() {
         }
         .overlay p {
           text-align: center;
-          color: white;
+          color: #f3f5f6;
           font-size: 15px;
           font-weight: 700;
-          animation: opacity 3s ease-in;
+          animation: opacity 2s ease-in;
         }
         .index {
           position: relative;
@@ -57,10 +58,11 @@ export default function Index() {
           flex-direction: column;
         }
         a {
-          color: #f0f0f0;
+          color: #f3f5f6;
+          transition: 0.3s all;
         }
         a:hover {
-          color: #ccbba2;
+          color: rgb(120, 169, 152);
         }
         .padding-top {
           padding-top: 10rem;
