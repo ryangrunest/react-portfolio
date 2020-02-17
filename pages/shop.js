@@ -1,6 +1,6 @@
 import { Component } from "react";
 import Layout from "../components/MyLayout";
-import fetch from "isomorphic-unfetch";
+import Product from "../components/shop/Product";
 import queries from "../queries/shop.js";
 
 class Shop extends Component {
@@ -8,22 +8,50 @@ class Shop extends Component {
     super(props);
     this.state = {
       shopName: "",
-      products: []
+      products: [],
+      isLoaded: false
     };
   }
 
   componentDidMount() {
-    queries.getShopName.then(data => this.setState({ shopName: data }));
+    queries.getShopName.then(data =>
+      this.setState({ shopName: data, isLoaded: true })
+    );
+    queries.getProductsWithImages(10).then(value => {
+      this.setState({ products: value, isLoaded: true });
+    });
   }
 
   render() {
     // console.log(this.state);
-    return (
-      <Layout page="Shop">
-        <h2>{this.state.shopName}</h2>
-        <p>This will eventually connect to a shopify store.</p>
-      </Layout>
-    );
+    const { isLoaded, shopName, products } = this.state;
+    console.log(products);
+    if (!isLoaded) {
+      return <div>Loading...</div>;
+    } else {
+      return (
+        <Layout page="Shop">
+          <div className="shop">
+            <h2>{shopName}</h2>
+            <div className="products-container">
+              {products.map((product, index) => {
+                return (
+                  <Product
+                    key={index}
+                    id={`product-${index}`}
+                    title={product.node.title}
+                    imgPath={
+                      product.node.variants.edges[0].node.image.transformedSrc
+                    }
+                    price={product.node.priceRange.maxVariantPrice.amount}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        </Layout>
+      );
+    }
   }
 }
 

@@ -1,0 +1,16 @@
+.shop {
+  .products-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .product {
+      padding: 1rem;
+      h4 {
+        font-size: 1rem;
+      }
+      img {
+        max-width: 20rem;
+      }
+    }
+  }
+}

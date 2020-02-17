@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -298,6 +298,54 @@ const Layout = props => {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
+
+/***/ }),
+
+/***/ "./components/shop/Product.js":
+/*!************************************!*\
+  !*** ./components/shop/Product.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Product; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/components/shop/Product.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+function Product(props) {
+  return __jsx("div", {
+    id: props.id,
+    className: "product",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 3
+    },
+    __self: this
+  }, __jsx("h4", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, props.title), __jsx("img", {
+    src: props.imgPath,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, `Price: $${props.price}`, "0"));
+}
 
 /***/ }),
 
@@ -1984,8 +2032,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_MyLayout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/MyLayout */ "./components/MyLayout.js");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_shop_Product__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/shop/Product */ "./components/shop/Product.js");
 /* harmony import */ var _queries_shop_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../queries/shop.js */ "./queries/shop.js");
 var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/pages/shop.js";
 
@@ -2000,38 +2047,84 @@ class Shop extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
     super(props);
     this.state = {
       shopName: "",
-      products: []
+      products: [],
+      isLoaded: false
     };
   }
 
   componentDidMount() {
     _queries_shop_js__WEBPACK_IMPORTED_MODULE_3__["default"].getShopName.then(data => this.setState({
-      shopName: data
+      shopName: data,
+      isLoaded: true
     }));
+    _queries_shop_js__WEBPACK_IMPORTED_MODULE_3__["default"].getProductsWithImages(10).then(value => {
+      this.setState({
+        products: value,
+        isLoaded: true
+      });
+    });
   }
 
   render() {
     // console.log(this.state);
-    return __jsx(_components_MyLayout__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      page: "Shop",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 22
-      },
-      __self: this
-    }, __jsx("h2", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 23
-      },
-      __self: this
-    }, this.state.shopName), __jsx("p", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 24
-      },
-      __self: this
-    }, "This will eventually connect to a shopify store."));
+    const {
+      isLoaded,
+      shopName,
+      products
+    } = this.state;
+    console.log(products);
+
+    if (!isLoaded) {
+      return __jsx("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
+      }, "Loading...");
+    } else {
+      return __jsx(_components_MyLayout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        page: "Shop",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33
+        },
+        __self: this
+      }, __jsx("div", {
+        className: "shop",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34
+        },
+        __self: this
+      }, __jsx("h2", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 35
+        },
+        __self: this
+      }, shopName), __jsx("div", {
+        className: "products-container",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 36
+        },
+        __self: this
+      }, products.map((product, index) => {
+        return __jsx(_components_shop_Product__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          key: index,
+          id: `product-${index}`,
+          title: product.node.title,
+          imgPath: product.node.variants.edges[0].node.image.transformedSrc,
+          price: product.node.priceRange.maxVariantPrice.amount,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 39
+          },
+          __self: this
+        });
+      }))));
+    }
   }
 
 }
@@ -2059,7 +2152,8 @@ const headers = {
 };
 let queries = {
   getProductsWithImages: numberOfProducts => {
-    let query = `query	{
+    return new Promise((resolve, reject) => {
+      let query = `query	{
       products(first:${numberOfProducts})	{
         edges {
           node {
@@ -2072,6 +2166,15 @@ let queries = {
                 }
               }
             }
+            variants(first:10) {
+              edges {
+                node {
+                  image {
+                    transformedSrc
+                  }
+                }
+              }
+            }
             priceRange {
               maxVariantPrice {
                 amount
@@ -2081,12 +2184,13 @@ let queries = {
         }
       }
     }`;
-    isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_0___default()(url, {
-      method: "post",
-      headers: headers,
-      body: query
-    }).then(r => r.json()).then(data => {
-      return console.log(data);
+      isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_0___default()(url, {
+        method: "post",
+        headers: headers,
+        body: query
+      }).then(r => r.json()).then(data => {
+        resolve(data.data.products.edges);
+      });
     });
   },
   getShopName: new Promise((resolve, reject) => {
@@ -2111,7 +2215,7 @@ let queries = {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!*****************************!*\
   !*** multi ./pages/shop.js ***!
   \*****************************/

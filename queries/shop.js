@@ -8,7 +8,8 @@ const headers = {
 
 let queries = {
   getProductsWithImages: numberOfProducts => {
-    let query = `query	{
+    return new Promise((resolve, reject) => {
+      let query = `query	{
       products(first:${numberOfProducts})	{
         edges {
           node {
@@ -21,6 +22,15 @@ let queries = {
                 }
               }
             }
+            variants(first:10) {
+              edges {
+                node {
+                  image {
+                    transformedSrc
+                  }
+                }
+              }
+            }
             priceRange {
               maxVariantPrice {
                 amount
@@ -30,15 +40,16 @@ let queries = {
         }
       }
     }`;
-    fetch(url, {
-      method: "post",
-      headers: headers,
-      body: query
-    })
-      .then(r => r.json())
-      .then(data => {
-        return console.log(data);
-      });
+      fetch(url, {
+        method: "post",
+        headers: headers,
+        body: query
+      })
+        .then(r => r.json())
+        .then(data => {
+          resolve(data.data.products.edges);
+        });
+    });
   },
   getShopName: new Promise((resolve, reject) => {
     let value = "cheeseburger";
