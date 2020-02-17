@@ -18,7 +18,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var graphql_js_client__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! graphql-js-client */ "./node_modules/graphql-js-client/index.es.js");
 /* harmony import */ var _components_MyLayout__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/MyLayout */ "./components/MyLayout.js");
-/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../types */ "./types.js");
+/* harmony import */ var _types_Types__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../types/Types */ "./types/Types.js");
+/* harmony import */ var _types_Types__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_types_Types__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/next/dist/build/polyfills/fetch/index.js");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_9__);
 
 
 
@@ -31,14 +34,16 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
 
 
 
-var client = new graphql_js_client__WEBPACK_IMPORTED_MODULE_6__["default"](_types__WEBPACK_IMPORTED_MODULE_8__["default"], {
-  url: "https://another-test-store-97213.myshopify.com/api/graphql",
-  fetcherOptions: {
-    headers: {
-      "X-Shopify-Storefront-Access-Token": "5db76a7bcd70717eade01e6a64392829"
-    }
-  }
-});
+ // const client = new Client(typeBundle, {
+//   url: "https://another-test-store-97213.myshopify.com/api/graphql",
+//   fetcherOptions: {
+//     headers: {
+//       "X-Shopify-Storefront-Access-Token": "5db76a7bcd70717eade01e6a64392829"
+//     }
+//   }
+// });
+
+var query1 = "query\t{\n  products(first:1)\t{\n      edges\t{\n          node\t{\n              id\n              handle\n              variants(first:1)\t{\n                  edges\t{\n                      node\t{\n                          id\n                          displayName\n                      }\n                  }\n              }\n          }\n      }\n  }\n}";
 
 var Shop =
 /*#__PURE__*/
@@ -61,34 +66,42 @@ function (_Component) {
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Shop, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      var query = client.query(function (root) {
-        root.add("products", {
-          args: {
-            first: 10
-          }
-        }, function (product) {
-          product.add("title");
-        }); // root.add("shop", shop => {
-        //   shop.add("name");
-        //   shop.addConnection("products", { args: { first: 10 } }, product => {
-        //     product.add("title");
-        //     product.add("description");
-        //     product.addConnection("images", { args: { first: 1 } }, image => {
-        //       image.add("id");
-        //     });
-        //   });
-        // });
-      });
-      client.send(query).then(function (_ref) {
-        var model = _ref.model,
-            data = _ref.data;
-        console.log(data); // this.setState({
-        //   shopName: data.shop.name,
-        //   products: data.shop.products.edges
-        // });
-        // console.log(model); // The serialized model with rich features
-        // console.log(data); // The raw data returned from the API endpoint
-        // console.log(name);
+      // let query = client.query(root => {
+      //   root.add("products", { args: { first: 10 } }, product => {
+      //     product.add("title");
+      //   });
+      //   // root.add("shop", shop => {
+      //   //   shop.add("name");
+      //   //   shop.addConnection("products", { args: { first: 10 } }, product => {
+      //   //     product.add("title");
+      //   //     product.add("description");
+      //   //     product.addConnection("images", { args: { first: 1 } }, image => {
+      //   //       image.add("id");
+      //   //     });
+      //   //   });
+      //   // });
+      // });
+      // client.send(query).then(({ model, data }) => {
+      //   console.log(data);
+      //   // this.setState({
+      //   //   shopName: data.shop.name,
+      //   //   products: data.shop.products.edges
+      //   // });
+      //   // console.log(model); // The serialized model with rich features
+      //   // console.log(data); // The raw data returned from the API endpoint
+      //   // console.log(name);
+      // });
+      isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_9___default()("https://another-test-store-97213.myshopify.com/api/graphql", {
+        method: "post",
+        headers: {
+          "Content-Type": "application/graphql",
+          "X-Shopify-Storefront-Access-Token": "5db76a7bcd70717eade01e6a64392829"
+        },
+        body: query1
+      }).then(function (r) {
+        r.json();
+      }).then(function (data) {
+        console.log(data);
       });
     }
   }, {
@@ -99,19 +112,19 @@ function (_Component) {
         page: "Shop",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 89
         },
         __self: this
       }, __jsx("h2", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
+          lineNumber: 90
         },
         __self: this
       }, this.state.shopName), __jsx("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 91
         },
         __self: this
       }, "This will eventually connect to a shopify store."));
@@ -126,4 +139,4 @@ function (_Component) {
 /***/ })
 
 })
-//# sourceMappingURL=shop.js.01a6c79ff4fbb9191c60.hot-update.js.map
+//# sourceMappingURL=shop.js.7ac45e08e7a9dedc1787.hot-update.js.map
