@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1983,13 +1983,10 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var graphql_js_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! graphql-js-client */ "graphql-js-client");
-/* harmony import */ var graphql_js_client__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(graphql_js_client__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_MyLayout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/MyLayout */ "./components/MyLayout.js");
-/* harmony import */ var _types_Types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../types/Types */ "./types/Types.js");
-/* harmony import */ var _types_Types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_types_Types__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _components_MyLayout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/MyLayout */ "./components/MyLayout.js");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _queries_shop_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../queries/shop.js */ "./queries/shop.js");
 var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/pages/shop.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -1997,32 +1994,6 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
- // const client = new Client(typeBundle, {
-//   url: "https://another-test-store-97213.myshopify.com/api/graphql",
-//   fetcherOptions: {
-//     headers: {
-//       "X-Shopify-Storefront-Access-Token": "5db76a7bcd70717eade01e6a64392829"
-//     }
-//   }
-// });
-
-let query1 = `query	{
-  products(first:1)	{
-      edges	{
-          node	{
-              id
-              handle
-              variants(first:1)	{
-                  edges	{
-                      node	{
-                          id
-                      }
-                  }
-              }
-          }
-      }
-  }
-}`;
 
 class Shop extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   constructor(props) {
@@ -2034,60 +2005,30 @@ class Shop extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   }
 
   componentDidMount() {
-    // let query = client.query(root => {
-    //   root.add("products", { args: { first: 10 } }, product => {
-    //     product.add("title");
-    //   });
-    //   // root.add("shop", shop => {
-    //   //   shop.add("name");
-    //   //   shop.addConnection("products", { args: { first: 10 } }, product => {
-    //   //     product.add("title");
-    //   //     product.add("description");
-    //   //     product.addConnection("images", { args: { first: 1 } }, image => {
-    //   //       image.add("id");
-    //   //     });
-    //   //   });
-    //   // });
-    // });
-    // client.send(query).then(({ model, data }) => {
-    //   console.log(data);
-    //   // this.setState({
-    //   //   shopName: data.shop.name,
-    //   //   products: data.shop.products.edges
-    //   // });
-    //   // console.log(model); // The serialized model with rich features
-    //   // console.log(data); // The raw data returned from the API endpoint
-    //   // console.log(name);
-    // });
-    isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default()("https://another-test-store-97213.myshopify.com/api/graphql", {
-      method: "post",
-      headers: {
-        "Content-Type": "application/graphql",
-        "X-Shopify-Storefront-Access-Token": "5db76a7bcd70717eade01e6a64392829"
-      },
-      body: query1
-    }).then(r => r.json()).then(data => console.log(data));
+    _queries_shop_js__WEBPACK_IMPORTED_MODULE_3__["default"].getShopName.then(data => this.setState({
+      shopName: data
+    }));
   }
 
   render() {
-    console.log(this.state);
-    return __jsx(_components_MyLayout__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    // console.log(this.state);
+    return __jsx(_components_MyLayout__WEBPACK_IMPORTED_MODULE_1__["default"], {
       page: "Shop",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 84
+        lineNumber: 22
       },
       __self: this
     }, __jsx("h2", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 85
+        lineNumber: 23
       },
       __self: this
     }, this.state.shopName), __jsx("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 86
+        lineNumber: 24
       },
       __self: this
     }, "This will eventually connect to a shopify store."));
@@ -2099,18 +2040,78 @@ class Shop extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 
 /***/ }),
 
-/***/ "./types/Types.js":
-/*!************************!*\
-  !*** ./types/Types.js ***!
-  \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ "./queries/shop.js":
+/*!*************************!*\
+  !*** ./queries/shop.js ***!
+  \*************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_0__);
 
+const url = "https://another-test-store-97213.myshopify.com/api/graphql";
+const headers = {
+  "Content-Type": "application/graphql",
+  "X-Shopify-Storefront-Access-Token": "5db76a7bcd70717eade01e6a64392829"
+};
+let queries = {
+  getProductsWithImages: numberOfProducts => {
+    let query = `query	{
+      products(first:${numberOfProducts})	{
+        edges {
+          node {
+            id
+            title
+            images(first: 1) {
+              edges {
+                node {
+                  id
+                }
+              }
+            }
+            priceRange {
+              maxVariantPrice {
+                amount
+              }
+            }
+          }
+        }
+      }
+    }`;
+    isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_0___default()(url, {
+      method: "post",
+      headers: headers,
+      body: query
+    }).then(r => r.json()).then(data => {
+      return console.log(data);
+    });
+  },
+  getShopName: new Promise((resolve, reject) => {
+    let value = "cheeseburger";
+    let query = `query	{
+      shop {
+        name
+      }
+    }
+    `;
+    isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_0___default()(url, {
+      method: "post",
+      headers: headers,
+      body: query
+    }).then(r => r.json()).then(data => {
+      value = data.data.shop.name;
+      resolve(value);
+    });
+  })
+};
+/* harmony default export */ __webpack_exports__["default"] = (queries);
 
 /***/ }),
 
-/***/ 5:
+/***/ 4:
 /*!*****************************!*\
   !*** multi ./pages/shop.js ***!
   \*****************************/
@@ -2174,17 +2175,6 @@ module.exports = require("core-js/library/fn/symbol/iterator");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/weak-map");
-
-/***/ }),
-
-/***/ "graphql-js-client":
-/*!************************************!*\
-  !*** external "graphql-js-client" ***!
-  \************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("graphql-js-client");
 
 /***/ }),
 
