@@ -271,103 +271,96 @@ var Index2 = function Index2(props) {
     __self: this
   }, function (progress, event) {
     return __jsx("div", {
-      className: "jsx-2085888330" + " " + "container",
+      className: "jsx-2085888330" + " " + "container left",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 15
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "jsx-2085888330" + " " + "left",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 16
       },
       __self: this
     }, __jsx("h2", {
       className: "jsx-2085888330",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17
+        lineNumber: 16
       },
       __self: this
     }, "I'm a software developer from Portland, currently residing in San Diego with experience in..."), __jsx("ul", {
       className: "jsx-2085888330",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 21
+        lineNumber: 20
       },
       __self: this
     }, __jsx("li", {
       className: "jsx-2085888330",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 22
+        lineNumber: 21
       },
       __self: this
     }, "Javascript"), __jsx("li", {
       className: "jsx-2085888330",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 23
+        lineNumber: 22
       },
       __self: this
     }, "Ruby"), __jsx("li", {
       className: "jsx-2085888330",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 24
+        lineNumber: 23
       },
       __self: this
     }, "Python")), __jsx("ul", {
       className: "jsx-2085888330",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26
+        lineNumber: 25
       },
       __self: this
     }, __jsx("li", {
       className: "jsx-2085888330",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27
+        lineNumber: 26
       },
       __self: this
     }, "React"), __jsx("li", {
       className: "jsx-2085888330",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28
+        lineNumber: 27
       },
       __self: this
     }, "Rails"), __jsx("li", {
       className: "jsx-2085888330",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29
+        lineNumber: 28
       },
       __self: this
     }, "Django")), __jsx("p", {
       className: "jsx-2085888330",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31
+        lineNumber: 30
       },
       __self: this
     }, "... and more. I think", " ", __jsx("strong", {
       className: "jsx-2085888330",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 33
+        lineNumber: 32
       },
       __self: this
-    }, "javascript is a great language"), ", and I'm constantly wow'd by the amount of technology people have created and built using it. That being said, I don't believe that everything needs / should be created using javascript. Always pick the right tool for the job!")));
+    }, "javascript is a great language"), ", and I'm constantly wow'd by the amount of technology people have created and built using it. That being said, I don't believe that everything needs / should be created using javascript. Always pick the right tool for the job!"));
   }), __jsx("div", {
     id: "trigger-2",
     className: "jsx-2085888330",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 41
     },
     __self: this
   }), __jsx(react_scrollmagic__WEBPACK_IMPORTED_MODULE_2__["Scene"], {
@@ -377,113 +370,106 @@ var Index2 = function Index2(props) {
     indicators: false,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 42
     },
     __self: this
   }, function (progress, event) {
     return __jsx("div", {
-      className: "jsx-2085888330" + " " + "container",
+      className: "jsx-2085888330" + " " + "container right",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 51
-      },
-      __self: this
-    }, __jsx("div", {
-      className: "jsx-2085888330" + " " + "right",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 52
+        lineNumber: 49
       },
       __self: this
     }, __jsx("h2", {
       className: "jsx-2085888330",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 53
+        lineNumber: 50
       },
       __self: this
     }, "I'm passionate about..."), __jsx("ul", {
       className: "jsx-2085888330",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 54
+        lineNumber: 51
       },
       __self: this
     }, __jsx("li", {
       className: "jsx-2085888330",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 55
+        lineNumber: 52
       },
       __self: this
     }, "Coding"), __jsx("li", {
       className: "jsx-2085888330",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 56
+        lineNumber: 53
       },
       __self: this
     }, "eCommerce"), __jsx("li", {
       className: "jsx-2085888330",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 57
+        lineNumber: 54
       },
       __self: this
     }, "Entrepeneurship")), __jsx("ul", {
       className: "jsx-2085888330",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 59
+        lineNumber: 56
       },
       __self: this
     }, __jsx("li", {
       className: "jsx-2085888330",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 60
+        lineNumber: 57
       },
       __self: this
     }, "Music"), __jsx("li", {
       className: "jsx-2085888330",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 61
+        lineNumber: 58
       },
       __self: this
     }, "Art"), __jsx("li", {
       className: "jsx-2085888330",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 62
+        lineNumber: 59
       },
       __self: this
     }, "Learning")), __jsx("p", {
       className: "jsx-2085888330",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 64
+        lineNumber: 61
       },
       __self: this
     }, "I believe that it's important to have a", " ", __jsx("strong", {
       className: "jsx-2085888330",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 66
+        lineNumber: 63
       },
       __self: this
     }, "well balanced lifestyle"), ". Working as a software developer means that I spend a lot of time staring at a computer, thinking quietly to myself."), __jsx("p", {
       className: "jsx-2085888330",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 70
+        lineNumber: 67
       },
       __self: this
-    }, "Because of this, I actively try to seek out opportunity to connect with other people. Music, Art, and continual learning are some of the outlets I've found to help with that.")));
+    }, "Because of this, I actively try to seek out opportunity to connect with other people. Music, Art, and continual learning are some of the outlets I've found to help with that."));
   })), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
     id: "2085888330",
     __self: this
-  }, "\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9yZ3J1bmVzdC9EZXZlbG9wZXIvcmVhY3QtcG9ydGZvbGlvL2NvbXBvbmVudHMvaW5kZXgvSW5kZXgyLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQStFa0IiLCJmaWxlIjoiL1VzZXJzL3JncnVuZXN0L0RldmVsb3Blci9yZWFjdC1wb3J0Zm9saW8vY29tcG9uZW50cy9pbmRleC9JbmRleDIuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDb250cm9sbGVyLCBTY2VuZSB9IGZyb20gXCJyZWFjdC1zY3JvbGxtYWdpY1wiO1xuY29uc3QgSW5kZXgyID0gcHJvcHMgPT4ge1xuICByZXR1cm4gKFxuICAgIDxkaXYgY2xhc3NOYW1lPVwiaW5kZXgtMlwiPlxuICAgICAgPGRpdiBpZD1cInRyaWdnZXJcIj48L2Rpdj5cbiAgICAgIDxDb250cm9sbGVyPlxuICAgICAgICA8aDE+V2hvIEFtIEk/PC9oMT5cbiAgICAgICAgPFNjZW5lXG4gICAgICAgICAgZHVyYXRpb249ezcwMH1cbiAgICAgICAgICBjbGFzc1RvZ2dsZT1cInNsaWRlLWxlZnQtb3BhY2l0eVwiXG4gICAgICAgICAgdHJpZ2dlckVsZW1lbnQ9XCIjdHJpZ2dlclwiXG4gICAgICAgICAgaW5kaWNhdG9ycz17ZmFsc2V9XG4gICAgICAgID5cbiAgICAgICAgICB7KHByb2dyZXNzLCBldmVudCkgPT4gKFxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250YWluZXJcIj5cbiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJsZWZ0XCI+XG4gICAgICAgICAgICAgICAgPGgyPlxuICAgICAgICAgICAgICAgICAgSSdtIGEgc29mdHdhcmUgZGV2ZWxvcGVyIGZyb20gUG9ydGxhbmQsIGN1cnJlbnRseSByZXNpZGluZyBpblxuICAgICAgICAgICAgICAgICAgU2FuIERpZWdvIHdpdGggZXhwZXJpZW5jZSBpbi4uLlxuICAgICAgICAgICAgICAgIDwvaDI+XG4gICAgICAgICAgICAgICAgPHVsPlxuICAgICAgICAgICAgICAgICAgPGxpPkphdmFzY3JpcHQ8L2xpPlxuICAgICAgICAgICAgICAgICAgPGxpPlJ1Ynk8L2xpPlxuICAgICAgICAgICAgICAgICAgPGxpPlB5dGhvbjwvbGk+XG4gICAgICAgICAgICAgICAgPC91bD5cbiAgICAgICAgICAgICAgICA8dWw+XG4gICAgICAgICAgICAgICAgICA8bGk+UmVhY3Q8L2xpPlxuICAgICAgICAgICAgICAgICAgPGxpPlJhaWxzPC9saT5cbiAgICAgICAgICAgICAgICAgIDxsaT5EamFuZ288L2xpPlxuICAgICAgICAgICAgICAgIDwvdWw+XG4gICAgICAgICAgICAgICAgPHA+XG4gICAgICAgICAgICAgICAgICAuLi4gYW5kIG1vcmUuIEkgdGhpbmt7XCIgXCJ9XG4gICAgICAgICAgICAgICAgICA8c3Ryb25nPmphdmFzY3JpcHQgaXMgYSBncmVhdCBsYW5ndWFnZTwvc3Ryb25nPiwgYW5kIEknbVxuICAgICAgICAgICAgICAgICAgY29uc3RhbnRseSB3b3cnZCBieSB0aGUgYW1vdW50IG9mIHRlY2hub2xvZ3kgcGVvcGxlIGhhdmVcbiAgICAgICAgICAgICAgICAgIGNyZWF0ZWQgYW5kIGJ1aWx0IHVzaW5nIGl0LiBUaGF0IGJlaW5nIHNhaWQsIEkgZG9uJ3QgYmVsaWV2ZVxuICAgICAgICAgICAgICAgICAgdGhhdCBldmVyeXRoaW5nIG5lZWRzIC8gc2hvdWxkIGJlIGNyZWF0ZWQgdXNpbmcgamF2YXNjcmlwdC5cbiAgICAgICAgICAgICAgICAgIEFsd2F5cyBwaWNrIHRoZSByaWdodCB0b29sIGZvciB0aGUgam9iIVxuICAgICAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICApfVxuICAgICAgICA8L1NjZW5lPlxuICAgICAgICA8ZGl2IGlkPVwidHJpZ2dlci0yXCI+PC9kaXY+XG4gICAgICAgIDxTY2VuZVxuICAgICAgICAgIGR1cmF0aW9uPXs1MDB9XG4gICAgICAgICAgY2xhc3NUb2dnbGU9XCJzbGlkZS1yaWdodC1vcGFjaXR5XCJcbiAgICAgICAgICB0cmlnZ2VyRWxlbWVudD1cIiN0cmlnZ2VyLTJcIlxuICAgICAgICAgIGluZGljYXRvcnM9e2ZhbHNlfVxuICAgICAgICA+XG4gICAgICAgICAgeyhwcm9ncmVzcywgZXZlbnQpID0+IChcbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udGFpbmVyXCI+XG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicmlnaHRcIj5cbiAgICAgICAgICAgICAgICA8aDI+SSdtIHBhc3Npb25hdGUgYWJvdXQuLi48L2gyPlxuICAgICAgICAgICAgICAgIDx1bD5cbiAgICAgICAgICAgICAgICAgIDxsaT5Db2Rpbmc8L2xpPlxuICAgICAgICAgICAgICAgICAgPGxpPmVDb21tZXJjZTwvbGk+XG4gICAgICAgICAgICAgICAgICA8bGk+RW50cmVwZW5ldXJzaGlwPC9saT5cbiAgICAgICAgICAgICAgICA8L3VsPlxuICAgICAgICAgICAgICAgIDx1bD5cbiAgICAgICAgICAgICAgICAgIDxsaT5NdXNpYzwvbGk+XG4gICAgICAgICAgICAgICAgICA8bGk+QXJ0PC9saT5cbiAgICAgICAgICAgICAgICAgIDxsaT5MZWFybmluZzwvbGk+XG4gICAgICAgICAgICAgICAgPC91bD5cbiAgICAgICAgICAgICAgICA8cD5cbiAgICAgICAgICAgICAgICAgIEkgYmVsaWV2ZSB0aGF0IGl0J3MgaW1wb3J0YW50IHRvIGhhdmUgYXtcIiBcIn1cbiAgICAgICAgICAgICAgICAgIDxzdHJvbmc+d2VsbCBiYWxhbmNlZCBsaWZlc3R5bGU8L3N0cm9uZz4uIFdvcmtpbmcgYXMgYVxuICAgICAgICAgICAgICAgICAgc29mdHdhcmUgZGV2ZWxvcGVyIG1lYW5zIHRoYXQgSSBzcGVuZCBhIGxvdCBvZiB0aW1lIHN0YXJpbmcgYXRcbiAgICAgICAgICAgICAgICAgIGEgY29tcHV0ZXIsIHRoaW5raW5nIHF1aWV0bHkgdG8gbXlzZWxmLlxuICAgICAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICAgICAgICA8cD5cbiAgICAgICAgICAgICAgICAgIEJlY2F1c2Ugb2YgdGhpcywgSSBhY3RpdmVseSB0cnkgdG8gc2VlayBvdXQgb3Bwb3J0dW5pdHkgdG9cbiAgICAgICAgICAgICAgICAgIGNvbm5lY3Qgd2l0aCBvdGhlciBwZW9wbGUuIE11c2ljLCBBcnQsIGFuZCBjb250aW51YWwgbGVhcm5pbmdcbiAgICAgICAgICAgICAgICAgIGFyZSBzb21lIG9mIHRoZSBvdXRsZXRzIEkndmUgZm91bmQgdG8gaGVscCB3aXRoIHRoYXQuXG4gICAgICAgICAgICAgICAgPC9wPlxuICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICl9XG4gICAgICAgIDwvU2NlbmU+XG4gICAgICA8L0NvbnRyb2xsZXI+XG4gICAgICA8c3R5bGUganN4PntgYH08L3N0eWxlPlxuICAgIDwvZGl2PlxuICApO1xufTtcblxuZXhwb3J0IGRlZmF1bHQgSW5kZXgyO1xuIl19 */\n/*@ sourceURL=/Users/rgrunest/Developer/react-portfolio/components/index/Index2.js */"));
+  }, "\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9yZ3J1bmVzdC9EZXZlbG9wZXIvcmVhY3QtcG9ydGZvbGlvL2NvbXBvbmVudHMvaW5kZXgvSW5kZXgyLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQTJFa0IiLCJmaWxlIjoiL1VzZXJzL3JncnVuZXN0L0RldmVsb3Blci9yZWFjdC1wb3J0Zm9saW8vY29tcG9uZW50cy9pbmRleC9JbmRleDIuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDb250cm9sbGVyLCBTY2VuZSB9IGZyb20gXCJyZWFjdC1zY3JvbGxtYWdpY1wiO1xuY29uc3QgSW5kZXgyID0gcHJvcHMgPT4ge1xuICByZXR1cm4gKFxuICAgIDxkaXYgY2xhc3NOYW1lPVwiaW5kZXgtMlwiPlxuICAgICAgPGRpdiBpZD1cInRyaWdnZXJcIj48L2Rpdj5cbiAgICAgIDxDb250cm9sbGVyPlxuICAgICAgICA8aDE+V2hvIEFtIEk/PC9oMT5cbiAgICAgICAgPFNjZW5lXG4gICAgICAgICAgZHVyYXRpb249ezcwMH1cbiAgICAgICAgICBjbGFzc1RvZ2dsZT1cInNsaWRlLWxlZnQtb3BhY2l0eVwiXG4gICAgICAgICAgdHJpZ2dlckVsZW1lbnQ9XCIjdHJpZ2dlclwiXG4gICAgICAgICAgaW5kaWNhdG9ycz17ZmFsc2V9XG4gICAgICAgID5cbiAgICAgICAgICB7KHByb2dyZXNzLCBldmVudCkgPT4gKFxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250YWluZXIgbGVmdFwiPlxuICAgICAgICAgICAgICA8aDI+XG4gICAgICAgICAgICAgICAgSSdtIGEgc29mdHdhcmUgZGV2ZWxvcGVyIGZyb20gUG9ydGxhbmQsIGN1cnJlbnRseSByZXNpZGluZyBpblxuICAgICAgICAgICAgICAgIFNhbiBEaWVnbyB3aXRoIGV4cGVyaWVuY2UgaW4uLi5cbiAgICAgICAgICAgICAgPC9oMj5cbiAgICAgICAgICAgICAgPHVsPlxuICAgICAgICAgICAgICAgIDxsaT5KYXZhc2NyaXB0PC9saT5cbiAgICAgICAgICAgICAgICA8bGk+UnVieTwvbGk+XG4gICAgICAgICAgICAgICAgPGxpPlB5dGhvbjwvbGk+XG4gICAgICAgICAgICAgIDwvdWw+XG4gICAgICAgICAgICAgIDx1bD5cbiAgICAgICAgICAgICAgICA8bGk+UmVhY3Q8L2xpPlxuICAgICAgICAgICAgICAgIDxsaT5SYWlsczwvbGk+XG4gICAgICAgICAgICAgICAgPGxpPkRqYW5nbzwvbGk+XG4gICAgICAgICAgICAgIDwvdWw+XG4gICAgICAgICAgICAgIDxwPlxuICAgICAgICAgICAgICAgIC4uLiBhbmQgbW9yZS4gSSB0aGlua3tcIiBcIn1cbiAgICAgICAgICAgICAgICA8c3Ryb25nPmphdmFzY3JpcHQgaXMgYSBncmVhdCBsYW5ndWFnZTwvc3Ryb25nPiwgYW5kIEknbVxuICAgICAgICAgICAgICAgIGNvbnN0YW50bHkgd293J2QgYnkgdGhlIGFtb3VudCBvZiB0ZWNobm9sb2d5IHBlb3BsZSBoYXZlIGNyZWF0ZWRcbiAgICAgICAgICAgICAgICBhbmQgYnVpbHQgdXNpbmcgaXQuIFRoYXQgYmVpbmcgc2FpZCwgSSBkb24ndCBiZWxpZXZlIHRoYXRcbiAgICAgICAgICAgICAgICBldmVyeXRoaW5nIG5lZWRzIC8gc2hvdWxkIGJlIGNyZWF0ZWQgdXNpbmcgamF2YXNjcmlwdC4gQWx3YXlzXG4gICAgICAgICAgICAgICAgcGljayB0aGUgcmlnaHQgdG9vbCBmb3IgdGhlIGpvYiFcbiAgICAgICAgICAgICAgPC9wPlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgKX1cbiAgICAgICAgPC9TY2VuZT5cbiAgICAgICAgPGRpdiBpZD1cInRyaWdnZXItMlwiPjwvZGl2PlxuICAgICAgICA8U2NlbmVcbiAgICAgICAgICBkdXJhdGlvbj17NTAwfVxuICAgICAgICAgIGNsYXNzVG9nZ2xlPVwic2xpZGUtcmlnaHQtb3BhY2l0eVwiXG4gICAgICAgICAgdHJpZ2dlckVsZW1lbnQ9XCIjdHJpZ2dlci0yXCJcbiAgICAgICAgICBpbmRpY2F0b3JzPXtmYWxzZX1cbiAgICAgICAgPlxuICAgICAgICAgIHsocHJvZ3Jlc3MsIGV2ZW50KSA9PiAoXG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRhaW5lciByaWdodFwiPlxuICAgICAgICAgICAgICA8aDI+SSdtIHBhc3Npb25hdGUgYWJvdXQuLi48L2gyPlxuICAgICAgICAgICAgICA8dWw+XG4gICAgICAgICAgICAgICAgPGxpPkNvZGluZzwvbGk+XG4gICAgICAgICAgICAgICAgPGxpPmVDb21tZXJjZTwvbGk+XG4gICAgICAgICAgICAgICAgPGxpPkVudHJlcGVuZXVyc2hpcDwvbGk+XG4gICAgICAgICAgICAgIDwvdWw+XG4gICAgICAgICAgICAgIDx1bD5cbiAgICAgICAgICAgICAgICA8bGk+TXVzaWM8L2xpPlxuICAgICAgICAgICAgICAgIDxsaT5BcnQ8L2xpPlxuICAgICAgICAgICAgICAgIDxsaT5MZWFybmluZzwvbGk+XG4gICAgICAgICAgICAgIDwvdWw+XG4gICAgICAgICAgICAgIDxwPlxuICAgICAgICAgICAgICAgIEkgYmVsaWV2ZSB0aGF0IGl0J3MgaW1wb3J0YW50IHRvIGhhdmUgYXtcIiBcIn1cbiAgICAgICAgICAgICAgICA8c3Ryb25nPndlbGwgYmFsYW5jZWQgbGlmZXN0eWxlPC9zdHJvbmc+LiBXb3JraW5nIGFzIGEgc29mdHdhcmVcbiAgICAgICAgICAgICAgICBkZXZlbG9wZXIgbWVhbnMgdGhhdCBJIHNwZW5kIGEgbG90IG9mIHRpbWUgc3RhcmluZyBhdCBhXG4gICAgICAgICAgICAgICAgY29tcHV0ZXIsIHRoaW5raW5nIHF1aWV0bHkgdG8gbXlzZWxmLlxuICAgICAgICAgICAgICA8L3A+XG4gICAgICAgICAgICAgIDxwPlxuICAgICAgICAgICAgICAgIEJlY2F1c2Ugb2YgdGhpcywgSSBhY3RpdmVseSB0cnkgdG8gc2VlayBvdXQgb3Bwb3J0dW5pdHkgdG9cbiAgICAgICAgICAgICAgICBjb25uZWN0IHdpdGggb3RoZXIgcGVvcGxlLiBNdXNpYywgQXJ0LCBhbmQgY29udGludWFsIGxlYXJuaW5nXG4gICAgICAgICAgICAgICAgYXJlIHNvbWUgb2YgdGhlIG91dGxldHMgSSd2ZSBmb3VuZCB0byBoZWxwIHdpdGggdGhhdC5cbiAgICAgICAgICAgICAgPC9wPlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgKX1cbiAgICAgICAgPC9TY2VuZT5cbiAgICAgIDwvQ29udHJvbGxlcj5cbiAgICAgIDxzdHlsZSBqc3g+e2BgfTwvc3R5bGU+XG4gICAgPC9kaXY+XG4gICk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBJbmRleDI7XG4iXX0= */\n/*@ sourceURL=/Users/rgrunest/Developer/react-portfolio/components/index/Index2.js */"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Index2);
@@ -15578,7 +15564,7 @@ function Index() {
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!*************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Frgrunest%2FDeveloper%2Freact-portfolio%2Fpages%2Findex.js ***!
   \*************************************************************************************************************************************/
@@ -15601,5 +15587,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

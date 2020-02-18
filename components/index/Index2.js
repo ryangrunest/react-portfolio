@@ -12,31 +12,29 @@ const Index2 = props => {
           indicators={false}
         >
           {(progress, event) => (
-            <div className="container">
-              <div className="left">
-                <h2>
-                  I'm a software developer from Portland, currently residing in
-                  San Diego with experience in...
-                </h2>
-                <ul>
-                  <li>Javascript</li>
-                  <li>Ruby</li>
-                  <li>Python</li>
-                </ul>
-                <ul>
-                  <li>React</li>
-                  <li>Rails</li>
-                  <li>Django</li>
-                </ul>
-                <p>
-                  ... and more. I think{" "}
-                  <strong>javascript is a great language</strong>, and I'm
-                  constantly wow'd by the amount of technology people have
-                  created and built using it. That being said, I don't believe
-                  that everything needs / should be created using javascript.
-                  Always pick the right tool for the job!
-                </p>
-              </div>
+            <div className="container left">
+              <h2>
+                I'm a software developer from Portland, currently residing in
+                San Diego with experience in...
+              </h2>
+              <ul>
+                <li>Javascript</li>
+                <li>Ruby</li>
+                <li>Python</li>
+              </ul>
+              <ul>
+                <li>React</li>
+                <li>Rails</li>
+                <li>Django</li>
+              </ul>
+              <p>
+                ... and more. I think{" "}
+                <strong>javascript is a great language</strong>, and I'm
+                constantly wow'd by the amount of technology people have created
+                and built using it. That being said, I don't believe that
+                everything needs / should be created using javascript. Always
+                pick the right tool for the job!
+              </p>
             </div>
           )}
         </Scene>
@@ -48,31 +46,29 @@ const Index2 = props => {
           indicators={false}
         >
           {(progress, event) => (
-            <div className="container">
-              <div className="right">
-                <h2>I'm passionate about...</h2>
-                <ul>
-                  <li>Coding</li>
-                  <li>eCommerce</li>
-                  <li>Entrepeneurship</li>
-                </ul>
-                <ul>
-                  <li>Music</li>
-                  <li>Art</li>
-                  <li>Learning</li>
-                </ul>
-                <p>
-                  I believe that it's important to have a{" "}
-                  <strong>well balanced lifestyle</strong>. Working as a
-                  software developer means that I spend a lot of time staring at
-                  a computer, thinking quietly to myself.
-                </p>
-                <p>
-                  Because of this, I actively try to seek out opportunity to
-                  connect with other people. Music, Art, and continual learning
-                  are some of the outlets I've found to help with that.
-                </p>
-              </div>
+            <div className="container right">
+              <h2>I'm passionate about...</h2>
+              <ul>
+                <li>Coding</li>
+                <li>eCommerce</li>
+                <li>Entrepeneurship</li>
+              </ul>
+              <ul>
+                <li>Music</li>
+                <li>Art</li>
+                <li>Learning</li>
+              </ul>
+              <p>
+                I believe that it's important to have a{" "}
+                <strong>well balanced lifestyle</strong>. Working as a software
+                developer means that I spend a lot of time staring at a
+                computer, thinking quietly to myself.
+              </p>
+              <p>
+                Because of this, I actively try to seek out opportunity to
+                connect with other people. Music, Art, and continual learning
+                are some of the outlets I've found to help with that.
+              </p>
             </div>
           )}
         </Scene>
