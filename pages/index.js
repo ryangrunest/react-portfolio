@@ -1,5 +1,6 @@
 import Layout from "../components/MyLayout";
-import Index2 from "../components//index/Index2";
+import Who from "../components/index/Who";
+import Art from "../components/index/Art";
 import { Controller, Scene } from "react-scrollmagic";
 
 export default function Index() {
@@ -15,7 +16,8 @@ export default function Index() {
           </p>
         </div>
       </div>
-      <Index2 />
+      <Who />
+      <Art />
     </Layout>
   );
 }

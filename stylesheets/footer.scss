@@ -1,0 +1,36 @@
+.Footer {
+  background-color: $black;
+  color: $light;
+  height: 25rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    color: $light;
+  }
+  .contact-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    li {
+      padding: 2rem;
+      display: inline;
+      a {
+        i {
+          font-size: 2rem;
+        }
+      }
+    }
+    .back-to-top {
+      display: block;
+    }
+  }
+  h3 {
+    text-align: center;
+    padding-top: 2rem;
+  }
+}
