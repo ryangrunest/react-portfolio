@@ -188,7 +188,7 @@ var Layout = function Layout(props) {
     },
     __self: this
   }), __jsx("div", {
-    className: "jsx-3309014317",
+    className: "jsx-3323263836",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
@@ -201,9 +201,9 @@ var Layout = function Layout(props) {
     },
     __self: this
   }), props.children), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "3309014317",
+    id: "3323263836",
     __self: this
-  }, "html,body{background:#f3f5f6;position:relative;font-family:\"Dosis\",sans-serif;-webkit-letter-spacing:1px;-moz-letter-spacing:1px;-ms-letter-spacing:1px;letter-spacing:1px;margin:0;padding:0;overflow-x:hidden;color:#252b33;}body{padding:20px;}@media only screen and (max-width:600px){body{padding:0;}}p::selection,h1::selection,h2::selection,h3::selection,li::selection{color:#f3f5f6;background-color:rgb(120,169,152);}a{-webkit-text-decoration:none;text-decoration:none;color:#252b33;-webkit-transition:0.3s all;transition:0.3s all;}p strong{font-weight:bold;font-size:1.1rem;}a:hover,a:active,a:focus,a: visited{color:gray;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9yZ3J1bmVzdC9EZXZlbG9wZXIvcmVhY3QtcG9ydGZvbGlvL2NvbXBvbmVudHMvTXlMYXlvdXQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBV3lCLEFBSThCLEFBVU4sQUFJRCxBQVFFLEFBSU8sQUFLSixBQU9OLFVBdkJYLENBd0JGLEVBNUJBLENBWXNDLEdBU25CLEVBL0JDLGVBZ0NwQixHQS9Ca0MsV0FzQmxDLEVBR2dCLGNBQ00sSUF6QkQsNENBMEJyQixpREF6QlcsU0FDQyxVQUNRLGtCQUNKLGNBQ2hCIiwiZmlsZSI6Ii9Vc2Vycy9yZ3J1bmVzdC9EZXZlbG9wZXIvcmVhY3QtcG9ydGZvbGlvL2NvbXBvbmVudHMvTXlMYXlvdXQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgTXlIZWFkZXIgZnJvbSBcIi4vTXlIZWFkZXJcIjtcbmltcG9ydCBNeUhlYWQgZnJvbSBcIi4vTXlIZWFkXCI7XG5cbmNvbnN0IExheW91dCA9IHByb3BzID0+IHtcbiAgcmV0dXJuIChcbiAgICA8PlxuICAgICAgPE15SGVhZCBwYWdlPXtwcm9wcy5wYWdlfSAvPlxuICAgICAgPGRpdj5cbiAgICAgICAgPE15SGVhZGVyIC8+XG4gICAgICAgIHtwcm9wcy5jaGlsZHJlbn1cbiAgICAgIDwvZGl2PlxuICAgICAgPHN0eWxlIGpzeCBnbG9iYWw+e2BcbiAgICAgICAgaHRtbCxcbiAgICAgICAgYm9keSB7XG4gICAgICAgICAgYmFja2dyb3VuZDogI2YzZjVmNjtcbiAgICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICAgICAgZm9udC1mYW1pbHk6IFwiRG9zaXNcIiwgc2Fucy1zZXJpZjtcbiAgICAgICAgICBsZXR0ZXItc3BhY2luZzogMXB4O1xuICAgICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICAgIG92ZXJmbG93LXg6IGhpZGRlbjtcbiAgICAgICAgICBjb2xvcjogIzI1MmIzMztcbiAgICAgICAgfVxuICAgICAgICBib2R5IHtcbiAgICAgICAgICBwYWRkaW5nOiAyMHB4O1xuICAgICAgICB9XG4gICAgICAgIEBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogNjAwcHgpIHtcbiAgICAgICAgICBib2R5IHtcbiAgICAgICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgICAgfVxuICAgICAgICB9XG4gICAgICAgIHA6OnNlbGVjdGlvbixcbiAgICAgICAgaDE6OnNlbGVjdGlvbixcbiAgICAgICAgaDI6OnNlbGVjdGlvbixcbiAgICAgICAgaDM6OnNlbGVjdGlvbixcbiAgICAgICAgbGk6OnNlbGVjdGlvbiB7XG4gICAgICAgICAgY29sb3I6ICNmM2Y1ZjY7XG4gICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDEyMCwgMTY5LCAxNTIpO1xuICAgICAgICB9XG4gICAgICAgIGEge1xuICAgICAgICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgICAgICAgICBjb2xvcjogIzI1MmIzMztcbiAgICAgICAgICB0cmFuc2l0aW9uOiAwLjNzIGFsbDtcbiAgICAgICAgfVxuICAgICAgICBwIHN0cm9uZyB7XG4gICAgICAgICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gICAgICAgICAgZm9udC1zaXplOiAxLjFyZW07XG4gICAgICAgIH1cbiAgICAgICAgYTpob3ZlcixcbiAgICAgICAgYTphY3RpdmUsXG4gICAgICAgIGE6Zm9jdXMsXG4gICAgICAgIGE6IHZpc2l0ZWQge1xuICAgICAgICAgIGNvbG9yOiBncmF5O1xuICAgICAgICB9XG4gICAgICBgfTwvc3R5bGU+XG4gICAgPC8+XG4gICk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBMYXlvdXQ7XG4iXX0= */\n/*@ sourceURL=/Users/rgrunest/Developer/react-portfolio/components/MyLayout.js */"));
+  }, "html,body{background:#f3f5f6;position:relative;font-family:\"Dosis\",sans-serif;-webkit-letter-spacing:1px;-moz-letter-spacing:1px;-ms-letter-spacing:1px;letter-spacing:1px;margin:0;padding:0;overflow-x:hidden;color:#252b33;}body{padding:20px;}@media only screen and (max-width:600px){body{padding:0;}}*::selection{color:#f3f5f6;background-color:rgb(120,169,152);}a{-webkit-text-decoration:none;text-decoration:none;color:#252b33;-webkit-transition:0.3s all;transition:0.3s all;}p strong{font-weight:bold;font-size:1.1rem;}a:hover,a:active,a:focus,a: visited{color:gray;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9yZ3J1bmVzdC9EZXZlbG9wZXIvcmVhY3QtcG9ydGZvbGlvL2NvbXBvbmVudHMvTXlMYXlvdXQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBV3lCLEFBSThCLEFBVU4sQUFJRCxBQUlFLEFBSU8sQUFLSixBQU9OLFVBbkJYLENBb0JGLEVBeEJBLENBUXNDLEdBU25CLEVBM0JDLGVBNEJwQixHQTNCa0MsV0FrQmxDLEVBR2dCLGNBQ00sSUFyQkQsNENBc0JyQixpREFyQlcsU0FDQyxVQUNRLGtCQUNKLGNBQ2hCIiwiZmlsZSI6Ii9Vc2Vycy9yZ3J1bmVzdC9EZXZlbG9wZXIvcmVhY3QtcG9ydGZvbGlvL2NvbXBvbmVudHMvTXlMYXlvdXQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgTXlIZWFkZXIgZnJvbSBcIi4vTXlIZWFkZXJcIjtcbmltcG9ydCBNeUhlYWQgZnJvbSBcIi4vTXlIZWFkXCI7XG5cbmNvbnN0IExheW91dCA9IHByb3BzID0+IHtcbiAgcmV0dXJuIChcbiAgICA8PlxuICAgICAgPE15SGVhZCBwYWdlPXtwcm9wcy5wYWdlfSAvPlxuICAgICAgPGRpdj5cbiAgICAgICAgPE15SGVhZGVyIC8+XG4gICAgICAgIHtwcm9wcy5jaGlsZHJlbn1cbiAgICAgIDwvZGl2PlxuICAgICAgPHN0eWxlIGpzeCBnbG9iYWw+e2BcbiAgICAgICAgaHRtbCxcbiAgICAgICAgYm9keSB7XG4gICAgICAgICAgYmFja2dyb3VuZDogI2YzZjVmNjtcbiAgICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICAgICAgZm9udC1mYW1pbHk6IFwiRG9zaXNcIiwgc2Fucy1zZXJpZjtcbiAgICAgICAgICBsZXR0ZXItc3BhY2luZzogMXB4O1xuICAgICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICAgIG92ZXJmbG93LXg6IGhpZGRlbjtcbiAgICAgICAgICBjb2xvcjogIzI1MmIzMztcbiAgICAgICAgfVxuICAgICAgICBib2R5IHtcbiAgICAgICAgICBwYWRkaW5nOiAyMHB4O1xuICAgICAgICB9XG4gICAgICAgIEBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogNjAwcHgpIHtcbiAgICAgICAgICBib2R5IHtcbiAgICAgICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgICAgfVxuICAgICAgICB9XG4gICAgICAgICo6OnNlbGVjdGlvbiB7XG4gICAgICAgICAgY29sb3I6ICNmM2Y1ZjY7XG4gICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDEyMCwgMTY5LCAxNTIpO1xuICAgICAgICB9XG4gICAgICAgIGEge1xuICAgICAgICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgICAgICAgICBjb2xvcjogIzI1MmIzMztcbiAgICAgICAgICB0cmFuc2l0aW9uOiAwLjNzIGFsbDtcbiAgICAgICAgfVxuICAgICAgICBwIHN0cm9uZyB7XG4gICAgICAgICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gICAgICAgICAgZm9udC1zaXplOiAxLjFyZW07XG4gICAgICAgIH1cbiAgICAgICAgYTpob3ZlcixcbiAgICAgICAgYTphY3RpdmUsXG4gICAgICAgIGE6Zm9jdXMsXG4gICAgICAgIGE6IHZpc2l0ZWQge1xuICAgICAgICAgIGNvbG9yOiBncmF5O1xuICAgICAgICB9XG4gICAgICBgfTwvc3R5bGU+XG4gICAgPC8+XG4gICk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBMYXlvdXQ7XG4iXX0= */\n/*@ sourceURL=/Users/rgrunest/Developer/react-portfolio/components/MyLayout.js */"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
@@ -253,7 +253,16 @@ function Product(props) {
       lineNumber: 6
     },
     __self: this
-  }, "Price: $".concat(props.price), "0"));
+  }, "Price: $".concat(props.price), "0"), __jsx("button", {
+    onClick: function onClick() {
+      return props.createCheckout(props.id);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }));
 }
 
 /***/ }),
@@ -11642,12 +11651,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _components_MyLayout__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/MyLayout */ "./components/MyLayout.js");
-/* harmony import */ var _components_shop_Product__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/shop/Product */ "./components/shop/Product.js");
-/* harmony import */ var _queries_shop_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../queries/shop.js */ "./queries/shop.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _components_MyLayout__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/MyLayout */ "./components/MyLayout.js");
+/* harmony import */ var _components_shop_Product__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/shop/Product */ "./components/shop/Product.js");
+/* harmony import */ var _queries_shop_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../queries/shop.js */ "./queries/shop.js");
+
 
 
 
@@ -11655,7 +11666,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/pages/shop.js";
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement;
 
 
 
@@ -11664,7 +11675,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
 var Shop =
 /*#__PURE__*/
 function (_Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Shop, _Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(Shop, _Component);
 
   function Shop(props) {
     var _this;
@@ -11675,8 +11686,10 @@ function (_Component) {
     _this.state = {
       shopName: "",
       products: [],
-      isLoaded: false
+      isLoaded: false,
+      cartURL: ""
     };
+    _this.createCheckout = _this.createCheckout.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this));
     return _this;
   }
 
@@ -11685,13 +11698,13 @@ function (_Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      _queries_shop_js__WEBPACK_IMPORTED_MODULE_8__["default"].getShopName.then(function (data) {
+      _queries_shop_js__WEBPACK_IMPORTED_MODULE_9__["default"].getShopName.then(function (data) {
         return _this2.setState({
           shopName: data,
           isLoaded: true
         });
       });
-      _queries_shop_js__WEBPACK_IMPORTED_MODULE_8__["default"].getProductsWithImages(10).then(function (value) {
+      _queries_shop_js__WEBPACK_IMPORTED_MODULE_9__["default"].getProductsWithImages(10).then(function (value) {
         _this2.setState({
           products: value,
           isLoaded: true
@@ -11699,61 +11712,74 @@ function (_Component) {
       });
     }
   }, {
+    key: "createCheckout",
+    value: function createCheckout(id) {
+      var _this3 = this;
+
+      _queries_shop_js__WEBPACK_IMPORTED_MODULE_9__["default"].createCheckout(id).then(function (data) {
+        _this3.setState({
+          cartURL: data
+        });
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
-      // console.log(this.state);
+      var _this4 = this;
+
       var _this$state = this.state,
           isLoaded = _this$state.isLoaded,
           shopName = _this$state.shopName,
           products = _this$state.products;
-      console.log(products);
 
       if (!isLoaded) {
         return __jsx("div", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 30
+            lineNumber: 36
           },
           __self: this
         }, "Loading...");
       } else {
-        return __jsx(_components_MyLayout__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        return __jsx(_components_MyLayout__WEBPACK_IMPORTED_MODULE_7__["default"], {
           page: "Shop",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 33
+            lineNumber: 39
           },
           __self: this
         }, __jsx("div", {
           className: "shop",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 34
+            lineNumber: 40
           },
           __self: this
         }, __jsx("h2", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 35
+            lineNumber: 41
           },
           __self: this
         }, shopName), __jsx("div", {
           className: "products-container",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 36
+            lineNumber: 42
           },
           __self: this
         }, products.map(function (product, index) {
-          return __jsx(_components_shop_Product__WEBPACK_IMPORTED_MODULE_7__["default"], {
+          return __jsx(_components_shop_Product__WEBPACK_IMPORTED_MODULE_8__["default"], {
             key: index,
-            id: "product-".concat(index),
+            id: product.node.id,
             title: product.node.title,
+            product: product,
             imgPath: product.node.variants.edges[0].node.image.transformedSrc,
+            createCheckout: _this4.createCheckout,
             price: product.node.priceRange.maxVariantPrice.amount,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 39
+              lineNumber: 45
             },
             __self: this
           });
@@ -11763,7 +11789,7 @@ function (_Component) {
   }]);
 
   return Shop;
-}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+}(react__WEBPACK_IMPORTED_MODULE_6__["Component"]);
 
 /* harmony default export */ __webpack_exports__["default"] = (Shop);
 
@@ -11817,7 +11843,24 @@ var queries = {
       value = data.data.shop.name;
       resolve(value);
     });
-  })
+  }),
+  createCheckout: function createCheckout(lineItem) {
+    return new _babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_0___default.a(function (resolve, reject) {
+      var value = "cheeseburger";
+      var query = "mutation {\n        checkoutCreate(input: {\n          lineItems: [{ variantId: \"".concat(lineItem, "\", quantity: 1}]\n        }) {\n          checkout {\n             id\n             webUrl\n             lineItems(first: 5) {\n               edges {\n                 node {\n                   title\n                   quantity\n                 }\n               }\n             }\n          }\n        }\n      }");
+      console.log(query);
+      isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default()(url, {
+        method: "post",
+        headers: headers,
+        body: query
+      }).then(function (r) {
+        return r.json();
+      }).then(function (data) {
+        console.log(data);
+        resolve(data);
+      });
+    });
+  }
 };
 /* harmony default export */ __webpack_exports__["default"] = (queries);
 

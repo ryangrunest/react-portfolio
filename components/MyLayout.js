@@ -29,11 +29,7 @@ const Layout = props => {
             padding: 0;
           }
         }
-        p::selection,
-        h1::selection,
-        h2::selection,
-        h3::selection,
-        li::selection {
+        *::selection {
           color: #f3f5f6;
           background-color: rgb(120, 169, 152);
         }

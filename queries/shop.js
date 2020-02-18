@@ -69,7 +69,41 @@ let queries = {
         value = data.data.shop.name;
         resolve(value);
       });
-  })
+  }),
+  createCheckout: lineItem => {
+    return new Promise((resolve, reject) => {
+      let value = "cheeseburger";
+      let query = `mutation {
+        checkoutCreate(input: {
+          lineItems: [{ variantId: "${lineItem}", quantity: 1}]
+        }) {
+          checkout {
+             id
+             webUrl
+             lineItems(first: 5) {
+               edges {
+                 node {
+                   title
+                   quantity
+                 }
+               }
+             }
+          }
+        }
+      }`;
+      console.log(query);
+      fetch(url, {
+        method: "post",
+        headers: headers,
+        body: query
+      })
+        .then(r => r.json())
+        .then(data => {
+          console.log(data);
+          resolve(data);
+        });
+    });
+  }
 };
 
 export default queries;

@@ -9,8 +9,10 @@ class Shop extends Component {
     this.state = {
       shopName: "",
       products: [],
-      isLoaded: false
+      isLoaded: false,
+      cartURL: ""
     };
+    this.createCheckout = this.createCheckout.bind(this);
   }
 
   componentDidMount() {
@@ -22,10 +24,14 @@ class Shop extends Component {
     });
   }
 
+  createCheckout(id) {
+    queries.createCheckout(id).then(data => {
+      this.setState({ cartURL: data });
+    });
+  }
+
   render() {
-    // console.log(this.state);
     const { isLoaded, shopName, products } = this.state;
-    console.log(products);
     if (!isLoaded) {
       return <div>Loading...</div>;
     } else {
@@ -38,11 +44,13 @@ class Shop extends Component {
                 return (
                   <Product
                     key={index}
-                    id={`product-${index}`}
+                    id={product.node.id}
                     title={product.node.title}
+                    product={product}
                     imgPath={
                       product.node.variants.edges[0].node.image.transformedSrc
                     }
+                    createCheckout={this.createCheckout}
                     price={product.node.priceRange.maxVariantPrice.amount}
                   />
                 );
