@@ -88,10 +88,90 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
+
+/***/ "./components/BlogPost.js":
+/*!********************************!*\
+  !*** ./components/BlogPost.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return BlogPost; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _WordBreak__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./WordBreak */ "./components/WordBreak.js");
+var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/components/BlogPost.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function BlogPost(props) {
+  let splitText = props.text.split("\n");
+  console.log(splitText);
+  console.log(props);
+  return __jsx("div", {
+    className: "BlogPost",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, __jsx("h2", {
+    className: "title",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, props.title), __jsx("h3", {
+    className: "date",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, props.date), __jsx("div", {
+    className: "image-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, __jsx("img", {
+    src: props.imgPath,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  })), __jsx("div", {
+    className: "text",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, splitText.map(line => __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, line))), __jsx(_WordBreak__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }));
+}
+
+/***/ }),
 
 /***/ "./components/MyHead.js":
 /*!******************************!*\
@@ -301,280 +381,69 @@ const Layout = props => {
 
 /***/ }),
 
-/***/ "./components/index/Index2.js":
-/*!************************************!*\
-  !*** ./components/index/Index2.js ***!
-  \************************************/
+/***/ "./components/WordBreak.js":
+/*!*********************************!*\
+  !*** ./components/WordBreak.js ***!
+  \*********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "styled-jsx/style");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_scrollmagic__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-scrollmagic */ "react-scrollmagic");
-/* harmony import */ var react_scrollmagic__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_scrollmagic__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/components/index/Index2.js";
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/components/WordBreak.js";
 
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
-
-
-const Index2 = props => {
-  return __jsx("div", {
-    className: "jsx-2085888330" + " " + "index-2",
+const WordBreak = props => {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
+    className: "wordbreak",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 4
     },
     __self: undefined
-  }, __jsx("div", {
-    id: "trigger",
-    className: "jsx-2085888330",
+  }), __jsx("style", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 5
     },
     __self: undefined
-  }), __jsx(react_scrollmagic__WEBPACK_IMPORTED_MODULE_2__["Controller"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: undefined
-  }, __jsx("h1", {
-    className: "jsx-2085888330",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: undefined
-  }, "Who Am I?"), __jsx(react_scrollmagic__WEBPACK_IMPORTED_MODULE_2__["Scene"], {
-    duration: 700,
-    classToggle: "slide-left-opacity",
-    triggerElement: "#trigger",
-    indicators: false,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: undefined
-  }, (progress, event) => __jsx("div", {
-    className: "jsx-2085888330" + " " + "container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: undefined
-  }, __jsx("div", {
-    className: "jsx-2085888330" + " " + "left",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: undefined
-  }, __jsx("h2", {
-    className: "jsx-2085888330",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: undefined
-  }, "I'm a software developer from Portland, currently residing in San Diego with experience in..."), __jsx("ul", {
-    className: "jsx-2085888330",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21
-    },
-    __self: undefined
-  }, __jsx("li", {
-    className: "jsx-2085888330",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
-    },
-    __self: undefined
-  }, "Javascript"), __jsx("li", {
-    className: "jsx-2085888330",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    },
-    __self: undefined
-  }, "Ruby"), __jsx("li", {
-    className: "jsx-2085888330",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24
-    },
-    __self: undefined
-  }, "Python")), __jsx("ul", {
-    className: "jsx-2085888330",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26
-    },
-    __self: undefined
-  }, __jsx("li", {
-    className: "jsx-2085888330",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27
-    },
-    __self: undefined
-  }, "React"), __jsx("li", {
-    className: "jsx-2085888330",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    },
-    __self: undefined
-  }, "Rails"), __jsx("li", {
-    className: "jsx-2085888330",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29
-    },
-    __self: undefined
-  }, "Django")), __jsx("p", {
-    className: "jsx-2085888330",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31
-    },
-    __self: undefined
-  }, "... and more. I think", " ", __jsx("strong", {
-    className: "jsx-2085888330",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33
-    },
-    __self: undefined
-  }, "javascript is a great language"), ", and I'm constantly wow'd by the amount of technology people have created and built using it. That being said, I don't believe that everything needs / should be created using javascript. Always pick the right tool for the job!")))), __jsx("div", {
-    id: "trigger-2",
-    className: "jsx-2085888330",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 43
-    },
-    __self: undefined
-  }), __jsx(react_scrollmagic__WEBPACK_IMPORTED_MODULE_2__["Scene"], {
-    duration: 500,
-    classToggle: "slide-right-opacity",
-    triggerElement: "#trigger-2",
-    indicators: false,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44
-    },
-    __self: undefined
-  }, (progress, event) => __jsx("div", {
-    className: "jsx-2085888330" + " " + "container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51
-    },
-    __self: undefined
-  }, __jsx("div", {
-    className: "jsx-2085888330" + " " + "right",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 52
-    },
-    __self: undefined
-  }, __jsx("h2", {
-    className: "jsx-2085888330",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 53
-    },
-    __self: undefined
-  }, "I'm passionate about..."), __jsx("ul", {
-    className: "jsx-2085888330",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 54
-    },
-    __self: undefined
-  }, __jsx("li", {
-    className: "jsx-2085888330",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 55
-    },
-    __self: undefined
-  }, "Coding"), __jsx("li", {
-    className: "jsx-2085888330",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 56
-    },
-    __self: undefined
-  }, "eCommerce"), __jsx("li", {
-    className: "jsx-2085888330",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 57
-    },
-    __self: undefined
-  }, "Entrepeneurship")), __jsx("ul", {
-    className: "jsx-2085888330",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 59
-    },
-    __self: undefined
-  }, __jsx("li", {
-    className: "jsx-2085888330",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 60
-    },
-    __self: undefined
-  }, "Music"), __jsx("li", {
-    className: "jsx-2085888330",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 61
-    },
-    __self: undefined
-  }, "Art"), __jsx("li", {
-    className: "jsx-2085888330",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 62
-    },
-    __self: undefined
-  }, "Learning")), __jsx("p", {
-    className: "jsx-2085888330",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 64
-    },
-    __self: undefined
-  }, "I believe that it's important to have a", " ", __jsx("strong", {
-    className: "jsx-2085888330",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66
-    },
-    __self: undefined
-  }, "well balanced lifestyle"), ". Working as a software developer means that I spend a lot of time staring at a computer, thinking quietly to myself."), __jsx("p", {
-    className: "jsx-2085888330",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 70
-    },
-    __self: undefined
-  }, "Because of this, I actively try to seek out opportunity to connect with other people. Music, Art, and continual learning are some of the outlets I've found to help with that."))))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "2085888330",
-    __self: undefined
-  }, "\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9yZ3J1bmVzdC9EZXZlbG9wZXIvcmVhY3QtcG9ydGZvbGlvL2NvbXBvbmVudHMvaW5kZXgvSW5kZXgyLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQStFa0IiLCJmaWxlIjoiL1VzZXJzL3JncnVuZXN0L0RldmVsb3Blci9yZWFjdC1wb3J0Zm9saW8vY29tcG9uZW50cy9pbmRleC9JbmRleDIuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDb250cm9sbGVyLCBTY2VuZSB9IGZyb20gXCJyZWFjdC1zY3JvbGxtYWdpY1wiO1xuY29uc3QgSW5kZXgyID0gcHJvcHMgPT4ge1xuICByZXR1cm4gKFxuICAgIDxkaXYgY2xhc3NOYW1lPVwiaW5kZXgtMlwiPlxuICAgICAgPGRpdiBpZD1cInRyaWdnZXJcIj48L2Rpdj5cbiAgICAgIDxDb250cm9sbGVyPlxuICAgICAgICA8aDE+V2hvIEFtIEk/PC9oMT5cbiAgICAgICAgPFNjZW5lXG4gICAgICAgICAgZHVyYXRpb249ezcwMH1cbiAgICAgICAgICBjbGFzc1RvZ2dsZT1cInNsaWRlLWxlZnQtb3BhY2l0eVwiXG4gICAgICAgICAgdHJpZ2dlckVsZW1lbnQ9XCIjdHJpZ2dlclwiXG4gICAgICAgICAgaW5kaWNhdG9ycz17ZmFsc2V9XG4gICAgICAgID5cbiAgICAgICAgICB7KHByb2dyZXNzLCBldmVudCkgPT4gKFxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250YWluZXJcIj5cbiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJsZWZ0XCI+XG4gICAgICAgICAgICAgICAgPGgyPlxuICAgICAgICAgICAgICAgICAgSSdtIGEgc29mdHdhcmUgZGV2ZWxvcGVyIGZyb20gUG9ydGxhbmQsIGN1cnJlbnRseSByZXNpZGluZyBpblxuICAgICAgICAgICAgICAgICAgU2FuIERpZWdvIHdpdGggZXhwZXJpZW5jZSBpbi4uLlxuICAgICAgICAgICAgICAgIDwvaDI+XG4gICAgICAgICAgICAgICAgPHVsPlxuICAgICAgICAgICAgICAgICAgPGxpPkphdmFzY3JpcHQ8L2xpPlxuICAgICAgICAgICAgICAgICAgPGxpPlJ1Ynk8L2xpPlxuICAgICAgICAgICAgICAgICAgPGxpPlB5dGhvbjwvbGk+XG4gICAgICAgICAgICAgICAgPC91bD5cbiAgICAgICAgICAgICAgICA8dWw+XG4gICAgICAgICAgICAgICAgICA8bGk+UmVhY3Q8L2xpPlxuICAgICAgICAgICAgICAgICAgPGxpPlJhaWxzPC9saT5cbiAgICAgICAgICAgICAgICAgIDxsaT5EamFuZ288L2xpPlxuICAgICAgICAgICAgICAgIDwvdWw+XG4gICAgICAgICAgICAgICAgPHA+XG4gICAgICAgICAgICAgICAgICAuLi4gYW5kIG1vcmUuIEkgdGhpbmt7XCIgXCJ9XG4gICAgICAgICAgICAgICAgICA8c3Ryb25nPmphdmFzY3JpcHQgaXMgYSBncmVhdCBsYW5ndWFnZTwvc3Ryb25nPiwgYW5kIEknbVxuICAgICAgICAgICAgICAgICAgY29uc3RhbnRseSB3b3cnZCBieSB0aGUgYW1vdW50IG9mIHRlY2hub2xvZ3kgcGVvcGxlIGhhdmVcbiAgICAgICAgICAgICAgICAgIGNyZWF0ZWQgYW5kIGJ1aWx0IHVzaW5nIGl0LiBUaGF0IGJlaW5nIHNhaWQsIEkgZG9uJ3QgYmVsaWV2ZVxuICAgICAgICAgICAgICAgICAgdGhhdCBldmVyeXRoaW5nIG5lZWRzIC8gc2hvdWxkIGJlIGNyZWF0ZWQgdXNpbmcgamF2YXNjcmlwdC5cbiAgICAgICAgICAgICAgICAgIEFsd2F5cyBwaWNrIHRoZSByaWdodCB0b29sIGZvciB0aGUgam9iIVxuICAgICAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICApfVxuICAgICAgICA8L1NjZW5lPlxuICAgICAgICA8ZGl2IGlkPVwidHJpZ2dlci0yXCI+PC9kaXY+XG4gICAgICAgIDxTY2VuZVxuICAgICAgICAgIGR1cmF0aW9uPXs1MDB9XG4gICAgICAgICAgY2xhc3NUb2dnbGU9XCJzbGlkZS1yaWdodC1vcGFjaXR5XCJcbiAgICAgICAgICB0cmlnZ2VyRWxlbWVudD1cIiN0cmlnZ2VyLTJcIlxuICAgICAgICAgIGluZGljYXRvcnM9e2ZhbHNlfVxuICAgICAgICA+XG4gICAgICAgICAgeyhwcm9ncmVzcywgZXZlbnQpID0+IChcbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udGFpbmVyXCI+XG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicmlnaHRcIj5cbiAgICAgICAgICAgICAgICA8aDI+SSdtIHBhc3Npb25hdGUgYWJvdXQuLi48L2gyPlxuICAgICAgICAgICAgICAgIDx1bD5cbiAgICAgICAgICAgICAgICAgIDxsaT5Db2Rpbmc8L2xpPlxuICAgICAgICAgICAgICAgICAgPGxpPmVDb21tZXJjZTwvbGk+XG4gICAgICAgICAgICAgICAgICA8bGk+RW50cmVwZW5ldXJzaGlwPC9saT5cbiAgICAgICAgICAgICAgICA8L3VsPlxuICAgICAgICAgICAgICAgIDx1bD5cbiAgICAgICAgICAgICAgICAgIDxsaT5NdXNpYzwvbGk+XG4gICAgICAgICAgICAgICAgICA8bGk+QXJ0PC9saT5cbiAgICAgICAgICAgICAgICAgIDxsaT5MZWFybmluZzwvbGk+XG4gICAgICAgICAgICAgICAgPC91bD5cbiAgICAgICAgICAgICAgICA8cD5cbiAgICAgICAgICAgICAgICAgIEkgYmVsaWV2ZSB0aGF0IGl0J3MgaW1wb3J0YW50IHRvIGhhdmUgYXtcIiBcIn1cbiAgICAgICAgICAgICAgICAgIDxzdHJvbmc+d2VsbCBiYWxhbmNlZCBsaWZlc3R5bGU8L3N0cm9uZz4uIFdvcmtpbmcgYXMgYVxuICAgICAgICAgICAgICAgICAgc29mdHdhcmUgZGV2ZWxvcGVyIG1lYW5zIHRoYXQgSSBzcGVuZCBhIGxvdCBvZiB0aW1lIHN0YXJpbmcgYXRcbiAgICAgICAgICAgICAgICAgIGEgY29tcHV0ZXIsIHRoaW5raW5nIHF1aWV0bHkgdG8gbXlzZWxmLlxuICAgICAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICAgICAgICA8cD5cbiAgICAgICAgICAgICAgICAgIEJlY2F1c2Ugb2YgdGhpcywgSSBhY3RpdmVseSB0cnkgdG8gc2VlayBvdXQgb3Bwb3J0dW5pdHkgdG9cbiAgICAgICAgICAgICAgICAgIGNvbm5lY3Qgd2l0aCBvdGhlciBwZW9wbGUuIE11c2ljLCBBcnQsIGFuZCBjb250aW51YWwgbGVhcm5pbmdcbiAgICAgICAgICAgICAgICAgIGFyZSBzb21lIG9mIHRoZSBvdXRsZXRzIEkndmUgZm91bmQgdG8gaGVscCB3aXRoIHRoYXQuXG4gICAgICAgICAgICAgICAgPC9wPlxuICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICl9XG4gICAgICAgIDwvU2NlbmU+XG4gICAgICA8L0NvbnRyb2xsZXI+XG4gICAgICA8c3R5bGUganN4PntgYH08L3N0eWxlPlxuICAgIDwvZGl2PlxuICApO1xufTtcblxuZXhwb3J0IGRlZmF1bHQgSW5kZXgyO1xuIl19 */\n/*@ sourceURL=/Users/rgrunest/Developer/react-portfolio/components/index/Index2.js */"));
+  }, `
+    .wordbreak {
+      width: 60%;
+      height: 1px;
+      background-color: #252b3338;
+      margin: 1rem auto;
+    }
+  `));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Index2);
+/* harmony default export */ __webpack_exports__["default"] = (WordBreak);
+
+/***/ }),
+
+/***/ "./dbconfig.js":
+/*!*********************!*\
+  !*** ./dbconfig.js ***!
+  \*********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const config = {
+  apiKey: "AIzaSyCYBzQ6yAAZFpTIMUAjuei6bl0iolSmbjA",
+  authDomain: "myblog-3536b.firebaseapp.com",
+  databaseURL: "https://myblog-3536b.firebaseio.com",
+  projectId: "myblog-3536b",
+  storageBucket: "myblog-3536b.appspot.com",
+  messagingSenderId: "496062853871",
+  appId: "1:496062853871:web:30a427c740d371018f611a",
+  measurementId: "G-8JPJ4BEEWT"
+};
+/* harmony default export */ __webpack_exports__["default"] = (config);
 
 /***/ }),
 
@@ -2249,95 +2118,155 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/index.js":
-/*!************************!*\
-  !*** ./pages/index.js ***!
-  \************************/
+/***/ "./pages/blog.js":
+/*!***********************!*\
+  !*** ./pages/blog.js ***!
+  \***********************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Index; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_MyLayout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/MyLayout */ "./components/MyLayout.js");
-/* harmony import */ var _components_index_Index2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components//index/Index2 */ "./components/index/Index2.js");
-/* harmony import */ var react_scrollmagic__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-scrollmagic */ "react-scrollmagic");
-/* harmony import */ var react_scrollmagic__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_scrollmagic__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/pages/index.js";
-
+/* harmony import */ var firebase_app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! firebase/app */ "firebase/app");
+/* harmony import */ var firebase_app__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(firebase_app__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var firebase_database__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! firebase/database */ "firebase/database");
+/* harmony import */ var firebase_database__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(firebase_database__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _react_firebase_database__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @react-firebase/database */ "@react-firebase/database");
+/* harmony import */ var _react_firebase_database__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_react_firebase_database__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _dbconfig__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../dbconfig */ "./dbconfig.js");
+/* harmony import */ var _components_MyLayout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/MyLayout */ "./components/MyLayout.js");
+/* harmony import */ var _components_BlogPost__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/BlogPost */ "./components/BlogPost.js");
+/* harmony import */ var _components_WordBreak__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/WordBreak */ "./components/WordBreak.js");
+var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/pages/blog.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 
-function Index() {
-  return __jsx(_components_MyLayout__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    page: "Home",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }, __jsx("div", {
-    className: "index",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, __jsx("div", {
-    className: "overlay",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, __jsx("h1", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }, "Software / Web Developer"), __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }, "Currently Based in San Diego, CA."), __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }, "Don't be shy. Send me an", " ", __jsx("a", {
-    href: "mailto:ryangrunest45@gmail.com",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, "email"), "."))), __jsx(_components_index_Index2__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }));
+
+
+
+
+
+
+
+
+class Blog extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  constructor(props) {
+    super(props);
+    this.state = {
+      numBlogs: 0,
+      blogData: []
+    };
+  }
+
+  render() {
+    return __jsx("div", {
+      className: "blog",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 23
+      },
+      __self: this
+    }, __jsx(_react_firebase_database__WEBPACK_IMPORTED_MODULE_3__["FirebaseDatabaseProvider"], _extends({
+      firebase: firebase_app__WEBPACK_IMPORTED_MODULE_1___default.a
+    }, _dbconfig__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24
+      },
+      __self: this
+    }), __jsx(_components_MyLayout__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      page: "Blog",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25
+      },
+      __self: this
+    }, __jsx("h1", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26
+      },
+      __self: this
+    }, "This is the blog page. There are currently ", this.state.numBlogs, " ", "posts..."), __jsx(_react_firebase_database__WEBPACK_IMPORTED_MODULE_3__["FirebaseDatabaseNode"], {
+      path: "BlogPosts/",
+      orderByKey: true,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30
+      },
+      __self: this
+    }, data => {
+      console.log(data);
+
+      if (data.value) {
+        this.setState({
+          blogData: Object.entries(data.value),
+          numBlogs: Object.entries(data.value).length
+        });
+        return "";
+      } else {
+        return __jsx("div", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 40
+          },
+          __self: this
+        }, "Could not get data");
+      }
+    }), this.state.blogData.map((blog, index) => {
+      return __jsx(_components_BlogPost__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        key: index,
+        title: blog[1].title,
+        text: blog[1].text,
+        imgPath: blog[1].imgPath,
+        date: blog[1].date,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46
+        },
+        __self: this
+      });
+    }), __jsx("style", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 55
+      },
+      __self: this
+    }, `
+            
+    `))));
+  }
+
 }
+
+/* harmony default export */ __webpack_exports__["default"] = (Blog);
 
 /***/ }),
 
-/***/ 5:
-/*!******************************!*\
-  !*** multi ./pages/index.js ***!
-  \******************************/
+/***/ 3:
+/*!*****************************!*\
+  !*** multi ./pages/blog.js ***!
+  \*****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/rgrunest/Developer/react-portfolio/pages/index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! /Users/rgrunest/Developer/react-portfolio/pages/blog.js */"./pages/blog.js");
 
+
+/***/ }),
+
+/***/ "@react-firebase/database":
+/*!*******************************************!*\
+  !*** external "@react-firebase/database" ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@react-firebase/database");
 
 /***/ }),
 
@@ -2396,6 +2325,28 @@ module.exports = require("core-js/library/fn/weak-map");
 
 /***/ }),
 
+/***/ "firebase/app":
+/*!*******************************!*\
+  !*** external "firebase/app" ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("firebase/app");
+
+/***/ }),
+
+/***/ "firebase/database":
+/*!************************************!*\
+  !*** external "firebase/database" ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("firebase/database");
+
+/***/ }),
+
 /***/ "next/head":
 /*!****************************!*\
   !*** external "next/head" ***!
@@ -2451,17 +2402,6 @@ module.exports = require("react-is");
 
 /***/ }),
 
-/***/ "react-scrollmagic":
-/*!************************************!*\
-  !*** external "react-scrollmagic" ***!
-  \************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("react-scrollmagic");
-
-/***/ }),
-
 /***/ "styled-jsx/style":
 /*!***********************************!*\
   !*** external "styled-jsx/style" ***!
@@ -2485,4 +2425,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=blog.js.map

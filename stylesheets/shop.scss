@@ -2,7 +2,7 @@
   .products-container {
     padding: 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     .product {
       background-color: $light;
@@ -14,6 +14,7 @@
       }
       img {
         max-width: 20rem;
+        width: 100%;
       }
     }
   }
@@ -23,6 +24,7 @@
   .shop {
     .products-container {
       display: block;
+      padding: 0;
       .product {
         text-align: center;
       }
