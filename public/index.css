@@ -242,6 +242,73 @@
   padding-top: 2rem;
 }
 
+header {
+  z-index: 10000;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  padding: 20px;
+}
+header .header-left a {
+  font-size: 1.2rem;
+}
+header .hamburger {
+  position: relative;
+  width: 3rem;
+}
+header .hamburger:hover {
+  cursor: pointer;
+}
+header .hamburger div {
+  margin: 0.3rem;
+  width: 1.5rem;
+  height: 2.1px;
+  background-color: black;
+  transition: 0.3s all ease-in-out;
+}
+
+.burger-1 {
+  transform: translateY(0.42rem) rotate(-50deg);
+}
+
+.burger-2 {
+  opacity: 0;
+}
+
+.burger-3 {
+  transform: translateY(-0.45rem) rotate(50deg);
+}
+
+.NavMenu {
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  background-color: #f5f5f5;
+  position: absolute;
+  top: 68px;
+  left: 0;
+  transition: 0.4s all ease-in-out;
+  transform: translateX(100vw);
+  display: flex;
+  justify-content: center;
+}
+.NavMenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.NavMenu ul li {
+  padding: 0.5rem;
+}
+.NavMenu ul a {
+  font-size: 2rem;
+}
+
+.NavMenu.open {
+  transform: translateX(0);
+}
+
 html,
 body {
   background: #f3f5f6;
