@@ -24,8 +24,22 @@ class Blog extends Component {
         <FirebaseDatabaseProvider firebase={firebase} {...dbconfig}>
           <Layout page="Blog">
             <h1>
-              This is the blog page. There are currently {this.state.numBlogs}{" "}
-              posts...
+              <p>
+                These are words about various things that I find interesting or
+                that are encompassing my life.
+              </p>
+              <p>
+                Some of them have to do with{" "}
+                <span className="highlighted">software development.</span>
+              </p>
+              <p>
+                Some of them have to do with{" "}
+                <span className="highlighted">sounds.</span>
+              </p>
+              <p>
+                Some of them have to do with{" "}
+                <span className="highlighted">sunscreen.</span>
+              </p>
             </h1>
             <FirebaseDatabaseNode path="BlogPosts/" orderByKey>
               {data => {

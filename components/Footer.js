@@ -6,7 +6,7 @@ export default function Footer() {
         <ul className="contact-list">
           <li className="back-to-top">
             <Link href="/">
-              <a>Back To Top</a>
+              <a>Go Home</a>
             </Link>
           </li>
           <li>

@@ -60,7 +60,7 @@ function Footer() {
       lineNumber: 9
     },
     __self: this
-  }, "Back To Top"))), __jsx("li", {
+  }, "Go Home"))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
@@ -15903,7 +15903,7 @@ function Index() {
 
 /***/ }),
 
-/***/ 4:
+/***/ 1:
 /*!*************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Frgrunest%2FDeveloper%2Freact-portfolio%2Fpages%2Findex.js ***!
   \*************************************************************************************************************************************/
@@ -15926,5 +15926,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

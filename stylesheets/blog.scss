@@ -2,6 +2,11 @@
   h1 {
     padding: 1rem;
     margin: 0;
+    // background-color: $black;
+    // color: $light;
+    p {
+      margin: 0;
+    }
   }
   .BlogPost {
     background: white;
@@ -30,12 +35,13 @@
     }
 
     .text {
-      padding: 1rem 2rem;
+      padding: 1rem 1.5rem;
       padding-bottom: 3rem;
+      font-family: PT Serif, serif;
     }
     .text p {
       text-indent: 2rem;
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       word-wrap: break-word;
       margin: 0;
       margin-bottom: 1rem;
