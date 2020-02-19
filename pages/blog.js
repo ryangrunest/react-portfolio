@@ -30,15 +30,10 @@ class Blog extends Component {
               </p>
               <p>
                 Some of them have to do with{" "}
-                <span className="highlighted">software development.</span>
-              </p>
-              <p>
-                Some of them have to do with{" "}
-                <span className="highlighted">sounds.</span>
-              </p>
-              <p>
-                Some of them have to do with{" "}
-                <span className="highlighted">sunscreen.</span>
+                <span className="highlighted">software development</span>. Some
+                of them have to do with{" "}
+                <span className="highlighted">sounds</span>. Some of them have
+                to do with <span className="highlighted">sunscreen</span>.
               </p>
             </h1>
             <FirebaseDatabaseNode path="BlogPosts/" orderByKey>

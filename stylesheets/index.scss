@@ -16,6 +16,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   color: #252b33;
+  line-height: 1.7rem;
   *::selection {
     color: #f3f5f6;
     background-color: rgb(120, 169, 152);
@@ -35,6 +36,10 @@ body {
 }
 h1 {
   font-size: 2.2rem;
+  line-height: 3.3rem;
+}
+h4 {
+  line-height: 2.5rem;
 }
 p {
   font-size: 1.2rem;
@@ -58,6 +63,7 @@ p {
 .highlighted {
   background-color: $green;
   color: $light;
+  padding: 0.3rem 0.1rem;
 }
 
 .index {

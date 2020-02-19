@@ -251,6 +251,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   color: #252b33;
+  line-height: 1.7rem;
 }
 html *::selection,
 body *::selection {
@@ -275,6 +276,11 @@ body *:focus {
 
 h1 {
   font-size: 2.2rem;
+  line-height: 3.3rem;
+}
+
+h4 {
+  line-height: 2.5rem;
 }
 
 p {
@@ -302,6 +308,7 @@ p {
 .highlighted {
   background-color: #78a998;
   color: #f5f5f5;
+  padding: 0.3rem 0.1rem;
 }
 
 .index {

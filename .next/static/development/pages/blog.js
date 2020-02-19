@@ -37747,38 +37747,26 @@ function (_Component) {
           lineNumber: 33
         },
         __self: this
-      }, "software development.")), __jsx("p", {
+      }, "software development"), ". Some of them have to do with", " ", __jsx("span", {
+        className: "highlighted",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 35
         },
         __self: this
-      }, "Some of them have to do with", " ", __jsx("span", {
+      }, "sounds"), ". Some of them have to do with ", __jsx("span", {
         className: "highlighted",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 36
         },
         __self: this
-      }, "sounds.")), __jsx("p", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 39
-        },
-        __self: this
-      }, "Some of them have to do with", " ", __jsx("span", {
-        className: "highlighted",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 41
-        },
-        __self: this
-      }, "sunscreen."))), __jsx(_react_firebase_database__WEBPACK_IMPORTED_MODULE_10__["FirebaseDatabaseNode"], {
+      }, "sunscreen"), ".")), __jsx(_react_firebase_database__WEBPACK_IMPORTED_MODULE_10__["FirebaseDatabaseNode"], {
         path: "BlogPosts/",
         orderByKey: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 39
         },
         __self: this
       }, function (data) {
@@ -37793,7 +37781,7 @@ function (_Component) {
           return __jsx("div", {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 53
+              lineNumber: 48
             },
             __self: this
           }, "Could not get data");
@@ -37802,7 +37790,7 @@ function (_Component) {
         className: "blogpost-container",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 52
         },
         __self: this
       }, this.state.blogData.reverse().map(function (blog, index) {
@@ -37815,7 +37803,7 @@ function (_Component) {
           key: blog[0],
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 60
+            lineNumber: 55
           },
           __self: this
         });
