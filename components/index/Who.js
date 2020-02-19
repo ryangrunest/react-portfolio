@@ -6,7 +6,7 @@ const Who = props => {
       <Controller>
         <h1>Who Am I?</h1>
         <Scene
-          duration={900}
+          duration={1100}
           classToggle="slide-left-opacity"
           triggerElement="#trigger"
           indicators={false}
@@ -40,7 +40,7 @@ const Who = props => {
         </Scene>
         <div id="trigger-2"></div>
         <Scene
-          duration={900}
+          duration={1100}
           classToggle="slide-right-opacity"
           triggerElement="#trigger-2"
           indicators={false}
@@ -74,7 +74,7 @@ const Who = props => {
         </Scene>
         <div id="trigger-3"></div>
         <Scene
-          duration={900}
+          duration={1100}
           classToggle="slide-left-opacity"
           triggerElement="#trigger-3"
           indicators={false}

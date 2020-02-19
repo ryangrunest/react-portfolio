@@ -84,6 +84,7 @@
 .blog h1 p {
   margin: 0;
   padding: 0.5rem 0;
+  line-height: 1.6rem;
 }
 .blog .BlogPost {
   background: white;
@@ -253,6 +254,10 @@ body {
   color: #252b33;
   line-height: 1.7rem;
 }
+html *,
+body * {
+  box-sizing: border-box;
+}
 html *::selection,
 body *::selection {
   color: #f3f5f6;
@@ -277,6 +282,10 @@ body *:focus {
 h1 {
   font-size: 2.2rem;
   line-height: 3.3rem;
+}
+
+h2 {
+  line-height: 3rem;
 }
 
 h4 {

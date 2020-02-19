@@ -88,146 +88,10 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
-
-/***/ "./components/BlogPost.js":
-/*!********************************!*\
-  !*** ./components/BlogPost.js ***!
-  \********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _WordBreak__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./WordBreak */ "./components/WordBreak.js");
-var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/components/BlogPost.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-class BlogPost extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isOpen: false,
-      openText: [],
-      closedText: ""
-    };
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick() {
-    let element = document.querySelector(`#${this.props.id} .text`);
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
-  }
-
-  componentDidMount() {
-    const closedText = this.props.text.match(/.{1,275}/g)[0];
-    const splitText = this.props.text.split("\n");
-    this.setState({
-      openText: splitText,
-      closedText: closedText
-    });
-  }
-
-  render() {
-    return __jsx("div", {
-      className: "BlogPost" // style={this.state.isOpen ? "{{width=100%}}" : ""}
-      ,
-      style: this.state.isOpen ? {
-        width: "100%"
-      } : {},
-      id: this.props.id,
-      key: this.props.index,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 32
-      },
-      __self: this
-    }, __jsx("h2", {
-      className: "title",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 39
-      },
-      __self: this
-    }, this.props.title), __jsx("h3", {
-      className: "date",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 40
-      },
-      __self: this
-    }, this.props.date), __jsx("div", {
-      className: "image-container",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 41
-      },
-      __self: this
-    }, __jsx("img", {
-      src: this.props.imgPath,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 42
-      },
-      __self: this
-    })), __jsx("div", {
-      className: "text",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 44
-      },
-      __self: this
-    }, this.state.isOpen ? this.state.openText.map((line, index) => __jsx("p", {
-      key: index,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 46
-      },
-      __self: this
-    }, line)) : __jsx("p", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 48
-      },
-      __self: this
-    }, this.state.closedText)), __jsx(_WordBreak__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 51
-      },
-      __self: this
-    }), this.state.openText.length > 1 ? __jsx("div", {
-      className: "button-container",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 53
-      },
-      __self: this
-    }, __jsx("button", {
-      onClick: this.handleClick,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 54
-      },
-      __self: this
-    }, this.state.isOpen ? "Read Less" : "Read More")) : "");
-  }
-
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (BlogPost);
-
-/***/ }),
 
 /***/ "./components/Footer.js":
 /*!******************************!*\
@@ -600,56 +464,58 @@ const Layout = props => {
 
 /***/ }),
 
-/***/ "./components/WordBreak.js":
-/*!*********************************!*\
-  !*** ./components/WordBreak.js ***!
-  \*********************************/
+/***/ "./components/shop/Product.js":
+/*!************************************!*\
+  !*** ./components/shop/Product.js ***!
+  \************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Product; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/components/WordBreak.js";
+var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/components/shop/Product.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-const WordBreak = props => {
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
-    className: "wordbreak",
+function Product(props) {
+  return __jsx("div", {
+    id: props.id,
+    className: "product",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 3
+    },
+    __self: this
+  }, __jsx("h4", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 4
     },
-    __self: undefined
-  }));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (WordBreak);
-
-/***/ }),
-
-/***/ "./dbconfig.js":
-/*!*********************!*\
-  !*** ./dbconfig.js ***!
-  \*********************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-const config = {
-  apiKey: "AIzaSyCYBzQ6yAAZFpTIMUAjuei6bl0iolSmbjA",
-  authDomain: "myblog-3536b.firebaseapp.com",
-  databaseURL: "https://myblog-3536b.firebaseio.com",
-  projectId: "myblog-3536b",
-  storageBucket: "myblog-3536b.appspot.com",
-  messagingSenderId: "496062853871",
-  appId: "1:496062853871:web:30a427c740d371018f611a",
-  measurementId: "G-8JPJ4BEEWT"
-};
-/* harmony default export */ __webpack_exports__["default"] = (config);
+    __self: this
+  }, props.title), __jsx("img", {
+    src: props.imgPath,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, `Price: $${props.price}`, "0"), __jsx("button", {
+    onClick: () => props.createCheckout(props.id),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, "Buy"));
+}
 
 /***/ }),
 
@@ -2324,9 +2190,9 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/blog.js":
+/***/ "./pages/shop.js":
 /*!***********************!*\
-  !*** ./pages/blog.js ***!
+  !*** ./pages/shop.js ***!
   \***********************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -2335,175 +2201,241 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var firebase_app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! firebase/app */ "firebase/app");
-/* harmony import */ var firebase_app__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(firebase_app__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var firebase_database__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! firebase/database */ "firebase/database");
-/* harmony import */ var firebase_database__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(firebase_database__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _react_firebase_database__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @react-firebase/database */ "@react-firebase/database");
-/* harmony import */ var _react_firebase_database__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_react_firebase_database__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _dbconfig__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../dbconfig */ "./dbconfig.js");
-/* harmony import */ var _components_MyLayout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/MyLayout */ "./components/MyLayout.js");
-/* harmony import */ var _components_BlogPost__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/BlogPost */ "./components/BlogPost.js");
-/* harmony import */ var _components_WordBreak__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/WordBreak */ "./components/WordBreak.js");
-var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/pages/blog.js";
+/* harmony import */ var _components_MyLayout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/MyLayout */ "./components/MyLayout.js");
+/* harmony import */ var _components_shop_Product__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/shop/Product */ "./components/shop/Product.js");
+/* harmony import */ var _queries_shop_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../queries/shop.js */ "./queries/shop.js");
+var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/pages/shop.js";
+
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 
 
 
-
-
-
-
-
-
-class Blog extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+class Shop extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   constructor(props) {
     super(props);
     this.state = {
-      numBlogs: 0,
-      blogData: []
+      shopName: "",
+      products: [],
+      isLoaded: false,
+      cartURL: ""
     };
+    this.createCheckout = this.createCheckout.bind(this);
+  }
+
+  componentDidMount() {
+    _queries_shop_js__WEBPACK_IMPORTED_MODULE_3__["default"].getShopName.then(data => this.setState({
+      shopName: data,
+      isLoaded: true
+    }));
+    _queries_shop_js__WEBPACK_IMPORTED_MODULE_3__["default"].getProductsWithImages(10).then(value => {
+      this.setState({
+        products: value,
+        isLoaded: true
+      });
+    });
+  }
+
+  createCheckout(id) {
+    _queries_shop_js__WEBPACK_IMPORTED_MODULE_3__["default"].createCheckout(id).then(data => {
+      this.setState({
+        cartURL: data
+      });
+    });
   }
 
   render() {
-    return __jsx("div", {
-      className: "blog",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 23
-      },
-      __self: this
-    }, __jsx(_react_firebase_database__WEBPACK_IMPORTED_MODULE_3__["FirebaseDatabaseProvider"], _extends({
-      firebase: firebase_app__WEBPACK_IMPORTED_MODULE_1___default.a
-    }, _dbconfig__WEBPACK_IMPORTED_MODULE_4__["default"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 24
-      },
-      __self: this
-    }), __jsx(_components_MyLayout__WEBPACK_IMPORTED_MODULE_5__["default"], {
-      page: "Blog",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 25
-      },
-      __self: this
-    }, __jsx("h1", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 26
-      },
-      __self: this
-    }, __jsx("p", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 27
-      },
-      __self: this
-    }, "These are words about various things that I find interesting or that are encompassing my life."), __jsx("p", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 31
-      },
-      __self: this
-    }, "Some of them have to do with", " ", __jsx("span", {
-      className: "highlighted",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 33
-      },
-      __self: this
-    }, "software development"), ". Some of them have to do with", " ", __jsx("span", {
-      className: "highlighted",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 35
-      },
-      __self: this
-    }, "sounds"), ". Some of them have to do with ", __jsx("span", {
-      className: "highlighted",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 36
-      },
-      __self: this
-    }, "sunscreen"), ".")), __jsx(_react_firebase_database__WEBPACK_IMPORTED_MODULE_3__["FirebaseDatabaseNode"], {
-      path: "BlogPosts/",
-      orderByKey: true,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 39
-      },
-      __self: this
-    }, data => {
-      if (data.value) {
-        this.setState({
-          blogData: Object.entries(data.value),
-          numBlogs: Object.entries(data.value).length
-        });
-        return "";
-      } else {
-        return __jsx("div", {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 48
-          },
-          __self: this
-        }, "Could not get data");
-      }
-    }), __jsx("div", {
-      className: "blogpost-container",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 52
-      },
-      __self: this
-    }, this.state.blogData.reverse().map((blog, index) => {
-      return __jsx(_components_BlogPost__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        id: blog[0],
-        title: blog[1].title,
-        text: blog[1].text,
-        imgPath: blog[1].imgPath,
-        date: blog[1].date,
-        key: blog[0],
+    const {
+      isLoaded,
+      shopName,
+      products
+    } = this.state;
+
+    if (!isLoaded) {
+      return __jsx("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 36
         },
         __self: this
-      });
-    })))));
+      }, "Loading...");
+    } else {
+      return __jsx(_components_MyLayout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        page: "Shop",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 39
+        },
+        __self: this
+      }, __jsx("div", {
+        className: "shop",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40
+        },
+        __self: this
+      }, __jsx("h2", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 41
+        },
+        __self: this
+      }, shopName), __jsx("div", {
+        className: "products-container",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 42
+        },
+        __self: this
+      }, products.map((product, index) => {
+        return __jsx(_components_shop_Product__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          key: index,
+          id: product.node.id,
+          title: product.node.title,
+          product: product,
+          imgPath: product.node.variants.edges[0].node.image.transformedSrc,
+          createCheckout: this.createCheckout,
+          price: product.node.priceRange.maxVariantPrice.amount,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 45
+          },
+          __self: this
+        });
+      }))));
+    }
   }
 
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (Blog);
+/* harmony default export */ __webpack_exports__["default"] = (Shop);
 
 /***/ }),
 
-/***/ 4:
+/***/ "./queries/shop.js":
+/*!*************************!*\
+  !*** ./queries/shop.js ***!
+  \*************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_0__);
+
+const url = "https://another-test-store-97213.myshopify.com/api/graphql";
+const headers = {
+  "Content-Type": "application/graphql",
+  "X-Shopify-Storefront-Access-Token": "5db76a7bcd70717eade01e6a64392829"
+};
+let queries = {
+  getProductsWithImages: numberOfProducts => {
+    return new Promise((resolve, reject) => {
+      let query = `query	{
+      products(first:${numberOfProducts})	{
+        edges {
+          node {
+            id
+            title
+            images(first: 1) {
+              edges {
+                node {
+                  id
+                }
+              }
+            }
+            variants(first:10) {
+              edges {
+                node {
+                  image {
+                    transformedSrc
+                  }
+                }
+              }
+            }
+            priceRange {
+              maxVariantPrice {
+                amount
+              }
+            }
+          }
+        }
+      }
+    }`;
+      isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_0___default()(url, {
+        method: "post",
+        headers: headers,
+        body: query
+      }).then(r => r.json()).then(data => {
+        resolve(data.data.products.edges);
+      });
+    });
+  },
+  getShopName: new Promise((resolve, reject) => {
+    let value = "cheeseburger";
+    let query = `query	{
+      shop {
+        name
+      }
+    }
+    `;
+    isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_0___default()(url, {
+      method: "post",
+      headers: headers,
+      body: query
+    }).then(r => r.json()).then(data => {
+      value = data.data.shop.name;
+      resolve(value);
+    });
+  }),
+  createCheckout: lineItem => {
+    return new Promise((resolve, reject) => {
+      let value = "cheeseburger";
+      let query = `mutation {
+        checkoutCreate(input: {
+          lineItems: [{ variantId: "${lineItem}", quantity: 1}]
+        }) {
+          checkout {
+             id
+             webUrl
+             lineItems(first: 5) {
+               edges {
+                 node {
+                   title
+                   quantity
+                 }
+               }
+             }
+          }
+        }
+      }`;
+      console.log(query);
+      isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_0___default()(url, {
+        method: "post",
+        headers: headers,
+        body: query
+      }).then(r => r.json()).then(data => {
+        console.log(data);
+        resolve(data);
+      });
+    });
+  }
+};
+/* harmony default export */ __webpack_exports__["default"] = (queries);
+
+/***/ }),
+
+/***/ 6:
 /*!*****************************!*\
-  !*** multi ./pages/blog.js ***!
+  !*** multi ./pages/shop.js ***!
   \*****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/rgrunest/Developer/react-portfolio/pages/blog.js */"./pages/blog.js");
+module.exports = __webpack_require__(/*! /Users/rgrunest/Developer/react-portfolio/pages/shop.js */"./pages/shop.js");
 
-
-/***/ }),
-
-/***/ "@react-firebase/database":
-/*!*******************************************!*\
-  !*** external "@react-firebase/database" ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@react-firebase/database");
 
 /***/ }),
 
@@ -2562,25 +2494,14 @@ module.exports = require("core-js/library/fn/weak-map");
 
 /***/ }),
 
-/***/ "firebase/app":
-/*!*******************************!*\
-  !*** external "firebase/app" ***!
-  \*******************************/
+/***/ "isomorphic-unfetch":
+/*!*************************************!*\
+  !*** external "isomorphic-unfetch" ***!
+  \*************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("firebase/app");
-
-/***/ }),
-
-/***/ "firebase/database":
-/*!************************************!*\
-  !*** external "firebase/database" ***!
-  \************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("firebase/database");
+module.exports = require("isomorphic-unfetch");
 
 /***/ }),
 
@@ -2662,4 +2583,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=blog.js.map
+//# sourceMappingURL=shop.js.map
