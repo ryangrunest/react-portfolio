@@ -9,8 +9,8 @@ const Layout = props => {
       <div id="Layout">
         <MyHeader />
         {props.children}
+        <Footer />
       </div>
-      <Footer />
       <script
         src="https://kit.fontawesome.com/7fde712a5d.js"
         crossOrigin="anonymous"

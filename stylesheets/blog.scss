@@ -6,13 +6,16 @@
     // color: $light;
     p {
       margin: 0;
+      padding: 0.5rem 0;
     }
   }
   .BlogPost {
     background: white;
-    border-radius: 5px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
+    transition: 1s all ease-in-out;
+    margin-bottom: 2rem;
+
     .title {
       margin: 0;
       padding: 1.5rem;
@@ -32,11 +35,11 @@
     }
     img {
       width: 100%;
+      max-width: 35rem;
     }
 
     .text {
       padding: 1rem 1.5rem;
-      padding-bottom: 3rem;
       font-family: PT Serif, serif;
     }
     .text p {
@@ -45,6 +48,44 @@
       word-wrap: break-word;
       margin: 0;
       margin-bottom: 1rem;
+      animation: opacity 1.4s ease-out;
+    }
+    .button-container {
+      text-align: center;
+    }
+    button {
+      padding: 0.5rem 2rem;
+      background-color: $green;
+      color: $light;
+      font-size: 1.1rem;
+      border: none;
+      transition: 0.3s all ease-in-out;
+      margin: 0 2rem;
+      &:hover {
+        cursor: pointer;
+        box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.3);
+      }
+      &:active {
+        transform: translate(3px, 3px);
+        box-shadow: none;
+        transition: 0.1s all ease-in-out;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 830px) {
+  .blog {
+    .blogpost-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      flex-wrap: wrap;
+      margin: 1rem;
+      .BlogPost {
+        display: inline-block;
+        width: 45%;
+      }
     }
   }
 }

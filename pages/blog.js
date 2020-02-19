@@ -43,7 +43,6 @@ class Blog extends Component {
             </h1>
             <FirebaseDatabaseNode path="BlogPosts/" orderByKey>
               {data => {
-                console.log(data);
                 if (data.value) {
                   this.setState({
                     blogData: Object.entries(data.value),
@@ -55,20 +54,20 @@ class Blog extends Component {
                 }
               }}
             </FirebaseDatabaseNode>
-            {this.state.blogData.map((blog, index) => {
-              return (
-                <BlogPost
-                  key={index}
-                  title={blog[1].title}
-                  text={blog[1].text}
-                  imgPath={blog[1].imgPath}
-                  date={blog[1].date}
-                />
-              );
-            })}
-            <style>{`
-            
-    `}</style>
+            <div className="blogpost-container">
+              {this.state.blogData.reverse().map((blog, index) => {
+                return (
+                  <BlogPost
+                    id={blog[0]}
+                    title={blog[1].title}
+                    text={blog[1].text}
+                    imgPath={blog[1].imgPath}
+                    date={blog[1].date}
+                    key={blog[0]}
+                  />
+                );
+              })}
+            </div>
           </Layout>
         </FirebaseDatabaseProvider>
       </div>

@@ -8,7 +8,9 @@ html,
 body {
   background: #f3f5f6;
   position: relative;
-  font-family: "Dosis", sans-serif;
+  // font-family: "Dosis", sans-serif;
+  // font-family: "Muli", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   letter-spacing: 1px;
   margin: 0;
   padding: 0;
@@ -27,15 +29,21 @@ body {
     font-weight: bold;
     font-size: 1.1rem;
   }
-}
-body {
-  padding: 20px;
+  *:focus {
+    outline: none;
+  }
 }
 h1 {
-  font-size: 3rem;
+  font-size: 2.2rem;
 }
 p {
   font-size: 1.2rem;
+}
+.wordbreak {
+  width: 60%;
+  height: 1px;
+  background-color: #252b3338;
+  margin: 1rem auto;
 }
 #Layout {
   padding-bottom: 25rem;
@@ -112,14 +120,19 @@ p {
     align-items: center;
     background-color: $black;
     color: $light;
+    font-size: 2.5rem;
   }
   .container {
     color: $black;
+    min-height: 30rem;
     transition: 0.7s all;
     font-size: 1.5rem;
     background: $white;
     padding: 1rem;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
   .container.dark {
     color: $white;
@@ -152,7 +165,8 @@ p {
     p {
       font-size: 2rem;
       text-align: center;
-      width: 17rem;
+      padding: 0.5rem 0;
+      width: 22rem;
       background-color: $green;
       color: $light;
     }
@@ -161,6 +175,7 @@ p {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding-bottom: 4rem;
     .nested {
       background: $light;
       border: 5px solid $green;
@@ -205,6 +220,9 @@ p {
     margin-top: 0;
     box-shadow: none;
     background: $light;
+  }
+  .Who .right {
+    text-align: left;
   }
   .Art {
     .container {
