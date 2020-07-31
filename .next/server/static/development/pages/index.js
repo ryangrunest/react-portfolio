@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -107,7 +107,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/components/Footer.js";
+var _jsxFileName = "/Users/rgrunest/Developer/ForFun/react-portfolio/components/Footer.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -243,7 +243,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "next/head");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/components/MyHead.js";
+var _jsxFileName = "/Users/rgrunest/Developer/ForFun/react-portfolio/components/MyHead.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -322,7 +322,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _NavMenu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./NavMenu */ "./components/NavMenu.js");
-var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/components/MyHeader.js";
+var _jsxFileName = "/Users/rgrunest/Developer/ForFun/react-portfolio/components/MyHeader.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -438,7 +438,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _MyHeader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./MyHeader */ "./components/MyHeader.js");
 /* harmony import */ var _MyHead__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./MyHead */ "./components/MyHead.js");
 /* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Footer */ "./components/Footer.js");
-var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/components/MyLayout.js";
+var _jsxFileName = "/Users/rgrunest/Developer/ForFun/react-portfolio/components/MyLayout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -500,7 +500,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/components/NavMenu.js";
+var _jsxFileName = "/Users/rgrunest/Developer/ForFun/react-portfolio/components/NavMenu.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -589,7 +589,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_scrollmagic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-scrollmagic */ "react-scrollmagic");
 /* harmony import */ var react_scrollmagic__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_scrollmagic__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/components/index/Art.js";
+var _jsxFileName = "/Users/rgrunest/Developer/ForFun/react-portfolio/components/index/Art.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -727,7 +727,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_scrollmagic__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-scrollmagic */ "react-scrollmagic");
 /* harmony import */ var react_scrollmagic__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_scrollmagic__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/components/index/Who.js";
+var _jsxFileName = "/Users/rgrunest/Developer/ForFun/react-portfolio/components/index/Who.js";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
@@ -1014,7 +1014,7 @@ const Who = props => {
   }, "Life is short, so I like to try new things. Maybe this comes from the ever looming existential dread?")))), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
     id: "2085888330",
     __self: undefined
-  }, "\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9yZ3J1bmVzdC9EZXZlbG9wZXIvcmVhY3QtcG9ydGZvbGlvL2NvbXBvbmVudHMvaW5kZXgvV2hvLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWdHa0IiLCJmaWxlIjoiL1VzZXJzL3JncnVuZXN0L0RldmVsb3Blci9yZWFjdC1wb3J0Zm9saW8vY29tcG9uZW50cy9pbmRleC9XaG8uanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDb250cm9sbGVyLCBTY2VuZSB9IGZyb20gXCJyZWFjdC1zY3JvbGxtYWdpY1wiO1xuY29uc3QgV2hvID0gcHJvcHMgPT4ge1xuICByZXR1cm4gKFxuICAgIDxkaXYgY2xhc3NOYW1lPVwiV2hvXCI+XG4gICAgICA8ZGl2IGlkPVwidHJpZ2dlclwiPjwvZGl2PlxuICAgICAgPENvbnRyb2xsZXI+XG4gICAgICAgIDxoMT5XaG8gQW0gST88L2gxPlxuICAgICAgICA8U2NlbmVcbiAgICAgICAgICBkdXJhdGlvbj17MTEwMH1cbiAgICAgICAgICBjbGFzc1RvZ2dsZT1cInNsaWRlLWxlZnQtb3BhY2l0eVwiXG4gICAgICAgICAgdHJpZ2dlckVsZW1lbnQ9XCIjdHJpZ2dlclwiXG4gICAgICAgICAgaW5kaWNhdG9ycz17ZmFsc2V9XG4gICAgICAgID5cbiAgICAgICAgICB7KHByb2dyZXNzLCBldmVudCkgPT4gKFxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250YWluZXIgbGVmdFwiPlxuICAgICAgICAgICAgICA8aDI+XG4gICAgICAgICAgICAgICAgSSdtIEEgU29mdHdhcmUgRGV2ZWxvcGVyIEZyb20gUG9ydGxhbmQsIEN1cnJlbnRseSBSZXNpZGluZyBJblxuICAgICAgICAgICAgICAgIFNhbiBEaWVnbyBXaXRoIEV4cGVyaWVuY2UgSW4uLi5cbiAgICAgICAgICAgICAgPC9oMj5cbiAgICAgICAgICAgICAgPHVsPlxuICAgICAgICAgICAgICAgIDxsaT5KYXZhc2NyaXB0PC9saT5cbiAgICAgICAgICAgICAgICA8bGk+UnVieTwvbGk+XG4gICAgICAgICAgICAgICAgPGxpPlB5dGhvbjwvbGk+XG4gICAgICAgICAgICAgIDwvdWw+XG4gICAgICAgICAgICAgIDx1bD5cbiAgICAgICAgICAgICAgICA8bGk+UmVhY3Q8L2xpPlxuICAgICAgICAgICAgICAgIDxsaT5SYWlsczwvbGk+XG4gICAgICAgICAgICAgICAgPGxpPkRqYW5nbzwvbGk+XG4gICAgICAgICAgICAgIDwvdWw+XG4gICAgICAgICAgICAgIDxwPlxuICAgICAgICAgICAgICAgIC4uLiBhbmQgbW9yZS4gSSB0aGlua3tcIiBcIn1cbiAgICAgICAgICAgICAgICA8c3Ryb25nPmphdmFzY3JpcHQgaXMgYSBncmVhdCBsYW5ndWFnZTwvc3Ryb25nPiwgYW5kIEknbVxuICAgICAgICAgICAgICAgIGNvbnN0YW50bHkgd293J2QgYnkgdGhlIGFtb3VudCBvZiB0ZWNobm9sb2d5IHBlb3BsZSBoYXZlIGNyZWF0ZWRcbiAgICAgICAgICAgICAgICBhbmQgYnVpbHQgdXNpbmcgaXQuIFRoYXQgYmVpbmcgc2FpZCwgSSBkb24ndCBiZWxpZXZlIHRoYXRcbiAgICAgICAgICAgICAgICBldmVyeXRoaW5nIG5lZWRzIC8gc2hvdWxkIGJlIGNyZWF0ZWQgdXNpbmcgamF2YXNjcmlwdC4gQWx3YXlzXG4gICAgICAgICAgICAgICAgcGljayB0aGUgcmlnaHQgdG9vbCBmb3IgdGhlIGpvYiFcbiAgICAgICAgICAgICAgPC9wPlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgKX1cbiAgICAgICAgPC9TY2VuZT5cbiAgICAgICAgPGRpdiBpZD1cInRyaWdnZXItMlwiPjwvZGl2PlxuICAgICAgICA8U2NlbmVcbiAgICAgICAgICBkdXJhdGlvbj17MTEwMH1cbiAgICAgICAgICBjbGFzc1RvZ2dsZT1cInNsaWRlLXJpZ2h0LW9wYWNpdHlcIlxuICAgICAgICAgIHRyaWdnZXJFbGVtZW50PVwiI3RyaWdnZXItMlwiXG4gICAgICAgICAgaW5kaWNhdG9ycz17ZmFsc2V9XG4gICAgICAgID5cbiAgICAgICAgICB7KHByb2dyZXNzLCBldmVudCkgPT4gKFxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250YWluZXIgcmlnaHQgZGFya1wiPlxuICAgICAgICAgICAgICA8aDI+SSdtIFBhc3Npb25hdGUgQWJvdXQuLi48L2gyPlxuICAgICAgICAgICAgICA8dWw+XG4gICAgICAgICAgICAgICAgPGxpPkNvZGluZzwvbGk+XG4gICAgICAgICAgICAgICAgPGxpPmVDb21tZXJjZTwvbGk+XG4gICAgICAgICAgICAgICAgPGxpPkVudHJlcGVuZXVyc2hpcDwvbGk+XG4gICAgICAgICAgICAgIDwvdWw+XG4gICAgICAgICAgICAgIDx1bD5cbiAgICAgICAgICAgICAgICA8bGk+TXVzaWM8L2xpPlxuICAgICAgICAgICAgICAgIDxsaT5BcnQ8L2xpPlxuICAgICAgICAgICAgICAgIDxsaT5MZWFybmluZzwvbGk+XG4gICAgICAgICAgICAgIDwvdWw+XG4gICAgICAgICAgICAgIDxwPlxuICAgICAgICAgICAgICAgIEkgYmVsaWV2ZSB0aGF0IGl0J3MgaW1wb3J0YW50IHRvIGhhdmUgYXtcIiBcIn1cbiAgICAgICAgICAgICAgICA8c3Ryb25nPndlbGwgYmFsYW5jZWQgbGlmZXN0eWxlPC9zdHJvbmc+LiBXb3JraW5nIGFzIGEgc29mdHdhcmVcbiAgICAgICAgICAgICAgICBkZXZlbG9wZXIgbWVhbnMgdGhhdCBJIHNwZW5kIGEgbG90IG9mIHRpbWUgc3RhcmluZyBhdCBhXG4gICAgICAgICAgICAgICAgY29tcHV0ZXIsIHRoaW5raW5nIHF1aWV0bHkgdG8gbXlzZWxmLlxuICAgICAgICAgICAgICA8L3A+XG4gICAgICAgICAgICAgIDxwPlxuICAgICAgICAgICAgICAgIEJlY2F1c2Ugb2YgdGhpcywgSSBhY3RpdmVseSB0cnkgdG8gc2VlayBvdXQgb3Bwb3J0dW5pdHkgdG9cbiAgICAgICAgICAgICAgICBjb25uZWN0IHdpdGggb3RoZXIgcGVvcGxlLiBNdXNpYywgQXJ0LCBhbmQgY29udGludWFsIGxlYXJuaW5nXG4gICAgICAgICAgICAgICAgYXJlIHNvbWUgb2YgdGhlIG91dGxldHMgSSd2ZSBmb3VuZCB0byBoZWxwIHdpdGggdGhhdC5cbiAgICAgICAgICAgICAgPC9wPlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgKX1cbiAgICAgICAgPC9TY2VuZT5cbiAgICAgICAgPGRpdiBpZD1cInRyaWdnZXItM1wiPjwvZGl2PlxuICAgICAgICA8U2NlbmVcbiAgICAgICAgICBkdXJhdGlvbj17MTEwMH1cbiAgICAgICAgICBjbGFzc1RvZ2dsZT1cInNsaWRlLWxlZnQtb3BhY2l0eVwiXG4gICAgICAgICAgdHJpZ2dlckVsZW1lbnQ9XCIjdHJpZ2dlci0zXCJcbiAgICAgICAgICBpbmRpY2F0b3JzPXtmYWxzZX1cbiAgICAgICAgPlxuICAgICAgICAgIHsocHJvZ3Jlc3MsIGV2ZW50KSA9PiAoXG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRhaW5lciBsZWZ0XCI+XG4gICAgICAgICAgICAgIDxoMj5JbiBNeSBGcmVlIFRpbWUuLi48L2gyPlxuICAgICAgICAgICAgICA8cD5cbiAgICAgICAgICAgICAgICBZb3UgY2FuIGZpbmQgbWUgc3VyZmluZywgaGlraW5nLCBjYW1waW5nLCBwbGF5aW5nIGd1aXRhcixcbiAgICAgICAgICAgICAgICBwbGF5aW5nIHZpZGVvIGdhbWVzLCByZWFkaW5nLCBsaXN0ZW5pbmcgdG8gcG9kY2FzdHMgYW5kIG11c2ljLlxuICAgICAgICAgICAgICA8L3A+XG4gICAgICAgICAgICAgIDxwPlxuICAgICAgICAgICAgICAgIExpZmUgaXMgc2hvcnQsIHNvIEkgbGlrZSB0byB0cnkgbmV3IHRoaW5ncy4gTWF5YmUgdGhpcyBjb21lc1xuICAgICAgICAgICAgICAgIGZyb20gdGhlIGV2ZXIgbG9vbWluZyBleGlzdGVudGlhbCBkcmVhZD9cbiAgICAgICAgICAgICAgPC9wPlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgKX1cbiAgICAgICAgPC9TY2VuZT5cbiAgICAgIDwvQ29udHJvbGxlcj5cbiAgICAgIDxzdHlsZSBqc3g+e2BgfTwvc3R5bGU+XG4gICAgPC9kaXY+XG4gICk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBXaG87XG4iXX0= */\n/*@ sourceURL=/Users/rgrunest/Developer/react-portfolio/components/index/Who.js */"));
+  }, "\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9yZ3J1bmVzdC9EZXZlbG9wZXIvRm9yRnVuL3JlYWN0LXBvcnRmb2xpby9jb21wb25lbnRzL2luZGV4L1doby5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFnR2tCIiwiZmlsZSI6Ii9Vc2Vycy9yZ3J1bmVzdC9EZXZlbG9wZXIvRm9yRnVuL3JlYWN0LXBvcnRmb2xpby9jb21wb25lbnRzL2luZGV4L1doby5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IENvbnRyb2xsZXIsIFNjZW5lIH0gZnJvbSBcInJlYWN0LXNjcm9sbG1hZ2ljXCI7XG5jb25zdCBXaG8gPSBwcm9wcyA9PiB7XG4gIHJldHVybiAoXG4gICAgPGRpdiBjbGFzc05hbWU9XCJXaG9cIj5cbiAgICAgIDxkaXYgaWQ9XCJ0cmlnZ2VyXCI+PC9kaXY+XG4gICAgICA8Q29udHJvbGxlcj5cbiAgICAgICAgPGgxPldobyBBbSBJPzwvaDE+XG4gICAgICAgIDxTY2VuZVxuICAgICAgICAgIGR1cmF0aW9uPXsxMTAwfVxuICAgICAgICAgIGNsYXNzVG9nZ2xlPVwic2xpZGUtbGVmdC1vcGFjaXR5XCJcbiAgICAgICAgICB0cmlnZ2VyRWxlbWVudD1cIiN0cmlnZ2VyXCJcbiAgICAgICAgICBpbmRpY2F0b3JzPXtmYWxzZX1cbiAgICAgICAgPlxuICAgICAgICAgIHsocHJvZ3Jlc3MsIGV2ZW50KSA9PiAoXG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRhaW5lciBsZWZ0XCI+XG4gICAgICAgICAgICAgIDxoMj5cbiAgICAgICAgICAgICAgICBJJ20gQSBTb2Z0d2FyZSBEZXZlbG9wZXIgRnJvbSBQb3J0bGFuZCwgQ3VycmVudGx5IFJlc2lkaW5nIEluXG4gICAgICAgICAgICAgICAgU2FuIERpZWdvIFdpdGggRXhwZXJpZW5jZSBJbi4uLlxuICAgICAgICAgICAgICA8L2gyPlxuICAgICAgICAgICAgICA8dWw+XG4gICAgICAgICAgICAgICAgPGxpPkphdmFzY3JpcHQ8L2xpPlxuICAgICAgICAgICAgICAgIDxsaT5SdWJ5PC9saT5cbiAgICAgICAgICAgICAgICA8bGk+UHl0aG9uPC9saT5cbiAgICAgICAgICAgICAgPC91bD5cbiAgICAgICAgICAgICAgPHVsPlxuICAgICAgICAgICAgICAgIDxsaT5SZWFjdDwvbGk+XG4gICAgICAgICAgICAgICAgPGxpPlJhaWxzPC9saT5cbiAgICAgICAgICAgICAgICA8bGk+RGphbmdvPC9saT5cbiAgICAgICAgICAgICAgPC91bD5cbiAgICAgICAgICAgICAgPHA+XG4gICAgICAgICAgICAgICAgLi4uIGFuZCBtb3JlLiBJIHRoaW5re1wiIFwifVxuICAgICAgICAgICAgICAgIDxzdHJvbmc+amF2YXNjcmlwdCBpcyBhIGdyZWF0IGxhbmd1YWdlPC9zdHJvbmc+LCBhbmQgSSdtXG4gICAgICAgICAgICAgICAgY29uc3RhbnRseSB3b3cnZCBieSB0aGUgYW1vdW50IG9mIHRlY2hub2xvZ3kgcGVvcGxlIGhhdmUgY3JlYXRlZFxuICAgICAgICAgICAgICAgIGFuZCBidWlsdCB1c2luZyBpdC4gVGhhdCBiZWluZyBzYWlkLCBJIGRvbid0IGJlbGlldmUgdGhhdFxuICAgICAgICAgICAgICAgIGV2ZXJ5dGhpbmcgbmVlZHMgLyBzaG91bGQgYmUgY3JlYXRlZCB1c2luZyBqYXZhc2NyaXB0LiBBbHdheXNcbiAgICAgICAgICAgICAgICBwaWNrIHRoZSByaWdodCB0b29sIGZvciB0aGUgam9iIVxuICAgICAgICAgICAgICA8L3A+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICApfVxuICAgICAgICA8L1NjZW5lPlxuICAgICAgICA8ZGl2IGlkPVwidHJpZ2dlci0yXCI+PC9kaXY+XG4gICAgICAgIDxTY2VuZVxuICAgICAgICAgIGR1cmF0aW9uPXsxMTAwfVxuICAgICAgICAgIGNsYXNzVG9nZ2xlPVwic2xpZGUtcmlnaHQtb3BhY2l0eVwiXG4gICAgICAgICAgdHJpZ2dlckVsZW1lbnQ9XCIjdHJpZ2dlci0yXCJcbiAgICAgICAgICBpbmRpY2F0b3JzPXtmYWxzZX1cbiAgICAgICAgPlxuICAgICAgICAgIHsocHJvZ3Jlc3MsIGV2ZW50KSA9PiAoXG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRhaW5lciByaWdodCBkYXJrXCI+XG4gICAgICAgICAgICAgIDxoMj5JJ20gUGFzc2lvbmF0ZSBBYm91dC4uLjwvaDI+XG4gICAgICAgICAgICAgIDx1bD5cbiAgICAgICAgICAgICAgICA8bGk+Q29kaW5nPC9saT5cbiAgICAgICAgICAgICAgICA8bGk+ZUNvbW1lcmNlPC9saT5cbiAgICAgICAgICAgICAgICA8bGk+RW50cmVwZW5ldXJzaGlwPC9saT5cbiAgICAgICAgICAgICAgPC91bD5cbiAgICAgICAgICAgICAgPHVsPlxuICAgICAgICAgICAgICAgIDxsaT5NdXNpYzwvbGk+XG4gICAgICAgICAgICAgICAgPGxpPkFydDwvbGk+XG4gICAgICAgICAgICAgICAgPGxpPkxlYXJuaW5nPC9saT5cbiAgICAgICAgICAgICAgPC91bD5cbiAgICAgICAgICAgICAgPHA+XG4gICAgICAgICAgICAgICAgSSBiZWxpZXZlIHRoYXQgaXQncyBpbXBvcnRhbnQgdG8gaGF2ZSBhe1wiIFwifVxuICAgICAgICAgICAgICAgIDxzdHJvbmc+d2VsbCBiYWxhbmNlZCBsaWZlc3R5bGU8L3N0cm9uZz4uIFdvcmtpbmcgYXMgYSBzb2Z0d2FyZVxuICAgICAgICAgICAgICAgIGRldmVsb3BlciBtZWFucyB0aGF0IEkgc3BlbmQgYSBsb3Qgb2YgdGltZSBzdGFyaW5nIGF0IGFcbiAgICAgICAgICAgICAgICBjb21wdXRlciwgdGhpbmtpbmcgcXVpZXRseSB0byBteXNlbGYuXG4gICAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICAgICAgPHA+XG4gICAgICAgICAgICAgICAgQmVjYXVzZSBvZiB0aGlzLCBJIGFjdGl2ZWx5IHRyeSB0byBzZWVrIG91dCBvcHBvcnR1bml0eSB0b1xuICAgICAgICAgICAgICAgIGNvbm5lY3Qgd2l0aCBvdGhlciBwZW9wbGUuIE11c2ljLCBBcnQsIGFuZCBjb250aW51YWwgbGVhcm5pbmdcbiAgICAgICAgICAgICAgICBhcmUgc29tZSBvZiB0aGUgb3V0bGV0cyBJJ3ZlIGZvdW5kIHRvIGhlbHAgd2l0aCB0aGF0LlxuICAgICAgICAgICAgICA8L3A+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICApfVxuICAgICAgICA8L1NjZW5lPlxuICAgICAgICA8ZGl2IGlkPVwidHJpZ2dlci0zXCI+PC9kaXY+XG4gICAgICAgIDxTY2VuZVxuICAgICAgICAgIGR1cmF0aW9uPXsxMTAwfVxuICAgICAgICAgIGNsYXNzVG9nZ2xlPVwic2xpZGUtbGVmdC1vcGFjaXR5XCJcbiAgICAgICAgICB0cmlnZ2VyRWxlbWVudD1cIiN0cmlnZ2VyLTNcIlxuICAgICAgICAgIGluZGljYXRvcnM9e2ZhbHNlfVxuICAgICAgICA+XG4gICAgICAgICAgeyhwcm9ncmVzcywgZXZlbnQpID0+IChcbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udGFpbmVyIGxlZnRcIj5cbiAgICAgICAgICAgICAgPGgyPkluIE15IEZyZWUgVGltZS4uLjwvaDI+XG4gICAgICAgICAgICAgIDxwPlxuICAgICAgICAgICAgICAgIFlvdSBjYW4gZmluZCBtZSBzdXJmaW5nLCBoaWtpbmcsIGNhbXBpbmcsIHBsYXlpbmcgZ3VpdGFyLFxuICAgICAgICAgICAgICAgIHBsYXlpbmcgdmlkZW8gZ2FtZXMsIHJlYWRpbmcsIGxpc3RlbmluZyB0byBwb2RjYXN0cyBhbmQgbXVzaWMuXG4gICAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICAgICAgPHA+XG4gICAgICAgICAgICAgICAgTGlmZSBpcyBzaG9ydCwgc28gSSBsaWtlIHRvIHRyeSBuZXcgdGhpbmdzLiBNYXliZSB0aGlzIGNvbWVzXG4gICAgICAgICAgICAgICAgZnJvbSB0aGUgZXZlciBsb29taW5nIGV4aXN0ZW50aWFsIGRyZWFkP1xuICAgICAgICAgICAgICA8L3A+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICApfVxuICAgICAgICA8L1NjZW5lPlxuICAgICAgPC9Db250cm9sbGVyPlxuICAgICAgPHN0eWxlIGpzeD57YGB9PC9zdHlsZT5cbiAgICA8L2Rpdj5cbiAgKTtcbn07XG5cbmV4cG9ydCBkZWZhdWx0IFdobztcbiJdfQ== */\n/*@ sourceURL=/Users/rgrunest/Developer/ForFun/react-portfolio/components/index/Who.js */"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Who);
@@ -2709,7 +2709,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_index_Art__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/index/Art */ "./components/index/Art.js");
 /* harmony import */ var react_scrollmagic__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-scrollmagic */ "react-scrollmagic");
 /* harmony import */ var react_scrollmagic__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_scrollmagic__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "/Users/rgrunest/Developer/react-portfolio/pages/index.js";
+var _jsxFileName = "/Users/rgrunest/Developer/ForFun/react-portfolio/pages/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -2750,7 +2750,7 @@ function Index() {
       lineNumber: 12
     },
     __self: this
-  }, "Currently Based in San Diego, CA."), __jsx("p", {
+  }, "Currently Based in Ketchum, ID."), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 13
@@ -2780,14 +2780,14 @@ function Index() {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/rgrunest/Developer/react-portfolio/pages/index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! /Users/rgrunest/Developer/ForFun/react-portfolio/pages/index.js */"./pages/index.js");
 
 
 /***/ }),
