@@ -16,16 +16,16 @@
     "@react-firebase/auth": "^0.2.10",
     "@react-firebase/database": "^0.3.11",
     "babel-plugin-graphql-js-client-transform": "^1.1.1",
-    "cross-fetch": "^3.0.4",
-    "firebase": "^7.8.1",
+    "cross-fetch": "^3.1.4",
+    "firebase": "^8.6.7",
     "graphql-js-client": "^0.12.0",
-    "isomorphic-unfetch": "^3.0.0",
-    "next": "^9.2.1",
-    "node-fetch": "^2.6.0",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "isomorphic-unfetch": "^3.1.0",
+    "next": "^9.5.5",
+    "node-fetch": "^2.6.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-markdown": "^4.3.1",
-    "react-scrollmagic": "^2.1.1",
-    "swr": "^0.1.16"
+    "react-scrollmagic": "^2.3.0",
+    "swr": "^0.1.18"
   }
 }

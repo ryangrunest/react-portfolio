@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import firebase from "firebase/app";
+import 'firebase/firestore';
+import 'firebase/auth';
 import "firebase/database";
 import {
   FirebaseDatabaseProvider,
@@ -8,7 +10,6 @@ import {
 import dbconfig from "../dbconfig";
 import Layout from "../components/MyLayout";
 import BlogPost from "../components/BlogPost";
-import WordBreak from "../components/WordBreak";
 
 class Blog extends Component {
   constructor(props) {
