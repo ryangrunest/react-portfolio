@@ -12,8 +12,6 @@ body {
   }
   background: #f3f5f6;
   position: relative;
-  // font-family: "Dosis", sans-serif;
-  // font-family: "Muli", sans-serif;
   font-family: "Josefin Sans", sans-serif;
   letter-spacing: 1px;
   margin: 0;
@@ -56,6 +54,12 @@ p {
   height: 1px;
   background-color: #252b3338;
   margin: 1rem auto;
+}
+.container {
+  .text-container {
+    margin: 0 auto;
+    max-width: 25rem;
+  }
 }
 #Layout {
   padding-bottom: 25rem;
@@ -217,6 +221,7 @@ p {
       }
       img {
         width: 80%;
+        max-width: 17rem;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
       }
       .capitol {
@@ -246,6 +251,13 @@ p {
       .small-no-top-border {
         border-top: none;
       }
+    }
+  }
+}
+@media screen and (min-width: 600px) {
+  .container {
+    .text-container {
+      max-width: 45rem;
     }
   }
 }

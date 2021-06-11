@@ -13,6 +13,7 @@ const Who = props => {
         >
           {(progress, event) => (
             <div className="container left">
+              <div className="text-container">
               <h2>
                 I'm A Software Developer From Portland, Currently Residing In
                 San Diego With Experience In...
@@ -36,6 +37,7 @@ const Who = props => {
                 pick the right tool for the job!
               </p>
             </div>
+            </div>
           )}
         </Scene>
         <div id="trigger-2"></div>
@@ -47,28 +49,30 @@ const Who = props => {
         >
           {(progress, event) => (
             <div className="container right dark">
-              <h2>I'm Passionate About...</h2>
-              <ul>
-                <li>Coding</li>
-                <li>eCommerce</li>
-                <li>Entrepeneurship</li>
-              </ul>
-              <ul>
-                <li>Music</li>
-                <li>Art</li>
-                <li>Learning</li>
-              </ul>
-              <p>
+              <div className="text-container">
+                <h2>I'm Passionate About...</h2>
+                <ul>
+                  <li>Coding</li>
+                  <li>eCommerce</li>
+                  <li>Entrepeneurship</li>
+                </ul>
+                <ul>
+                  <li>Music</li>
+                  <li>Art</li>
+                  <li>Learning</li>
+                </ul>
+                <p>
                 I believe that it's important to have a{" "}
                 <strong>well balanced lifestyle</strong>. Working as a software
                 developer means that I spend a lot of time staring at a
                 computer, thinking quietly to myself.
-              </p>
-              <p>
+                </p>
+                <p>
                 Because of this, I actively try to seek out opportunity to
                 connect with other people. Music, Art, and continual learning
                 are some of the outlets I've found to help with that.
-              </p>
+                </p>
+              </div>
             </div>
           )}
         </Scene>
@@ -81,15 +85,17 @@ const Who = props => {
         >
           {(progress, event) => (
             <div className="container left">
-              <h2>In My Free Time...</h2>
-              <p>
-                You can find me surfing, hiking, camping, playing guitar,
-                playing video games, reading, listening to podcasts and music.
-              </p>
-              <p>
-                Life is short, so I like to try new things. Maybe this comes
-                from the ever looming existential dread?
-              </p>
+              <div className="text-container">
+                <h2>In My Free Time...</h2>
+                <p>
+                  You can find me surfing, hiking, camping, playing guitar,
+                  playing video games, reading, listening to podcasts and music.
+                </p>
+                <p>
+                  Life is short, so I like to try new things. Maybe this comes
+                  from the ever looming existential dread?
+                </p>
+              </div>
             </div>
           )}
         </Scene>

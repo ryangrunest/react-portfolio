@@ -7,6 +7,7 @@
     "dev": "next -p 8080",
     "build": "next build",
     "start": "next start",
+    "sass": "sass --watch stylesheets/index.scss public/index.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

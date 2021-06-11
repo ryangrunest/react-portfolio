@@ -370,6 +370,11 @@ p {
   margin: 1rem auto;
 }
 
+.container .text-container {
+  margin: 0 auto;
+  max-width: 25rem;
+}
+
 #Layout {
   padding-bottom: 25rem;
   position: relative;
@@ -533,6 +538,7 @@ p {
 }
 .Art .container .nested img {
   width: 80%;
+  max-width: 17rem;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 .Art .container .nested .capitol {
@@ -562,6 +568,11 @@ p {
   }
   .Art .container .small-no-top-border {
     border-top: none;
+  }
+}
+@media screen and (min-width: 600px) {
+  .container .text-container {
+    max-width: 45rem;
   }
 }
 
