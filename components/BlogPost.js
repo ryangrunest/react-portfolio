@@ -6,15 +6,14 @@ class BlogPost extends Component {
     this.state = {
       isOpen: false,
       openText: [],
-      closedText: ""
+      closedText: "",
     };
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick() {
-    let element = document.querySelector(`#${this.props.id} .text`);
     this.setState({
-      isOpen: !this.state.isOpen
+      isOpen: !this.state.isOpen,
     });
   }
 
@@ -23,7 +22,7 @@ class BlogPost extends Component {
     const splitText = this.props.text.split("\n");
     this.setState({
       openText: splitText,
-      closedText: closedText
+      closedText: closedText,
     });
   }
 

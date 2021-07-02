@@ -63,7 +63,7 @@ class Blog extends Component {
                 : "";
               return (
                 <BlogPost
-                  id={blog}
+                  id={blog.id}
                   title={blog.blogHeader}
                   text={blog.blogText}
                   imgPath={blogImg}
