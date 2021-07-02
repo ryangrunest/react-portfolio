@@ -58,7 +58,6 @@ class Blog extends Component {
           }}
           <div className="blogpost-container">
             {this.state.blogData.reverse().map((blog, index) => {
-              console.log(blog.blogMedia);
               const blogImg = blog.blogMedia
                 ? `https://rg-portfolio-backend.herokuapp.com${blog.blogMedia.url}`
                 : "";
