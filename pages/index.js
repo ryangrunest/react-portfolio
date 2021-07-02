@@ -1,12 +1,12 @@
 import Layout from "../components/MyLayout";
 import Who from "../components/index/Who";
 import Art from "../components/index/Art";
-import { Controller, Scene } from "react-scrollmagic";
 
 export default function Index() {
   return (
     <Layout page="Home">
       <div className="index">
+        <div className="github-profile"></div>
         <div className="overlay">
           <h1>Software / Web Developer</h1>
           <p>Currently Based in Portland, OR.</p>

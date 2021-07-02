@@ -1,10 +1,11 @@
 import { Controller, Scene } from "react-scrollmagic";
+
 const Who = props => {
   return (
     <div className="Who">
       <div id="trigger"></div>
       <Controller>
-        <h1>Who Am I?</h1>
+        <h1 className="text-center">Who Am I?</h1>
         <Scene
           duration={1100}
           classToggle="slide-left-opacity"

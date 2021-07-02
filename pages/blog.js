@@ -1,71 +1,80 @@
 import React, { Component } from "react";
-import firebase from "firebase/app";
-import 'firebase/firestore';
-import 'firebase/auth';
-import "firebase/database";
-import {
-  FirebaseDatabaseProvider,
-  FirebaseDatabaseNode
-} from "@react-firebase/database";
-import dbconfig from "../dbconfig";
 import Layout from "../components/MyLayout";
 import BlogPost from "../components/BlogPost";
+import axios from "axios";
 
 class Blog extends Component {
   constructor(props) {
     super(props);
     this.state = {
       numBlogs: 0,
-      blogData: []
+      blogData: [],
     };
+  }
+  componentDidMount() {
+    try {
+      axios({
+        method: "GET",
+        url: "https://rg-portfolio-backend.herokuapp.com/blog-posts",
+        headers: {
+          Authorization: process.env.NEXT_PUBLIC_DB_TOKEN,
+        },
+      }).then((res) => {
+        console.log(res);
+        this.setState({ blogData: res.data, numBlogs: res.data.length });
+      });
+    } catch (err) {
+      console.warn("failed to retrieve blog posts:\n", err);
+      return;
+    }
   }
   render() {
     return (
       <div className="blog">
-        <FirebaseDatabaseProvider firebase={firebase} {...dbconfig}>
-          <Layout page="Blog">
-            <h1>
-              <p>
-                These are words about various things that I find interesting or
-                that are encompassing my life.
-              </p>
-              <p>
-                Some of them have to do with{" "}
-                <span className="highlighted">software development</span>. Some
-                of them have to do with{" "}
-                <span className="highlighted">sounds</span>. Some of them have
-                to do with <span className="highlighted">sunscreen</span>.
-              </p>
-            </h1>
-            <FirebaseDatabaseNode path="BlogPosts/" orderByKey>
-              {data => {
-                if (data.value) {
-                  this.setState({
-                    blogData: Object.entries(data.value),
-                    numBlogs: Object.entries(data.value).length
-                  });
-                  return "";
-                } else {
-                  return <div>Could not get data</div>;
-                }
-              }}
-            </FirebaseDatabaseNode>
-            <div className="blogpost-container">
-              {this.state.blogData.reverse().map((blog, index) => {
-                return (
-                  <BlogPost
-                    id={blog[0]}
-                    title={blog[1].title}
-                    text={blog[1].text}
-                    imgPath={blog[1].imgPath}
-                    date={blog[1].date}
-                    key={blog[0]}
-                  />
-                );
-              })}
-            </div>
-          </Layout>
-        </FirebaseDatabaseProvider>
+        <Layout page="Blog">
+          <h1>
+            <p>
+              These are words about various things that I find interesting or
+              that are encompassing my life.
+            </p>
+            <p>
+              Some of them have to do with{" "}
+              <span className="highlighted">software development</span>. Some of
+              them have to do with <span className="highlighted">sounds</span>.
+              Some of them have to do with{" "}
+              <span className="highlighted">sunscreen</span>.
+            </p>
+          </h1>
+          {(data) => {
+            if (data.value) {
+              this.setState({
+                blogData: Object.entries(data.value),
+                numBlogs: Object.entries(data.value).length,
+              });
+              return "";
+            } else {
+              return <div>Could not get data</div>;
+            }
+          }}
+          <div className="blogpost-container">
+            {this.state.blogData.reverse().map((blog, index) => {
+              console.log(blog.blogMedia);
+              const blogImg = blog.blogMedia
+                ? `https://rg-portfolio-backend.herokuapp.com${blog.blogMedia.url}`
+                : "";
+              return (
+                <BlogPost
+                  id={blog}
+                  title={blog.blogHeader}
+                  text={blog.blogText}
+                  imgPath={blogImg}
+                  date={blog.date}
+                  key={blog.blogHeader}
+                />
+              );
+            })}
+          </div>
+        </Layout>
       </div>
     );
   }
