@@ -235,10 +235,6 @@
   padding: 2rem;
   display: inline;
 }
-.Footer .contact-list li a svg {
-  height: 100%;
-  width: 100%;
-}
 .Footer .contact-list .back-to-top {
   display: block;
 }
@@ -254,6 +250,10 @@
 .Footer .footer-content-container .icon-container a {
   height: 5rem;
   width: 5rem;
+}
+.Footer .footer-content-container .icon-container a svg {
+  height: 100%;
+  width: 100%;
 }
 .Footer h3 {
   text-align: center;

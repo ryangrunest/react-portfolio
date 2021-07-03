@@ -24,12 +24,6 @@
     li {
       padding: 2rem;
       display: inline;
-      a {
-        svg {
-          height: 100%;
-          width: 100%;
-        }
-      }
     }
     .back-to-top {
       display: block;
@@ -45,6 +39,10 @@
       a {
         height: 5rem;
         width: 5rem;
+        svg {
+          height: 100%;
+          width: 100%;
+        }
       }
     }
   }
