@@ -10,6 +10,11 @@
   align-items: center;
   a {
     color: $light;
+
+    svg {
+      max-width: 3rem;
+      max-height: 2.5rem;
+    }
   }
   .contact-list {
     list-style: none;
@@ -27,6 +32,19 @@
     }
     .back-to-top {
       display: block;
+    }
+  }
+  .footer-content-container {
+    width: 100%;
+    .icon-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 7rem;
+      a {
+        height: 5rem;
+        width: 5rem;
+      }
     }
   }
   h3 {

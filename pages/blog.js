@@ -67,7 +67,7 @@ class Blog extends Component {
                   title={blog.blogHeader}
                   text={blog.blogText}
                   imgPath={blogImg}
-                  date={blog.date}
+                  date={blog.createdAt}
                   key={blog.blogHeader}
                 />
               );

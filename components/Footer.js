@@ -1,4 +1,8 @@
 import Link from "next/link";
+import { faMobileAlt, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import icons from "../icons.js";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 export default function Footer() {
   return (
     <footer className="Footer">
@@ -9,25 +13,22 @@ export default function Footer() {
               <a>Go Home</a>
             </Link>
           </li>
-          <li>
+          <div className="icon-container">
             <a href="tel:503-830-0199">
-              <i className="fas fa-mobile-alt"></i>
+              <FontAwesomeIcon icon={faMobileAlt} />
             </a>
-          </li>
-          <li>
             <a href="mailto:ryangrunest45@gmail.com">
-              <i className="far fa-envelope"></i>
+              <FontAwesomeIcon icon={faEnvelope} />
             </a>
-          </li>
-          <li>
-            <Link href="www.linkedin.com/in/ryangrunest">
-              <a>
-                <i className="fab fa-linkedin"></i>
-              </a>
+            <Link href="https://linkedin.com/in/ryangrunest">
+              <a>{icons.linkedin}</a>
             </Link>
-          </li>
+            <Link href="https://github.com/ryangrunest">
+              <a>{icons.github}</a>
+            </Link>
+          </div>
         </ul>
-        <h3>&copy; 2020 Ryan Grunest</h3>
+        <h3>&copy; 2021 Ryan Grunest</h3>
       </div>
     </footer>
   );

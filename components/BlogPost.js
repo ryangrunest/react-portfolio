@@ -1,5 +1,7 @@
 import WordBreak from "./WordBreak";
 import { Component } from "react";
+import moment from "moment";
+
 class BlogPost extends Component {
   constructor(props) {
     super(props);
@@ -36,10 +38,16 @@ class BlogPost extends Component {
         key={this.props.index}
       >
         <h2 className="title">{this.props.title}</h2>
-        <h3 className="date">{this.props.date}</h3>
-        <div className="image-container">
-          <img src={this.props.imgPath}></img>
-        </div>
+        <h3 className="date">
+          {moment(this.props.date).format("MMMM Do YYYY")}
+        </h3>
+        {this.props.imgPath !== "" ? (
+          <div className="image-container">
+            <img src={this.props.imgPath}></img>
+          </div>
+        ) : (
+          ""
+        )}
         <div className="text">
           {this.state.isOpen ? (
             this.state.openText.map((line, index) => <p key={index}>{line}</p>)
