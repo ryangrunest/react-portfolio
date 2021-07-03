@@ -235,8 +235,9 @@
   padding: 2rem;
   display: inline;
 }
-.Footer .contact-list li a i {
-  font-size: 2rem;
+.Footer .contact-list li a svg {
+  height: 100%;
+  width: 100%;
 }
 .Footer .contact-list .back-to-top {
   display: block;
