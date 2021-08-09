@@ -16,9 +16,6 @@ class Blog extends Component {
       axios({
         method: "GET",
         url: "https://rg-portfolio-backend.herokuapp.com/blog-posts",
-        headers: {
-          Authorization: process.env.NEXT_PUBLIC_DB_TOKEN,
-        },
       }).then((res) => {
         console.log(res);
         this.setState({ blogData: res.data, numBlogs: res.data.length });

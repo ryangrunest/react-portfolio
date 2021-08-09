@@ -29,6 +29,7 @@ class BlogPost extends Component {
   }
 
   render() {
+    console.log(this.props.imgPath);
     return (
       <div
         className="BlogPost"
