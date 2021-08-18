@@ -8,7 +8,10 @@ export default function Layout({ children, page, wrapper }) {
   return (
     <>
       <MyHead page={page} />
-      <div id="default-layout" className={navIsOpen ? "nav-open" : ""}>
+      <div
+        id="default-layout"
+        className={navIsOpen ? wrapper + " nav-open" : wrapper}
+      >
         <MyHeader />
         {children}
         <Footer />
