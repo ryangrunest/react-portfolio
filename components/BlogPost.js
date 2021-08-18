@@ -33,7 +33,6 @@ class BlogPost extends Component {
     return (
       <div
         className="BlogPost"
-        // style={this.state.isOpen ? "{{width=100%}}" : ""}
         style={this.state.isOpen ? { width: "100%" } : {}}
         id={this.props.id}
         key={this.props.index}

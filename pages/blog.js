@@ -55,8 +55,8 @@ class Blog extends Component {
           }}
           <div className="blogpost-container">
             {this.state.blogData.reverse().map((blog, index) => {
-              const blogImg = blog.blogMedia
-                ? `https://rg-portfolio-backend.herokuapp.com${blog.blogMedia.url}`
+              let blogImg = blog.blogMedia
+                ? `https://rg-portfolio-bucket.s3.us-west-2.amazonaws.com/blog-images/${blog.blogMedia.name}`
                 : "";
               return (
                 <BlogPost
@@ -76,4 +76,11 @@ class Blog extends Component {
   }
 }
 
+// sample code from AWS
+//rg-portfolio-bucket-policy
+// // Initialize the Amazon Cognito credentials provider
+// AWS.config.region = 'us-west-2'; // Region
+// AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+//     IdentityPoolId: 'us-west-2:0cd49922-6be8-4b23-a9ae-c9d3ed7c9543',
+// });
 export default Blog;
