@@ -58,25 +58,36 @@ class Blog extends Component {
             }
           }}
           <div className="blogpost-container">
-            {this.state.blogDataRetrieved
-              ? this.state.blogData.reverse().map((blog, index) => {
-                  console.log(blog);
-                  const blogImg = blog.blogMedia
-                    ? `https://rg-portfolio-bucket.s3.us-west-2.amazonaws.com/blog-images/${blog.blogMedia.name}`
-                    : "";
+            {this.state.blogDataRetrieved ? (
+              this.state.blogData.reverse().map((blog, index) => {
+                console.log(blog);
+                const blogImg = blog.blogMedia
+                  ? `https://rg-portfolio-bucket.s3.us-west-2.amazonaws.com/blog-images/${blog.blogMedia.name}`
+                  : "";
 
-                  return (
-                    <BlogPost
-                      id={blog.id}
-                      title={blog.blogHeader}
-                      text={blog.blogText}
-                      imgPath={blogImg}
-                      date={blog.createdAt}
-                      key={blog.blogHeader}
-                    />
-                  );
-                })
-              : "beans"}
+                return (
+                  <BlogPost
+                    id={blog.id}
+                    title={blog.blogHeader}
+                    text={blog.blogText}
+                    imgPath={blogImg}
+                    date={blog.createdAt}
+                    key={blog.blogHeader}
+                  />
+                );
+              })
+            ) : (
+              <p className="round">
+                <span className="ouro">
+                  <span className="spinner-left">
+                    <span className="anim"></span>{" "}
+                  </span>
+                  <span className="spinner-right">
+                    <span className="anim"></span>
+                  </span>
+                </span>
+              </p>
+            )}
           </div>
         </Layout>
       </div>
