@@ -75,12 +75,4 @@ class Blog extends Component {
     );
   }
 }
-
-// sample code from AWS
-//rg-portfolio-bucket-policy
-// // Initialize the Amazon Cognito credentials provider
-// AWS.config.region = 'us-west-2'; // Region
-// AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-//     IdentityPoolId: 'us-west-2:0cd49922-6be8-4b23-a9ae-c9d3ed7c9543',
-// });
 export default Blog;
