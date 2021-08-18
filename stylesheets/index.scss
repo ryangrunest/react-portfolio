@@ -63,6 +63,7 @@ p {
   }
 }
 #default-layout {
+  min-height: 100vh;
   padding-bottom: 25rem;
   position: relative;
   a:hover,
@@ -70,6 +71,9 @@ p {
   a:focus,
   a:visited {
     color: gray;
+  }
+  &.nav-open {
+    overflow-y: hidden;
   }
 }
 .highlighted {

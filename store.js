@@ -13,7 +13,7 @@ const reducer = (state = initialState, action) => {
     case "TOGGLE_NAV":
       return {
         ...state,
-        navIsOpen: !navIsOpen,
+        navIsOpen: !state.navIsOpen,
       };
     default:
       return state;

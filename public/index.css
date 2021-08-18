@@ -582,6 +582,7 @@ p {
 }
 
 #default-layout {
+  min-height: 100vh;
   padding-bottom: 25rem;
   position: relative;
 }
@@ -590,6 +591,9 @@ p {
 #default-layout a:focus,
 #default-layout a:visited {
   color: gray;
+}
+#default-layout.nav-open {
+  overflow-y: hidden;
 }
 
 .highlighted {
