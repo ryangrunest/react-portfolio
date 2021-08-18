@@ -61,7 +61,7 @@ p {
     max-width: 25rem;
   }
 }
-#Layout {
+#default-layout {
   padding-bottom: 25rem;
   position: relative;
   a:hover,
@@ -79,7 +79,8 @@ p {
 
 .index {
   position: relative;
-  background: url("/splash-min.jpg") no-repeat center center fixed;
+  background: url("https://rg-portfolio-bucket.s3.us-west-2.amazonaws.com/blog-images/splash-min.jpg")
+    no-repeat center center fixed;
   height: calc(100vh - 65px); // height of header
   z-index: 0;
   h1 {

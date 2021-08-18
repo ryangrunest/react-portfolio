@@ -6,7 +6,7 @@ export default function Layout({ children, page }) {
   return (
     <>
       <MyHead page={page} />
-      <div id="Layout">
+      <div id="default-layout">
         <MyHeader />
         {children}
         <Footer />

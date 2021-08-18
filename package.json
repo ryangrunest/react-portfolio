@@ -4,10 +4,11 @@
   "description": "Rebuilding My Portfolio With React",
   "main": "index.js",
   "scripts": {
-    "dev": "next -p 8080",
+    "dev": "npm run watch-js & npm run watch-sass",
     "build": "next build",
+    "watch-js": "next -p 8080",
+    "watch-sass": "sass --watch --no-source-map stylesheets/index.scss public/index.css",
     "start": "next start",
-    "sass": "sass --watch stylesheets/index.scss public/index.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

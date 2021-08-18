@@ -1,6 +1,6 @@
 import Layout from "../components/DefaultLayout";
-import Who from "../components/index/Who";
-import Art from "../components/index/Art";
+import Who from "./components/Who";
+import Art from "./components/Art";
 
 export default function Index() {
   return (

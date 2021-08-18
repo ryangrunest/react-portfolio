@@ -393,14 +393,14 @@ p {
   max-width: 25rem;
 }
 
-#Layout {
+#default-layout {
   padding-bottom: 25rem;
   position: relative;
 }
-#Layout a:hover,
-#Layout a:active,
-#Layout a:focus,
-#Layout a:visited {
+#default-layout a:hover,
+#default-layout a:active,
+#default-layout a:focus,
+#default-layout a:visited {
   color: gray;
 }
 
@@ -412,7 +412,7 @@ p {
 
 .index {
   position: relative;
-  background: url("/splash-min.jpg") no-repeat center center fixed;
+  background: url("https://rg-portfolio-bucket.s3.us-west-2.amazonaws.com/blog-images/splash-min.jpg") no-repeat center center fixed;
   height: calc(100vh - 65px);
   z-index: 0;
 }
@@ -594,5 +594,3 @@ p {
     max-width: 45rem;
   }
 }
-
-/*# sourceMappingURL=index.css.map */
