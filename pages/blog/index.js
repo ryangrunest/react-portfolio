@@ -60,6 +60,7 @@ class Blog extends Component {
           <div className="blogpost-container">
             {this.state.blogDataRetrieved
               ? this.state.blogData.reverse().map((blog, index) => {
+                  console.log(blog);
                   const blogImg = blog.blogMedia
                     ? `https://rg-portfolio-bucket.s3.us-west-2.amazonaws.com/blog-images/${blog.blogMedia.name}`
                     : "";

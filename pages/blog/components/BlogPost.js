@@ -42,7 +42,11 @@ class BlogPost extends Component {
         </h3>
         {this.props.imgPath !== "" ? (
           <div className="image-container">
-            <img src={this.props.imgPath}></img>
+            <img
+              loading="lazy"
+              src={this.props.imgPath}
+              alt={this.props.title.toLowerCase()}
+            ></img>
           </div>
         ) : (
           ""

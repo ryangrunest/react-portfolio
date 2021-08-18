@@ -11,7 +11,10 @@ export default function Art() {
       </h4>
       <div className="container">
         <div className="nested">
-          <img src="https://rg-portfolio-bucket.s3.us-west-2.amazonaws.com/blog-images/slow-rush.jpeg"></img>
+          <img
+            loading="lazy"
+            src="https://rg-portfolio-bucket.s3.us-west-2.amazonaws.com/blog-images/slow-rush.jpeg"
+          ></img>
           <div className="text-container">
             <h3>The Slow Rush</h3>
             <p>Tame Impala</p>
@@ -20,6 +23,7 @@ export default function Art() {
         </div>
         <div className="nested small-no-top-border">
           <img
+            loading="lazy"
             className="capitol"
             src="https://rg-portfolio-bucket.s3.us-west-2.amazonaws.com/blog-images/capitol.jpg"
           ></img>
