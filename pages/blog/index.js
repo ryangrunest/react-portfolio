@@ -31,66 +31,64 @@ class Blog extends Component {
   }
   render() {
     return (
-      <div className="blog">
-        <Layout page="Blog">
-          <h1>
-            <p>
-              These are words about various things that I find interesting or
-              that are encompassing my life.
-            </p>
-            <p>
-              Some of them have to do with{" "}
-              <span className="highlighted">software development</span>. Some of
-              them have to do with <span className="highlighted">sounds</span>.
-              Some of them have to do with{" "}
-              <span className="highlighted">sunscreen</span>.
-            </p>
-          </h1>
-          {(data) => {
-            if (data.value) {
-              this.setState({
-                blogData: Object.entries(data.value),
-                numBlogs: Object.entries(data.value).length,
-              });
-              return "";
-            } else {
-              return <div>Could not get data</div>;
-            }
-          }}
-          <div className="blogpost-container">
-            {this.state.blogDataRetrieved ? (
-              this.state.blogData.reverse().map((blog, index) => {
-                console.log(blog);
-                const blogImg = blog.blogMedia
-                  ? `https://rg-portfolio-bucket.s3.us-west-2.amazonaws.com/blog-images/${blog.blogMedia.name}`
-                  : "";
+      <Layout page="Blog" wrapper="blog">
+        <h1>
+          <p>
+            These are words about various things that I find interesting or that
+            are encompassing my life.
+          </p>
+          <p>
+            Some of them have to do with{" "}
+            <span className="highlighted">software development</span>. Some of
+            them have to do with <span className="highlighted">sounds</span>.
+            Some of them have to do with{" "}
+            <span className="highlighted">sunscreen</span>.
+          </p>
+        </h1>
+        {(data) => {
+          if (data.value) {
+            this.setState({
+              blogData: Object.entries(data.value),
+              numBlogs: Object.entries(data.value).length,
+            });
+            return "";
+          } else {
+            return <div>Could not get data</div>;
+          }
+        }}
+        <div className="blogpost-container">
+          {this.state.blogDataRetrieved ? (
+            this.state.blogData.reverse().map((blog, index) => {
+              console.log(blog);
+              const blogImg = blog.blogMedia
+                ? `https://rg-portfolio-bucket.s3.us-west-2.amazonaws.com/blog-images/${blog.blogMedia.name}`
+                : "";
 
-                return (
-                  <BlogPost
-                    id={blog.id}
-                    title={blog.blogHeader}
-                    text={blog.blogText}
-                    imgPath={blogImg}
-                    date={blog.createdAt}
-                    key={blog.blogHeader}
-                  />
-                );
-              })
-            ) : (
-              <p className="round">
-                <span className="ouro">
-                  <span className="spinner-left">
-                    <span className="anim"></span>{" "}
-                  </span>
-                  <span className="spinner-right">
-                    <span className="anim"></span>
-                  </span>
+              return (
+                <BlogPost
+                  id={blog.id}
+                  title={blog.blogHeader}
+                  text={blog.blogText}
+                  imgPath={blogImg}
+                  date={blog.createdAt}
+                  key={blog.blogHeader}
+                />
+              );
+            })
+          ) : (
+            <p className="round">
+              <span className="ouro">
+                <span className="spinner-left">
+                  <span className="anim"></span>{" "}
                 </span>
-              </p>
-            )}
-          </div>
-        </Layout>
-      </div>
+                <span className="spinner-right">
+                  <span className="anim"></span>
+                </span>
+              </span>
+            </p>
+          )}
+        </div>
+      </Layout>
     );
   }
 }

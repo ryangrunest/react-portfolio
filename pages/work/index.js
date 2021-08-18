@@ -2,7 +2,7 @@ import Layout from "../../components/DefaultLayout";
 
 export default function Index() {
   return (
-    <Layout page="Work" childClass="work">
+    <Layout page="Work" wrapper="work">
       <div className="github-profile"></div>
       <div className="overlay">
         <h1>Software / Web Developer</h1>

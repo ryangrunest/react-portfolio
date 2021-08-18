@@ -7,19 +7,6 @@ header {
   .header-left a {
     font-size: 1.2rem;
   }
-  // .header-right a {
-  //   margin: 0 1rem;
-  //   padding: 0 0.2rem;
-  //   padding-bottom: 0.2rem;
-  //   border-bottom: 1px solid black;
-  //   transition: 0.3s all;
-  // }
-  // .header-right a:hover {
-  //   color: rgb(120, 169, 152);
-  // }
-  // .header-right a:hover {
-  //   border: none;
-  // }
   .hamburger {
     position: relative;
     width: 3rem;
@@ -56,12 +43,13 @@ header {
   transition: 0.4s all ease-in-out;
   transform: translateX(100vw);
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: center;
+    margin-right: 1rem;
+    text-align: right;
     li {
       padding: 0.5rem;
     }

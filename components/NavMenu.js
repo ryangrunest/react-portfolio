@@ -20,11 +20,12 @@ class NavMenu extends Component {
               <a onClick={this.props.click}>Blog</a>
             </Link>
           </li>
+          <li>
+            <Link href="/work">
+              <a onClick={this.props.click}>Work</a>
+            </Link>
+          </li>
         </ul>
-
-        {/* <Link href="/shop">
-        <a>Shop</a>
-      </Link> */}
       </div>
     );
   }

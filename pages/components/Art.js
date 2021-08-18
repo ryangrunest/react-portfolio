@@ -3,8 +3,12 @@ export default function Art() {
   return (
     <div className="Art">
       <h1>
-        “The art of a people is a true mirror to their minds.” – Jawaharlal
-        Nehru
+        <i>
+          “Don’t be in a hurry to condemn because he doesn’t do what you do or
+          think as you think or as fast. There was a time when you didn’t know
+          what you know today.”
+        </i>
+        <span>- Malcolm X</span>
       </h1>
       <h4>
         <p>Currently Vibing To...</p>
