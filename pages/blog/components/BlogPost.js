@@ -45,7 +45,7 @@ class BlogPost extends Component {
             <img
               loading="lazy"
               src={this.props.imgPath}
-              alt={this.props.title.toLowerCase()}
+              alt={this.props.title ? this.props.title.toLowerCase() : ""}
             ></img>
           </div>
         ) : (
