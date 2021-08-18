@@ -1,6 +1,9 @@
+import { useSelector } from "react-redux";
 import Layout from "../../components/DefaultLayout";
 
 export default function Index() {
+  const isNavOpen = useSelector((state) => state.navIsOpen);
+
   return (
     <Layout page="Work" wrapper="work">
       <div className="github-profile"></div>
@@ -11,6 +14,7 @@ export default function Index() {
           Don't be shy. Send me an{" "}
           <a href="mailto:ryangrunest45@gmail.com">email</a>.
         </p>
+        <p>navIsOpen? {isNavOpen ? "true" : "false"}</p>
       </div>
     </Layout>
   );
