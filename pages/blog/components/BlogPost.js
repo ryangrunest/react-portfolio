@@ -1,4 +1,4 @@
-import WordBreak from "./WordBreak";
+import WordBreak from "../../../components/WordBreak";
 import { Component } from "react";
 import moment from "moment";
 
@@ -29,7 +29,6 @@ class BlogPost extends Component {
   }
 
   render() {
-    console.log(this.props.imgPath);
     return (
       <div
         className="BlogPost"

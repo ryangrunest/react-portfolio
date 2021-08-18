@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Layout from "../components/MyLayout";
-import BlogPost from "../components/BlogPost";
+import Layout from "../../components/DefaultLayout";
+import BlogPost from "./components/BlogPost";
 import axios from "axios";
 
 class Blog extends Component {
@@ -8,6 +8,7 @@ class Blog extends Component {
     super(props);
     this.state = {
       numBlogs: 0,
+      blogDataRetrieved: false,
       blogData: [],
     };
   }
@@ -17,12 +18,15 @@ class Blog extends Component {
         method: "GET",
         url: "https://rg-portfolio-backend.herokuapp.com/blog-posts",
       }).then((res) => {
-        console.log(res);
-        this.setState({ blogData: res.data, numBlogs: res.data.length });
+        this.setState({
+          blogData: res.data,
+          numBlogs: res.data.length,
+          blogDataRetrieved: true,
+        });
       });
     } catch (err) {
       console.warn("failed to retrieve blog posts:\n", err);
-      return;
+      return false;
     }
   }
   render() {
@@ -54,21 +58,24 @@ class Blog extends Component {
             }
           }}
           <div className="blogpost-container">
-            {this.state.blogData.reverse().map((blog, index) => {
-              let blogImg = blog.blogMedia
-                ? `https://rg-portfolio-bucket.s3.us-west-2.amazonaws.com/blog-images/${blog.blogMedia.name}`
-                : "";
-              return (
-                <BlogPost
-                  id={blog.id}
-                  title={blog.blogHeader}
-                  text={blog.blogText}
-                  imgPath={blogImg}
-                  date={blog.createdAt}
-                  key={blog.blogHeader}
-                />
-              );
-            })}
+            {this.state.blogDataRetrieved
+              ? this.state.blogData.reverse().map((blog, index) => {
+                  const blogImg = blog.blogMedia
+                    ? `https://rg-portfolio-bucket.s3.us-west-2.amazonaws.com/blog-images/${blog.blogMedia.name}`
+                    : "";
+
+                  return (
+                    <BlogPost
+                      id={blog.id}
+                      title={blog.blogHeader}
+                      text={blog.blogText}
+                      imgPath={blogImg}
+                      date={blog.createdAt}
+                      key={blog.blogHeader}
+                    />
+                  );
+                })
+              : "beans"}
           </div>
         </Layout>
       </div>

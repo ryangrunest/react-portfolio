@@ -1,4 +1,4 @@
-import Layout from "../components/MyLayout";
+import Layout from "../components/DefaultLayout";
 import Who from "../components/index/Who";
 import Art from "../components/index/Art";
 
