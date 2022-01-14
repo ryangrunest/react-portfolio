@@ -1,5 +1,7 @@
-import Head from "next/head";
 import dynamic from "next/dynamic";
+
+import MapHeader from "./components/MapHeader";
+import MapHead from "./components/MapHead";
 
 const DynamicComponentWithNoSSR = dynamic(() => import("./components/Map"), {
   ssr: false,
@@ -7,17 +9,10 @@ const DynamicComponentWithNoSSR = dynamic(() => import("./components/Map"), {
 
 export default function CampSites() {
   return (
-    <div>
-      <Head>
-        <title>Campsites</title>
-        <link
-          href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css"
-          rel="stylesheet"
-        />
-      </Head>
-
-      <h1>hello campsites</h1>
+    <>
+      <MapHead page="CampSites" />
+      <MapHeader />
       <DynamicComponentWithNoSSR />
-    </div>
+    </>
   );
 }
