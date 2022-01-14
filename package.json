@@ -18,6 +18,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
+    "@redux-devtools/extension": "^3.1.0",
     "@reduxjs/toolkit": "^1.6.1",
     "axios": "^0.24.0",
     "babel-plugin-graphql-js-client-transform": "^1.1.1",
@@ -25,18 +26,17 @@
     "isomorphic-unfetch": "^3.1.0",
     "moment": "^2.29.1",
     "next": "^12.0.8",
-    "next-redux-wrapper": "^7.0.2",
-    "node-fetch": "^2.6.1",
+    "next-redux-wrapper": "^7.0.5",
+    "node-fetch": "^3.1.0",
     "postcss": "^8.3.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-gtm-module": "^2.0.11",
-    "react-markdown": "^6.0.2",
-    "react-redux": "^7.2.4",
+    "react-markdown": "^7.1.2",
+    "react-redux": "^7.2.6",
     "react-scrollmagic": "^2.3.0",
     "redux": "^4.1.2",
-    "redux-devtools-extension": "^2.13.9",
-    "redux-thunk": "^2.3.0",
-    "swr": "^0.5.6"
+    "redux-thunk": "^2.4.1",
+    "swr": "^1.1.2"
   }
 }
