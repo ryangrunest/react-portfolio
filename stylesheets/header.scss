@@ -61,3 +61,25 @@ header {
 .NavMenu.open {
   transform: translateX(0);
 }
+
+.subheader {
+  padding: 10px 20px;
+  padding-top: 0px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+
+  .subheader-title {
+    padding-right: 1rem;
+  }
+  .pin-container {
+    padding: 1rem;
+    svg {
+      height: 1.3rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

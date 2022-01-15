@@ -328,6 +328,26 @@ header .hamburger div {
   transform: translateX(0);
 }
 
+.subheader {
+  padding: 10px 20px;
+  padding-top: 0px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.subheader .subheader-title {
+  padding-right: 1rem;
+}
+.subheader .pin-container {
+  padding: 1rem;
+}
+.subheader .pin-container svg {
+  height: 1.3rem;
+}
+.subheader .pin-container svg:hover {
+  cursor: pointer;
+}
+
 /* Inspirated from  http://www.alessioatzeni.com/wp-content/tutorials/html-css/CSS3-loading-animation-loop/index.html */
 .ouro {
   position: relative;

@@ -20,7 +20,7 @@ const MapHeader = (props) => {
     <header>
       <div className="header-left">
         <Link href="/">
-          <a>Ryan Grunest</a>
+          <a>{props.title || "Ryan Grunest"}</a>
         </Link>
       </div>
       <div className="header-right">
