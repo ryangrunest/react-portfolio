@@ -24,6 +24,7 @@
     "babel-plugin-graphql-js-client-transform": "^1.1.1",
     "cross-fetch": "^3.1.4",
     "isomorphic-unfetch": "^3.1.0",
+    "mapbox-gl": "^2.6.1",
     "moment": "^2.29.1",
     "next": "^12.0.8",
     "next-redux-wrapper": "^7.0.5",
@@ -32,11 +33,16 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-gtm-module": "^2.0.11",
+    "react-map-gl": "^6.1.18",
     "react-markdown": "^7.1.2",
     "react-redux": "^7.2.6",
     "react-scrollmagic": "^2.3.0",
     "redux": "^4.1.2",
     "redux-thunk": "^2.4.1",
-    "swr": "^1.1.2"
+    "swr": "^1.1.2",
+    "vercel": "^23.1.2"
+  },
+  "devDependencies": {
+    "immer": ">=9.0.6"
   }
 }

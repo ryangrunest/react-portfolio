@@ -1,1 +1,8 @@
-{}
+{
+  "campsites/index.js -> ./components/Map": {
+    "id": "campsites/index.js -> ./components/Map",
+    "files": [
+      "static/chunks/pages_campsites_components_Map_js.js"
+    ]
+  }
+}
