@@ -341,12 +341,6 @@ header .hamburger div {
 .subheader .pin-container {
   padding: 1rem;
 }
-.subheader .pin-container svg {
-  height: 1.3rem;
-}
-.subheader .pin-container svg:hover {
-  cursor: pointer;
-}
 
 /* Inspirated from  http://www.alessioatzeni.com/wp-content/tutorials/html-css/CSS3-loading-animation-loop/index.html */
 .ouro {
@@ -535,6 +529,19 @@ header .hamburger div {
     -webkit-transform: rotate(360deg);
   }
 }
+.pin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pin svg {
+  height: 1.3rem;
+  color: #78a998;
+}
+.pin svg:hover {
+  cursor: pointer;
+}
+
 html,
 body {
   background: #f3f5f6;

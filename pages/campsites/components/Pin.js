@@ -67,9 +67,11 @@ const Pin = ({ pin }) => {
 
   return (
     <div className="pin-container" title={title}>
-      {pin === "camper" && <Camper />}
-      {pin === "tent" && <Tent />}
-      {pin === "sneaky" && <Sneaky />}
+      <div className="pin" draggable="true">
+        {pin === "camper" && <Camper />}
+        {pin === "tent" && <Tent />}
+        {pin === "sneaky" && <Sneaky />}
+      </div>
     </div>
   );
 };
